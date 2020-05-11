@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"             
+             mc:Ignorable="d"
+             x:Class="SodexoApp.Login" BackgroundColor="White"
+            xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+    
+    
+   
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <Grid BackgroundColor="#2a295c">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid>
+                        <Image Source="sodexo.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="40" />
+                    </Grid>
+
+                    <Grid Grid.Row="1" Margin="10,0,0,0">
+                        <Label Text="Bienvenido" TextColor="White"  VerticalOptions="Center" FontSize="16"/>
+                    </Grid>
+                </Grid>
+
+
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="1.2*"/>
+                        <RowDefinition Height="1.2*"/>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="0.5*"/>
+                    </Grid.RowDefinitions>
+
+
+                    <Grid Grid.Row="1" Margin="30,0,30,0">
+                        <inputLayout:SfTextInputLayout  Hint="Codigo" IsHintAlwaysFloated="False" 
+                ContainerType="Filled" HelperText="Enter your code"  ContainerBackgroundColor="White" FocusedColor="#2a295c">
+                            <Entry Text="1033796537" x:Name="Tx_codigo"/>
+                        </inputLayout:SfTextInputLayout>
+                    </Grid>
+
+                    <StackLayout Grid.Row="2" Margin="30,0,30,0">
+                        <inputLayout:SfTextInputLayout  Hint="Contraseña" IsHintAlwaysFloated="False" 
+                ContainerType="Filled" HelperText="Enter your password" ContainerBackgroundColor="White"   EnablePasswordVisibilityToggle="true"  FocusedColor="#2a295c">
+                    <Entry Text="alejo0316" x:Name="Tx_pass"/>
+                        </inputLayout:SfTextInputLayout>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3"  Orientation="Horizontal" Margin="30,0,0,0">
+                        <syncfusion:SfCheckBox x:Name="checkBox" IsChecked="True" Text="Recordarme" CheckedColor="#2a295c" IsThreeState="False"/>
+                    </StackLayout>
+
+                    <Grid Grid.Row="4">
+                        <Button x:Name="BtnSession" Text="Iniciar Sesion" BackgroundColor="#2a295c" Margin="15" TextColor="White" Clicked="BtnSession_Clicked"/>
+                    </Grid>
+
+                    <StackLayout Grid.Row="5" Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        <Label Text="¿Olvido la contraseña?"/>
+                    </StackLayout>
+                </Grid>
+
+            </Grid>
+      
+
+</ContentPage>

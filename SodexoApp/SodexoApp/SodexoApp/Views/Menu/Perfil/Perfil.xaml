@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             mc:Ignorable="d"
+             x:Class="SodexoApp.Views.Menu.Perfil.Perfil"
+             Title="Perfil">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10,50,10,0">
+
+                <Label Text="Perfil" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" TextColor="#2a295c" FontSize="20"/>
+
+                <inputLayout:SfTextInputLayout  Hint="Nombre" ContainerType="Outlined" Margin="5,0,5,0">
+                    <Entry />
+                </inputLayout:SfTextInputLayout>
+
+                <inputLayout:SfTextInputLayout  Hint="Contraseña" ContainerType="Outlined" Margin="5,0,5,0" EnablePasswordVisibilityToggle="true">
+                    <Entry />
+                </inputLayout:SfTextInputLayout>
+
+                <inputLayout:SfTextInputLayout  Hint="Documento" ContainerType="Outlined" Margin="5,0,5,0">
+                    <Entry />
+                </inputLayout:SfTextInputLayout>
+
+                <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" Margin="10,0,10,0">
+                    <combobox:SfComboBox.CustomView>
+                        <Label HeightRequest="40" Text="Sexo" VerticalTextAlignment="Center"/>
+                    </combobox:SfComboBox.CustomView>
+                    <combobox:SfComboBox.ComboBoxSource>
+                        <ListCollection:List x:TypeArguments="x:String">
+                            <x:String>Hombre</x:String>
+                            <x:String>Mujer</x:String>
+                        </ListCollection:List>
+                    </combobox:SfComboBox.ComboBoxSource>
+                </combobox:SfComboBox>
+
+
+                <inputLayout:SfTextInputLayout  Hint="Empresa" ContainerType="Outlined" Margin="5,0,5,0">
+                    <Entry />
+                </inputLayout:SfTextInputLayout>
+
+
+                <inputLayout:SfTextInputLayout  Hint="Cargo" ContainerType="Outlined" Margin="5,0,5,0">
+                    <Entry />
+                </inputLayout:SfTextInputLayout>
+
+                <inputLayout:SfTextInputLayout  Hint="Telefono" ContainerType="Outlined" Margin="5,0,5,0">
+                    <Entry />
+                </inputLayout:SfTextInputLayout>
+
+
+                <buttons:SfButton x:Name="BtnActualizar" Text="Actualizar" CornerRadius="2" BackgroundColor="#2a295c"/>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

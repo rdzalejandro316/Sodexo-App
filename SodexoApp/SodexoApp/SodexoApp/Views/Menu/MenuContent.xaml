@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SodexoApp.Views.Menu.MenuContent"  
+             xmlns:badge ="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBadgeView.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms"             
+             BackgroundColor="WhiteSmoke"
+             Title="Sodexo">
+
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Sodexo" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" TextColor="White"/>
+
+            <badge:SfBadgeView Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" BadgeText="20">
+                <badge:SfBadgeView.BadgeSettings>
+                    <badge:BadgeSetting BadgeType="None" BackgroundColor="Red" FontSize="10"/>
+                </badge:SfBadgeView.BadgeSettings>
+                <badge:SfBadgeView.Content>
+                    <buttons:SfButton x:Name="BtnNotification" Grid.Column="1" ShowIcon="True" ImageSource="notification.png" BackgroundColor="Transparent" Clicked="BtnNotification_Clicked"/>
+                </badge:SfBadgeView.Content>
+            </badge:SfBadgeView>
+            
+        </Grid>
+    </NavigationPage.TitleView>
+
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.Resources>
+                <Style TargetType="Label" x:Key="title">
+                    <Setter Property="VerticalOptions" Value="Center"/>
+                    <Setter Property="HorizontalOptions" Value="Center"/>
+                </Style>
+            </Grid.Resources>
+
+
+
+            <buttons:SfButton x:Name="BtnAlojamiento" Grid.Row="1" Grid.Column="1" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnAlojamiento_Clicked">
+                <buttons:SfButton.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid>
+                            <Image Source="sodexo.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="40" />
+                        </Grid>
+                        
+                        <Label Grid.Row="1" Text="Alojamiento" FontSize="16" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" Margin="0,0,0,5"/>
+                    </Grid>
+                </buttons:SfButton.Content>
+            </buttons:SfButton>
+
+            <buttons:SfButton x:Name="BtnLavanderia" Grid.Row="1" Grid.Column="2" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnLavanderia_Clicked">
+                <buttons:SfButton.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid>
+                            <Image Source="sodexo.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="40" />
+                        </Grid>
+
+                        <Label Grid.Row="1" Text="Lavanderia" FontSize="16" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" Margin="0,0,0,5"/>
+                    </Grid>
+                </buttons:SfButton.Content>
+            </buttons:SfButton>
+
+            <buttons:SfButton x:Name="BtnMantenimiento" Grid.Row="2" Grid.Column="1" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnMantenimiento_Clicked">
+                <buttons:SfButton.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid>
+                            <Image Source="sodexo.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="40" />
+                        </Grid>
+
+                        <Label Grid.Row="1" Text="Mantenimiento" FontSize="16" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" Margin="0,0,0,5"/>
+                    </Grid>
+                </buttons:SfButton.Content>
+            </buttons:SfButton>
+
+            <buttons:SfButton x:Name="BtnPerfil" Grid.Row="2" Grid.Column="2" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnPerfil_Clicked">
+                <buttons:SfButton.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid>
+                            <Image Source="sodexo.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="40" />
+                        </Grid>
+
+                        <Label Grid.Row="1" Text="Perfil" FontSize="16" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" Margin="0,0,0,5"/>
+                    </Grid>
+                </buttons:SfButton.Content>
+            </buttons:SfButton>
+
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
+    

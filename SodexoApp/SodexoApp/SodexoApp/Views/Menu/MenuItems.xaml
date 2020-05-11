@@ -1,0 +1,70 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="SodexoApp.Views.Menu.MenuItems" Title="Master">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid BackgroundColor="{StaticResource ColorMain}" HeightRequest="120">
+                <StackLayout Orientation="Horizontal">
+                    <sfavatar:SfAvatarView ContentType="AvatarCharacter"
+                               AvatarCharacter="Avatar11"
+                               HorizontalOptions="Start"
+                               VerticalOptions="Center"                               
+                               InitialsColor="Black" 
+                               WidthRequest="60"
+                               FontAttributes="Bold"
+                               HeightRequest="60"
+                               CornerRadius="35"          
+                               BackgroundColor="WhiteSmoke"
+                               Margin="10,0,0,0">
+                    </sfavatar:SfAvatarView>
+
+                    <StackLayout VerticalOptions="Center" Margin="10,0,0,0">
+                        <Label x:Name="TxName"  FontSize="16"
+                            Text="Nombre Usuario" TextColor="White" FontAttributes="Bold"/>
+                        <Label x:Name="TxCC"  FontSize="12"
+                            Text="DNI" TextColor="White"/>
+                    </StackLayout>
+
+                </StackLayout>
+
+            </Grid>
+
+
+            <ListView x:Name="navigationDrawerList"
+                  RowHeight="60"
+                  SeparatorVisibility="Default"
+                  BackgroundColor="White"
+                  ItemSelected="OnMenuItemSelected">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout VerticalOptions="FillAndExpand"
+                             Orientation="Horizontal"
+                             Padding="20,10,0,10"
+                             Spacing="20">
+                                <Image Source="{Binding IconSource}"
+                                    WidthRequest="20"
+                                    HeightRequest="20"
+                                    VerticalOptions="Center" />
+
+                                <Label Text="{Binding Title}"
+                                FontSize="12"
+                                VerticalOptions="Center"
+                                TextColor="Black"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

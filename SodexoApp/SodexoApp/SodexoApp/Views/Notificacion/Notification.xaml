@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:shimmer="clr-namespace:Syncfusion.XForms.Shimmer;assembly=Syncfusion.Core.XForms"
+             xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms"
+             x:Class="SodexoApp.Views.Notificacion.Notification" Appearing="ContentPage_Appearing">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout x:Name="loadStack" IsVisible="True">
+                <shimmer:SfShimmer x:Name="shimmer1" Type="Article" HeightRequest="100" />
+                <shimmer:SfShimmer x:Name="shimmer2" Type="Article" HeightRequest="100" />
+                <shimmer:SfShimmer x:Name="shimmer3" Type="Article" HeightRequest="100" />
+                <shimmer:SfShimmer x:Name="shimmer4" Type="Article" HeightRequest="100" />
+                <shimmer:SfShimmer x:Name="shimmer5" Type="Article" HeightRequest="100" />
+                <shimmer:SfShimmer x:Name="shimmer6" Type="Article" HeightRequest="100" />
+            </StackLayout>
+
+            
+            <StackLayout x:Name="LoadGrid" IsVisible="False">
+                <StackLayout HeightRequest="40" BackgroundColor="WhiteSmoke">
+                    
+                </StackLayout>
+                <syncfusion:SfListView x:Name="listView" ItemSize="100">
+                    <syncfusion:SfListView.ItemTemplate>
+                        <DataTemplate>
+                       
+                            <Grid Padding="10" BackgroundColor="White" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="0.4*" />
+                                    <RowDefinition Height="0.6*" />
+                                </Grid.RowDefinitions>
+
+                                <Label Text="{Binding Title}" FontAttributes="Bold" TextColor="Green" FontSize="20"/>
+                                <Label Grid.Row="1" Text="{Binding Messagen}" TextColor="Black" FontSize="15"/>
+                            </Grid>
+                            
+                        </DataTemplate>
+                    </syncfusion:SfListView.ItemTemplate>
+                </syncfusion:SfListView>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
