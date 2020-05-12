@@ -2705,6 +2705,80 @@ namespace SodexoApp.Droid
 			global::Syncfusion.ListView.XForms.Android.Resource.String.ApplicationName = global::SodexoApp.Droid.Resource.String.ApplicationName;
 			global::Syncfusion.ListView.XForms.Android.Resource.String.Hello = global::SodexoApp.Droid.Resource.String.Hello;
 			global::Syncfusion.ListView.XForms.Android.Resource.String.Load_More = global::SodexoApp.Droid.Resource.String.Load_More;
+			global::Com.Syncfusion.Maps.Resource.Animation.Scale_in = global::SodexoApp.Droid.Resource.Animation.Scale_in;
+			global::Com.Syncfusion.Maps.Resource.Animation.Scale_out = global::SodexoApp.Droid.Resource.Animation.Scale_out;
+			global::Com.Syncfusion.Maps.Resource.Attribute.bubbleAlpha = global::SodexoApp.Droid.Resource.Attribute.bubbleAlpha;
+			global::Com.Syncfusion.Maps.Resource.Attribute.bubbleFillColor = global::SodexoApp.Droid.Resource.Attribute.bubbleFillColor;
+			global::Com.Syncfusion.Maps.Resource.Attribute.bubbleIsAutoFillColors = global::SodexoApp.Droid.Resource.Attribute.bubbleIsAutoFillColors;
+			global::Com.Syncfusion.Maps.Resource.Attribute.bubbleMaxSize = global::SodexoApp.Droid.Resource.Attribute.bubbleMaxSize;
+			global::Com.Syncfusion.Maps.Resource.Attribute.bubbleMinSize = global::SodexoApp.Droid.Resource.Attribute.bubbleMinSize;
+			global::Com.Syncfusion.Maps.Resource.Attribute.bubbleVisibility = global::SodexoApp.Droid.Resource.Attribute.bubbleVisibility;
+			global::Com.Syncfusion.Maps.Resource.Attribute.enableMapSelection = global::SodexoApp.Droid.Resource.Attribute.enableMapSelection;
+			global::Com.Syncfusion.Maps.Resource.Attribute.enableMapZooming = global::SodexoApp.Droid.Resource.Attribute.enableMapZooming;
+			global::Com.Syncfusion.Maps.Resource.Attribute.mapLegendIcon = global::SodexoApp.Droid.Resource.Attribute.mapLegendIcon;
+			global::Com.Syncfusion.Maps.Resource.Attribute.mapLegendIconHeight = global::SodexoApp.Droid.Resource.Attribute.mapLegendIconHeight;
+			global::Com.Syncfusion.Maps.Resource.Attribute.mapLegendIconWidth = global::SodexoApp.Droid.Resource.Attribute.mapLegendIconWidth;
+			global::Com.Syncfusion.Maps.Resource.Attribute.mapLegendType = global::SodexoApp.Droid.Resource.Attribute.mapLegendType;
+			global::Com.Syncfusion.Maps.Resource.Attribute.mapLegendVisibility = global::SodexoApp.Droid.Resource.Attribute.mapLegendVisibility;
+			global::Com.Syncfusion.Maps.Resource.Attribute.mapMarkerIcon = global::SodexoApp.Droid.Resource.Attribute.mapMarkerIcon;
+			global::Com.Syncfusion.Maps.Resource.Attribute.markerIconColor = global::SodexoApp.Droid.Resource.Attribute.markerIconColor;
+			global::Com.Syncfusion.Maps.Resource.Attribute.markerIconSize = global::SodexoApp.Droid.Resource.Attribute.markerIconSize;
+			global::Com.Syncfusion.Maps.Resource.Attribute.markerLabel = global::SodexoApp.Droid.Resource.Attribute.markerLabel;
+			global::Com.Syncfusion.Maps.Resource.Attribute.markerLabelColor = global::SodexoApp.Droid.Resource.Attribute.markerLabelColor;
+			global::Com.Syncfusion.Maps.Resource.Attribute.markerLabelSize = global::SodexoApp.Droid.Resource.Attribute.markerLabelSize;
+			global::Com.Syncfusion.Maps.Resource.Attribute.markerLatitude = global::SodexoApp.Droid.Resource.Attribute.markerLatitude;
+			global::Com.Syncfusion.Maps.Resource.Attribute.markerLongitude = global::SodexoApp.Droid.Resource.Attribute.markerLongitude;
+			global::Com.Syncfusion.Maps.Resource.Attribute.selectedShapeColor = global::SodexoApp.Droid.Resource.Attribute.selectedShapeColor;
+			global::Com.Syncfusion.Maps.Resource.Attribute.selectedShapeStroke = global::SodexoApp.Droid.Resource.Attribute.selectedShapeStroke;
+			global::Com.Syncfusion.Maps.Resource.Attribute.selectedShapeStrokeThickness = global::SodexoApp.Droid.Resource.Attribute.selectedShapeStrokeThickness;
+			global::Com.Syncfusion.Maps.Resource.Attribute.shapeFill = global::SodexoApp.Droid.Resource.Attribute.shapeFill;
+			global::Com.Syncfusion.Maps.Resource.Attribute.shapeStroke = global::SodexoApp.Droid.Resource.Attribute.shapeStroke;
+			global::Com.Syncfusion.Maps.Resource.Attribute.shapeStrokeThickness = global::SodexoApp.Droid.Resource.Attribute.shapeStrokeThickness;
+			global::Com.Syncfusion.Maps.Resource.Attribute.uri = global::SodexoApp.Droid.Resource.Attribute.uri;
+			global::Com.Syncfusion.Maps.Resource.Dimension.activity_horizontal_margin = global::SodexoApp.Droid.Resource.Dimension.activity_horizontal_margin;
+			global::Com.Syncfusion.Maps.Resource.Dimension.activity_vertical_margin = global::SodexoApp.Droid.Resource.Dimension.activity_vertical_margin;
+			global::Com.Syncfusion.Maps.Resource.Id.action_settings = global::SodexoApp.Droid.Resource.Id.action_settings;
+			global::Com.Syncfusion.Maps.Resource.Id.bubbles = global::SodexoApp.Droid.Resource.Id.bubbles;
+			global::Com.Syncfusion.Maps.Resource.Id.circle = global::SodexoApp.Droid.Resource.Id.circle;
+			global::Com.Syncfusion.Maps.Resource.Id.diamond = global::SodexoApp.Droid.Resource.Id.diamond;
+			global::Com.Syncfusion.Maps.Resource.Id.image = global::SodexoApp.Droid.Resource.Id.image;
+			global::Com.Syncfusion.Maps.Resource.Id.layers = global::SodexoApp.Droid.Resource.Id.layers;
+			global::Com.Syncfusion.Maps.Resource.Id.rectangle = global::SodexoApp.Droid.Resource.Id.rectangle;
+			global::Com.Syncfusion.Maps.Resource.Id.square = global::SodexoApp.Droid.Resource.Id.square;
+			global::Com.Syncfusion.Maps.Resource.Layout.layout_maps = global::SodexoApp.Droid.Resource.Layout.layout_maps;
+			global::Com.Syncfusion.Maps.Resource.Menu.menu_sf_maps = global::SodexoApp.Droid.Resource.Menu.menu_sf_maps;
+			global::Com.Syncfusion.Maps.Resource.String.action_settings = global::SodexoApp.Droid.Resource.String.action_settings;
+			global::Com.Syncfusion.Maps.Resource.String.app_name = global::SodexoApp.Droid.Resource.String.app_name;
+			global::Com.Syncfusion.Maps.Resource.String.hello_world = global::SodexoApp.Droid.Resource.String.hello_world;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps = global::SodexoApp.Droid.Resource.Styleable.SfMaps;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_bubbleAlpha = global::SodexoApp.Droid.Resource.Styleable.SfMaps_bubbleAlpha;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_bubbleFillColor = global::SodexoApp.Droid.Resource.Styleable.SfMaps_bubbleFillColor;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_bubbleIsAutoFillColors = global::SodexoApp.Droid.Resource.Styleable.SfMaps_bubbleIsAutoFillColors;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_bubbleMaxSize = global::SodexoApp.Droid.Resource.Styleable.SfMaps_bubbleMaxSize;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_bubbleMinSize = global::SodexoApp.Droid.Resource.Styleable.SfMaps_bubbleMinSize;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_bubbleVisibility = global::SodexoApp.Droid.Resource.Styleable.SfMaps_bubbleVisibility;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_enableMapSelection = global::SodexoApp.Droid.Resource.Styleable.SfMaps_enableMapSelection;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_enableMapZooming = global::SodexoApp.Droid.Resource.Styleable.SfMaps_enableMapZooming;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_mapLegendIcon = global::SodexoApp.Droid.Resource.Styleable.SfMaps_mapLegendIcon;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_mapLegendIconHeight = global::SodexoApp.Droid.Resource.Styleable.SfMaps_mapLegendIconHeight;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_mapLegendIconWidth = global::SodexoApp.Droid.Resource.Styleable.SfMaps_mapLegendIconWidth;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_mapLegendType = global::SodexoApp.Droid.Resource.Styleable.SfMaps_mapLegendType;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_mapLegendVisibility = global::SodexoApp.Droid.Resource.Styleable.SfMaps_mapLegendVisibility;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_mapMarkerIcon = global::SodexoApp.Droid.Resource.Styleable.SfMaps_mapMarkerIcon;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_markerIconColor = global::SodexoApp.Droid.Resource.Styleable.SfMaps_markerIconColor;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_markerIconSize = global::SodexoApp.Droid.Resource.Styleable.SfMaps_markerIconSize;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_markerLabel = global::SodexoApp.Droid.Resource.Styleable.SfMaps_markerLabel;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_markerLabelColor = global::SodexoApp.Droid.Resource.Styleable.SfMaps_markerLabelColor;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_markerLabelSize = global::SodexoApp.Droid.Resource.Styleable.SfMaps_markerLabelSize;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_markerLatitude = global::SodexoApp.Droid.Resource.Styleable.SfMaps_markerLatitude;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_markerLongitude = global::SodexoApp.Droid.Resource.Styleable.SfMaps_markerLongitude;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_selectedShapeColor = global::SodexoApp.Droid.Resource.Styleable.SfMaps_selectedShapeColor;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_selectedShapeStroke = global::SodexoApp.Droid.Resource.Styleable.SfMaps_selectedShapeStroke;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_selectedShapeStrokeThickness = global::SodexoApp.Droid.Resource.Styleable.SfMaps_selectedShapeStrokeThickness;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_shapeFill = global::SodexoApp.Droid.Resource.Styleable.SfMaps_shapeFill;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_shapeStroke = global::SodexoApp.Droid.Resource.Styleable.SfMaps_shapeStroke;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_shapeStrokeThickness = global::SodexoApp.Droid.Resource.Styleable.SfMaps_shapeStrokeThickness;
+			global::Com.Syncfusion.Maps.Resource.Styleable.SfMaps_uri = global::SodexoApp.Droid.Resource.Styleable.SfMaps_uri;
 			global::Com.Syncfusion.Numerictextbox.Resource.Attribute.allowNull = global::SodexoApp.Droid.Resource.Attribute.allowNull;
 			global::Com.Syncfusion.Numerictextbox.Resource.Attribute.borderColor = global::SodexoApp.Droid.Resource.Attribute.borderColor;
 			global::Com.Syncfusion.Numerictextbox.Resource.Attribute.culture = global::SodexoApp.Droid.Resource.Attribute.culture;
@@ -5617,6 +5691,12 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f050024
 			public const int ExitToRight = 2131034148;
 			
+			// aapt resource value: 0x7f050025
+			public const int Scale_in = 2131034149;
+			
+			// aapt resource value: 0x7f050026
+			public const int Scale_out = 2131034150;
+			
 			static Animation()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -5907,6 +5987,24 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0101c5
 			public const int boxStrokeWidth = 2130772421;
 			
+			// aapt resource value: 0x7f0101fe
+			public const int bubbleAlpha = 2130772478;
+			
+			// aapt resource value: 0x7f0101f9
+			public const int bubbleFillColor = 2130772473;
+			
+			// aapt resource value: 0x7f0101fd
+			public const int bubbleIsAutoFillColors = 2130772477;
+			
+			// aapt resource value: 0x7f0101fb
+			public const int bubbleMaxSize = 2130772475;
+			
+			// aapt resource value: 0x7f0101fa
+			public const int bubbleMinSize = 2130772474;
+			
+			// aapt resource value: 0x7f0101fc
+			public const int bubbleVisibility = 2130772476;
+			
 			// aapt resource value: 0x7f010080
 			public const int buttonBarButtonStyle = 2130772096;
 			
@@ -5967,8 +6065,8 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0100b5
 			public const int checkboxStyle = 2130772149;
 			
-			// aapt resource value: 0x7f0101ee
-			public const int @checked = 2130772462;
+			// aapt resource value: 0x7f01020a
+			public const int @checked = 2130772490;
 			
 			// aapt resource value: 0x7f010165
 			public const int checkedChip = 2130772325;
@@ -6162,8 +6260,8 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f010185
 			public const int cornerRadius = 2130772357;
 			
-			// aapt resource value: 0x7f0101ed
-			public const int cornerradius = 2130772461;
+			// aapt resource value: 0x7f010209
+			public const int cornerradius = 2130772489;
 			
 			// aapt resource value: 0x7f0101b4
 			public const int counterEnabled = 2130772404;
@@ -6236,6 +6334,12 @@ namespace SodexoApp.Droid
 			
 			// aapt resource value: 0x7f0101e0
 			public const int enableGroupSeparator = 2130772448;
+			
+			// aapt resource value: 0x7f010202
+			public const int enableMapSelection = 2130772482;
+			
+			// aapt resource value: 0x7f010206
+			public const int enableMapZooming = 2130772486;
 			
 			// aapt resource value: 0x7f0101c6
 			public const int enforceMaterialTheme = 2130772422;
@@ -6444,8 +6548,8 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f010017
 			public const int isLightTheme = 2130771991;
 			
-			// aapt resource value: 0x7f0101ec
-			public const int isthreestate = 2130772460;
+			// aapt resource value: 0x7f010208
+			public const int isthreestate = 2130772488;
 			
 			// aapt resource value: 0x7f010189
 			public const int itemBackground = 2130772361;
@@ -6575,6 +6679,45 @@ namespace SodexoApp.Droid
 			
 			// aapt resource value: 0x7f010108
 			public const int logoDescription = 2130772232;
+			
+			// aapt resource value: 0x7f0101f7
+			public const int mapLegendIcon = 2130772471;
+			
+			// aapt resource value: 0x7f0101f4
+			public const int mapLegendIconHeight = 2130772468;
+			
+			// aapt resource value: 0x7f0101f5
+			public const int mapLegendIconWidth = 2130772469;
+			
+			// aapt resource value: 0x7f0101f8
+			public const int mapLegendType = 2130772472;
+			
+			// aapt resource value: 0x7f0101f6
+			public const int mapLegendVisibility = 2130772470;
+			
+			// aapt resource value: 0x7f0101f1
+			public const int mapMarkerIcon = 2130772465;
+			
+			// aapt resource value: 0x7f0101ee
+			public const int markerIconColor = 2130772462;
+			
+			// aapt resource value: 0x7f0101f2
+			public const int markerIconSize = 2130772466;
+			
+			// aapt resource value: 0x7f0101eb
+			public const int markerLabel = 2130772459;
+			
+			// aapt resource value: 0x7f0101ef
+			public const int markerLabelColor = 2130772463;
+			
+			// aapt resource value: 0x7f0101f0
+			public const int markerLabelSize = 2130772464;
+			
+			// aapt resource value: 0x7f0101ec
+			public const int markerLatitude = 2130772460;
+			
+			// aapt resource value: 0x7f0101ed
+			public const int markerLongitude = 2130772461;
 			
 			// aapt resource value: 0x7f01011a
 			public const int materialButtonStyle = 2130772250;
@@ -6735,41 +6878,41 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0100bc
 			public const int seekBarStyle = 2130772156;
 			
-			// aapt resource value: 0x7f0101f0
-			public const int segmentBackColor = 2130772464;
+			// aapt resource value: 0x7f01020c
+			public const int segmentBackColor = 2130772492;
 			
-			// aapt resource value: 0x7f0101f1
-			public const int segmentBorderColor = 2130772465;
+			// aapt resource value: 0x7f01020d
+			public const int segmentBorderColor = 2130772493;
 			
-			// aapt resource value: 0x7f0101f2
-			public const int segmentBorderThickness = 2130772466;
+			// aapt resource value: 0x7f01020e
+			public const int segmentBorderThickness = 2130772494;
 			
-			// aapt resource value: 0x7f0101f3
-			public const int segmentColor = 2130772467;
+			// aapt resource value: 0x7f01020f
+			public const int segmentColor = 2130772495;
 			
-			// aapt resource value: 0x7f0101f8
-			public const int segmentCornerRadius = 2130772472;
+			// aapt resource value: 0x7f010214
+			public const int segmentCornerRadius = 2130772500;
 			
-			// aapt resource value: 0x7f0101fa
-			public const int segmentDisplayMode = 2130772474;
+			// aapt resource value: 0x7f010216
+			public const int segmentDisplayMode = 2130772502;
 			
-			// aapt resource value: 0x7f0101f9
-			public const int segmentPosition = 2130772473;
+			// aapt resource value: 0x7f010215
+			public const int segmentPosition = 2130772501;
 			
-			// aapt resource value: 0x7f0101ef
-			public const int segmentSelectedIndex = 2130772463;
+			// aapt resource value: 0x7f01020b
+			public const int segmentSelectedIndex = 2130772491;
 			
-			// aapt resource value: 0x7f0101f7
-			public const int segmentStrokeThickness = 2130772471;
+			// aapt resource value: 0x7f010213
+			public const int segmentStrokeThickness = 2130772499;
 			
-			// aapt resource value: 0x7f0101f5
-			public const int segmentedHeight = 2130772469;
+			// aapt resource value: 0x7f010211
+			public const int segmentedHeight = 2130772497;
 			
-			// aapt resource value: 0x7f0101f4
-			public const int segmentedPadding = 2130772468;
+			// aapt resource value: 0x7f010210
+			public const int segmentedPadding = 2130772496;
 			
-			// aapt resource value: 0x7f0101f6
-			public const int segmentedWidth = 2130772470;
+			// aapt resource value: 0x7f010212
+			public const int segmentedWidth = 2130772498;
 			
 			// aapt resource value: 0x7f0101e4
 			public const int selectAllOnFocus = 2130772452;
@@ -6779,6 +6922,24 @@ namespace SodexoApp.Droid
 			
 			// aapt resource value: 0x7f010082
 			public const int selectableItemBackgroundBorderless = 2130772098;
+			
+			// aapt resource value: 0x7f010203
+			public const int selectedShapeColor = 2130772483;
+			
+			// aapt resource value: 0x7f010204
+			public const int selectedShapeStroke = 2130772484;
+			
+			// aapt resource value: 0x7f010205
+			public const int selectedShapeStrokeThickness = 2130772485;
+			
+			// aapt resource value: 0x7f0101ff
+			public const int shapeFill = 2130772479;
+			
+			// aapt resource value: 0x7f010200
+			public const int shapeStroke = 2130772480;
+			
+			// aapt resource value: 0x7f010201
+			public const int shapeStrokeThickness = 2130772481;
 			
 			// aapt resource value: 0x7f0100d4
 			public const int showAsAction = 2130772180;
@@ -6840,8 +7001,8 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f010134
 			public const int state_collapsible = 2130772276;
 			
-			// aapt resource value: 0x7f0101eb
-			public const int state_indeterminate = 2130772459;
+			// aapt resource value: 0x7f010207
+			public const int state_indeterminate = 2130772487;
 			
 			// aapt resource value: 0x7f010136
 			public const int state_liftable = 2130772278;
@@ -7145,6 +7306,9 @@ namespace SodexoApp.Droid
 			
 			// aapt resource value: 0x7f0101dc
 			public const int ttcIndex = 2130772444;
+			
+			// aapt resource value: 0x7f0101f3
+			public const int uri = 2130772467;
 			
 			// aapt resource value: 0x7f01017c
 			public const int useCompatPadding = 2130772348;
@@ -7884,6 +8048,12 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0a000c
 			public const int abc_text_size_title_material_toolbar = 2131361804;
 			
+			// aapt resource value: 0x7f0a00dd
+			public const int activity_horizontal_margin = 2131362013;
+			
+			// aapt resource value: 0x7f0a00de
+			public const int activity_vertical_margin = 2131362014;
+			
 			// aapt resource value: 0x7f0a00c5
 			public const int browser_actions_context_menu_max_width = 2131361989;
 			
@@ -8052,8 +8222,8 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0a0094
 			public const int design_textinput_caption_translate_y = 2131361940;
 			
-			// aapt resource value: 0x7f0a00dd
-			public const int disabledAlpha = 2131362013;
+			// aapt resource value: 0x7f0a00df
+			public const int disabledAlpha = 2131362015;
 			
 			// aapt resource value: 0x7f0a0054
 			public const int disabled_alpha_material_dark = 2131361876;
@@ -8683,26 +8853,26 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f020072
 			public const int avd_hide_password = 2130837618;
 			
-			// aapt resource value: 0x7f0200a6
-			public const int avd_hide_password_1 = 2130837670;
+			// aapt resource value: 0x7f0200ac
+			public const int avd_hide_password_1 = 2130837676;
 			
-			// aapt resource value: 0x7f0200a7
-			public const int avd_hide_password_2 = 2130837671;
+			// aapt resource value: 0x7f0200ad
+			public const int avd_hide_password_2 = 2130837677;
 			
-			// aapt resource value: 0x7f0200a8
-			public const int avd_hide_password_3 = 2130837672;
+			// aapt resource value: 0x7f0200ae
+			public const int avd_hide_password_3 = 2130837678;
 			
 			// aapt resource value: 0x7f020073
 			public const int avd_show_password = 2130837619;
 			
-			// aapt resource value: 0x7f0200a9
-			public const int avd_show_password_1 = 2130837673;
+			// aapt resource value: 0x7f0200af
+			public const int avd_show_password_1 = 2130837679;
 			
-			// aapt resource value: 0x7f0200aa
-			public const int avd_show_password_2 = 2130837674;
+			// aapt resource value: 0x7f0200b0
+			public const int avd_show_password_2 = 2130837680;
 			
-			// aapt resource value: 0x7f0200ab
-			public const int avd_show_password_3 = 2130837675;
+			// aapt resource value: 0x7f0200b1
+			public const int avd_show_password_3 = 2130837681;
 			
 			// aapt resource value: 0x7f020074
 			public const int btn_checkbox = 2130837620;
@@ -8759,100 +8929,118 @@ namespace SodexoApp.Droid
 			public const int dropdownbuttonimage = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_mtrl_chip_checked_black = 2130837638;
+			public const int house = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_mtrl_chip_checked_circle = 2130837639;
+			public const int ic_mtrl_chip_checked_black = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_mtrl_chip_close_circle = 2130837640;
+			public const int ic_mtrl_chip_checked_circle = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int input_layout_drop_down_icon = 2130837641;
+			public const int ic_mtrl_chip_close_circle = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int inputlayout_togglecollapseicon = 2130837642;
+			public const int Icon = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int inputlayout_togglevisibleicon = 2130837643;
+			public const int input_layout_drop_down_icon = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int mtrl_snackbar_background = 2130837644;
+			public const int inputlayout_togglecollapseicon = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int mtrl_tabs_default_indicator = 2130837645;
+			public const int inputlayout_togglevisibleicon = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int navigation_empty_icon = 2130837646;
+			public const int mark = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int notification = 2130837647;
+			public const int mtrl_snackbar_background = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int notification_action_background = 2130837648;
+			public const int mtrl_tabs_default_indicator = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int notification_bg = 2130837649;
+			public const int navigation_empty_icon = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int notification_bg_low = 2130837650;
+			public const int notification = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int notification_bg_low_normal = 2130837651;
+			public const int notification_action_background = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int notification_bg_low_pressed = 2130837652;
+			public const int notification_bg = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int notification_bg_normal = 2130837653;
+			public const int notification_bg_low = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int notification_bg_normal_pressed = 2130837654;
+			public const int notification_bg_low_normal = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int notification_icon_background = 2130837655;
-			
-			// aapt resource value: 0x7f0200a4
-			public const int notification_template_icon_bg = 2130837668;
-			
-			// aapt resource value: 0x7f0200a5
-			public const int notification_template_icon_low_bg = 2130837669;
+			public const int notification_bg_low_pressed = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int notification_tile_bg = 2130837656;
+			public const int notification_bg_normal = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int notify_panel_notification_icon_bg = 2130837657;
+			public const int notification_bg_normal_pressed = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int popup_forms_android_close_icon = 2130837658;
+			public const int notification_icon_background = 2130837658;
+			
+			// aapt resource value: 0x7f0200aa
+			public const int notification_template_icon_bg = 2130837674;
+			
+			// aapt resource value: 0x7f0200ab
+			public const int notification_template_icon_low_bg = 2130837675;
 			
 			// aapt resource value: 0x7f02009b
-			public const int popup_forms_android_shadow = 2130837659;
+			public const int notification_tile_bg = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int popup_forms_dark_theme_close_icon = 2130837660;
+			public const int notify_panel_notification_icon_bg = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int popup_forms_light_theme_close_icon = 2130837661;
+			public const int popup_forms_android_close_icon = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int sodexo = 2130837662;
+			public const int popup_forms_android_shadow = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int sodexosplash = 2130837663;
+			public const int popup_forms_dark_theme_close_icon = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int splash_screen = 2130837664;
+			public const int popup_forms_light_theme_close_icon = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int tooltip_frame_dark = 2130837665;
+			public const int sodexo = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int tooltip_frame_light = 2130837666;
+			public const int sodexosplash = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int van = 2130837667;
+			public const int splash_screen = 2130837667;
+			
+			// aapt resource value: 0x7f0200a4
+			public const int tools = 2130837668;
+			
+			// aapt resource value: 0x7f0200a5
+			public const int tooltip_frame_dark = 2130837669;
+			
+			// aapt resource value: 0x7f0200a6
+			public const int tooltip_frame_light = 2130837670;
+			
+			// aapt resource value: 0x7f0200a7
+			public const int user = 2130837671;
+			
+			// aapt resource value: 0x7f0200a8
+			public const int van = 2130837672;
+			
+			// aapt resource value: 0x7f0200a9
+			public const int washing = 2130837673;
 			
 			static Drawable()
 			{
@@ -8870,8 +9058,8 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0039
 			public const int ALT = 2131427385;
 			
-			// aapt resource value: 0x7f0b00db
-			public const int BorderView = 2131427547;
+			// aapt resource value: 0x7f0b00e1
+			public const int BorderView = 2131427553;
 			
 			// aapt resource value: 0x7f0b003a
 			public const int CTRL = 2131427386;
@@ -8879,8 +9067,8 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b003b
 			public const int FUNCTION = 2131427387;
 			
-			// aapt resource value: 0x7f0b00af
-			public const int Itemname = 2131427503;
+			// aapt resource value: 0x7f0b00b5
+			public const int Itemname = 2131427509;
 			
 			// aapt resource value: 0x7f0b003c
 			public const int META = 2131427388;
@@ -8891,41 +9079,41 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b003e
 			public const int SYM = 2131427390;
 			
-			// aapt resource value: 0x7f0b00c1
-			public const int action0 = 2131427521;
+			// aapt resource value: 0x7f0b00c7
+			public const int action0 = 2131427527;
 			
-			// aapt resource value: 0x7f0b0098
-			public const int action_bar = 2131427480;
+			// aapt resource value: 0x7f0b009e
+			public const int action_bar = 2131427486;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int action_bar_activity_content = 2131427329;
 			
-			// aapt resource value: 0x7f0b0097
-			public const int action_bar_container = 2131427479;
+			// aapt resource value: 0x7f0b009d
+			public const int action_bar_container = 2131427485;
 			
-			// aapt resource value: 0x7f0b0093
-			public const int action_bar_root = 2131427475;
+			// aapt resource value: 0x7f0b0099
+			public const int action_bar_root = 2131427481;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_bar_spinner = 2131427330;
 			
-			// aapt resource value: 0x7f0b0076
-			public const int action_bar_subtitle = 2131427446;
+			// aapt resource value: 0x7f0b007c
+			public const int action_bar_subtitle = 2131427452;
 			
-			// aapt resource value: 0x7f0b0075
-			public const int action_bar_title = 2131427445;
+			// aapt resource value: 0x7f0b007b
+			public const int action_bar_title = 2131427451;
 			
-			// aapt resource value: 0x7f0b00be
-			public const int action_container = 2131427518;
+			// aapt resource value: 0x7f0b00c4
+			public const int action_container = 2131427524;
 			
-			// aapt resource value: 0x7f0b0099
-			public const int action_context_bar = 2131427481;
+			// aapt resource value: 0x7f0b009f
+			public const int action_context_bar = 2131427487;
+			
+			// aapt resource value: 0x7f0b00cb
+			public const int action_divider = 2131427531;
 			
 			// aapt resource value: 0x7f0b00c5
-			public const int action_divider = 2131427525;
-			
-			// aapt resource value: 0x7f0b00bf
-			public const int action_image = 2131427519;
+			public const int action_image = 2131427525;
 			
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_divider = 2131427331;
@@ -8933,29 +9121,32 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0004
 			public const int action_menu_presenter = 2131427332;
 			
-			// aapt resource value: 0x7f0b0095
-			public const int action_mode_bar = 2131427477;
+			// aapt resource value: 0x7f0b009b
+			public const int action_mode_bar = 2131427483;
 			
-			// aapt resource value: 0x7f0b0094
-			public const int action_mode_bar_stub = 2131427476;
+			// aapt resource value: 0x7f0b009a
+			public const int action_mode_bar_stub = 2131427482;
 			
-			// aapt resource value: 0x7f0b0077
-			public const int action_mode_close_button = 2131427447;
+			// aapt resource value: 0x7f0b007d
+			public const int action_mode_close_button = 2131427453;
 			
-			// aapt resource value: 0x7f0b00c0
-			public const int action_text = 2131427520;
+			// aapt resource value: 0x7f0b00e2
+			public const int action_settings = 2131427554;
 			
-			// aapt resource value: 0x7f0b00ce
-			public const int actions = 2131427534;
+			// aapt resource value: 0x7f0b00c6
+			public const int action_text = 2131427526;
 			
-			// aapt resource value: 0x7f0b0078
-			public const int activity_chooser_view_content = 2131427448;
+			// aapt resource value: 0x7f0b00d4
+			public const int actions = 2131427540;
+			
+			// aapt resource value: 0x7f0b007e
+			public const int activity_chooser_view_content = 2131427454;
 			
 			// aapt resource value: 0x7f0b002e
 			public const int add = 2131427374;
 			
-			// aapt resource value: 0x7f0b008a
-			public const int alertTitle = 2131427466;
+			// aapt resource value: 0x7f0b0090
+			public const int alertTitle = 2131427472;
 			
 			// aapt resource value: 0x7f0b0064
 			public const int all = 2131427428;
@@ -8975,38 +9166,41 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0066
 			public const int blocking = 2131427430;
 			
-			// aapt resource value: 0x7f0b0072
-			public const int border = 2131427442;
+			// aapt resource value: 0x7f0b0079
+			public const int border = 2131427449;
 			
 			// aapt resource value: 0x7f0b0044
 			public const int bottom = 2131427396;
 			
-			// aapt resource value: 0x7f0b00a8
-			public const int bottomtab_navarea = 2131427496;
-			
-			// aapt resource value: 0x7f0b00a9
-			public const int bottomtab_tabbar = 2131427497;
-			
-			// aapt resource value: 0x7f0b00ab
-			public const int browser_actions_header_text = 2131427499;
-			
-			// aapt resource value: 0x7f0b00ad
-			public const int browser_actions_menu_item_icon = 2131427501;
-			
 			// aapt resource value: 0x7f0b00ae
-			public const int browser_actions_menu_item_text = 2131427502;
+			public const int bottomtab_navarea = 2131427502;
 			
-			// aapt resource value: 0x7f0b00ac
-			public const int browser_actions_menu_items = 2131427500;
+			// aapt resource value: 0x7f0b00af
+			public const int bottomtab_tabbar = 2131427503;
 			
-			// aapt resource value: 0x7f0b00aa
-			public const int browser_actions_menu_view = 2131427498;
+			// aapt resource value: 0x7f0b00b1
+			public const int browser_actions_header_text = 2131427505;
 			
-			// aapt resource value: 0x7f0b007d
-			public const int buttonPanel = 2131427453;
+			// aapt resource value: 0x7f0b00b3
+			public const int browser_actions_menu_item_icon = 2131427507;
 			
-			// aapt resource value: 0x7f0b00c2
-			public const int cancel_action = 2131427522;
+			// aapt resource value: 0x7f0b00b4
+			public const int browser_actions_menu_item_text = 2131427508;
+			
+			// aapt resource value: 0x7f0b00b2
+			public const int browser_actions_menu_items = 2131427506;
+			
+			// aapt resource value: 0x7f0b00b0
+			public const int browser_actions_menu_view = 2131427504;
+			
+			// aapt resource value: 0x7f0b0074
+			public const int bubbles = 2131427444;
+			
+			// aapt resource value: 0x7f0b0083
+			public const int buttonPanel = 2131427459;
+			
+			// aapt resource value: 0x7f0b00c8
+			public const int cancel_action = 2131427528;
 			
 			// aapt resource value: 0x7f0b004c
 			public const int center = 2131427404;
@@ -9017,14 +9211,17 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0052
 			public const int center_vertical = 2131427410;
 			
-			// aapt resource value: 0x7f0b0091
-			public const int checkbox = 2131427473;
+			// aapt resource value: 0x7f0b0097
+			public const int checkbox = 2131427479;
+			
+			// aapt resource value: 0x7f0b0076
+			public const int @checked = 2131427446;
+			
+			// aapt resource value: 0x7f0b00d0
+			public const int chronometer = 2131427536;
 			
 			// aapt resource value: 0x7f0b006f
-			public const int @checked = 2131427439;
-			
-			// aapt resource value: 0x7f0b00ca
-			public const int chronometer = 2131427530;
+			public const int circle = 2131427439;
 			
 			// aapt resource value: 0x7f0b0061
 			public const int clip_horizontal = 2131427425;
@@ -9038,47 +9235,50 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b006b
 			public const int compute = 2131427435;
 			
-			// aapt resource value: 0x7f0b00b2
-			public const int container = 2131427506;
+			// aapt resource value: 0x7f0b00b8
+			public const int container = 2131427512;
 			
-			// aapt resource value: 0x7f0b008d
-			public const int content = 2131427469;
-			
-			// aapt resource value: 0x7f0b0080
-			public const int contentPanel = 2131427456;
-			
-			// aapt resource value: 0x7f0b00b3
-			public const int coordinator = 2131427507;
-			
-			// aapt resource value: 0x7f0b0087
-			public const int custom = 2131427463;
+			// aapt resource value: 0x7f0b0093
+			public const int content = 2131427475;
 			
 			// aapt resource value: 0x7f0b0086
-			public const int customPanel = 2131427462;
+			public const int contentPanel = 2131427462;
+			
+			// aapt resource value: 0x7f0b00b9
+			public const int coordinator = 2131427513;
+			
+			// aapt resource value: 0x7f0b008d
+			public const int custom = 2131427469;
+			
+			// aapt resource value: 0x7f0b008c
+			public const int customPanel = 2131427468;
 			
 			// aapt resource value: 0x7f0b0069
 			public const int decimalMode = 2131427433;
 			
-			// aapt resource value: 0x7f0b0096
-			public const int decor_content_parent = 2131427478;
+			// aapt resource value: 0x7f0b009c
+			public const int decor_content_parent = 2131427484;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int default_activity_button = 2131427450;
+			// aapt resource value: 0x7f0b0080
+			public const int default_activity_button = 2131427456;
 			
-			// aapt resource value: 0x7f0b00b5
-			public const int design_bottom_sheet = 2131427509;
+			// aapt resource value: 0x7f0b00bb
+			public const int design_bottom_sheet = 2131427515;
 			
-			// aapt resource value: 0x7f0b00ba
-			public const int design_menu_item_action_area = 2131427514;
+			// aapt resource value: 0x7f0b00c0
+			public const int design_menu_item_action_area = 2131427520;
 			
-			// aapt resource value: 0x7f0b00b9
-			public const int design_menu_item_action_area_stub = 2131427513;
+			// aapt resource value: 0x7f0b00bf
+			public const int design_menu_item_action_area_stub = 2131427519;
 			
-			// aapt resource value: 0x7f0b00b8
-			public const int design_menu_item_text = 2131427512;
+			// aapt resource value: 0x7f0b00be
+			public const int design_menu_item_text = 2131427518;
 			
-			// aapt resource value: 0x7f0b00b7
-			public const int design_navigation_view = 2131427511;
+			// aapt resource value: 0x7f0b00bd
+			public const int design_navigation_view = 2131427517;
+			
+			// aapt resource value: 0x7f0b0070
+			public const int diamond = 2131427440;
 			
 			// aapt resource value: 0x7f0b0027
 			public const int disableHome = 2131427367;
@@ -9086,14 +9286,14 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b006a
 			public const int doubleMode = 2131427434;
 			
-			// aapt resource value: 0x7f0b009a
-			public const int edit_query = 2131427482;
+			// aapt resource value: 0x7f0b00a0
+			public const int edit_query = 2131427488;
 			
 			// aapt resource value: 0x7f0b0037
 			public const int end = 2131427383;
 			
-			// aapt resource value: 0x7f0b00d0
-			public const int end_padder = 2131427536;
+			// aapt resource value: 0x7f0b00d6
+			public const int end_padder = 2131427542;
 			
 			// aapt resource value: 0x7f0b0046
 			public const int enterAlways = 2131427398;
@@ -9104,11 +9304,11 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0048
 			public const int exitUntilCollapsed = 2131427400;
 			
-			// aapt resource value: 0x7f0b0079
-			public const int expand_activities_button = 2131427449;
+			// aapt resource value: 0x7f0b007f
+			public const int expand_activities_button = 2131427455;
 			
-			// aapt resource value: 0x7f0b0090
-			public const int expanded_menu = 2131427472;
+			// aapt resource value: 0x7f0b0096
+			public const int expanded_menu = 2131427478;
 			
 			// aapt resource value: 0x7f0b005e
 			public const int fill = 2131427422;
@@ -9125,11 +9325,11 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b005c
 			public const int @fixed = 2131427420;
 			
-			// aapt resource value: 0x7f0b00bc
-			public const int flyoutcontent_appbar = 2131427516;
+			// aapt resource value: 0x7f0b00c2
+			public const int flyoutcontent_appbar = 2131427522;
 			
-			// aapt resource value: 0x7f0b00bd
-			public const int flyoutcontent_recycler = 2131427517;
+			// aapt resource value: 0x7f0b00c3
+			public const int flyoutcontent_recycler = 2131427523;
 			
 			// aapt resource value: 0x7f0b0067
 			public const int forever = 2131427431;
@@ -9137,8 +9337,8 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b000a
 			public const int ghost_view = 2131427338;
 			
-			// aapt resource value: 0x7f0b008c
-			public const int group_divider = 2131427468;
+			// aapt resource value: 0x7f0b0092
+			public const int group_divider = 2131427474;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int home = 2131427333;
@@ -9146,26 +9346,26 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0028
 			public const int homeAsUp = 2131427368;
 			
-			// aapt resource value: 0x7f0b007c
-			public const int icon = 2131427452;
+			// aapt resource value: 0x7f0b0082
+			public const int icon = 2131427458;
 			
-			// aapt resource value: 0x7f0b00cf
-			public const int icon_group = 2131427535;
+			// aapt resource value: 0x7f0b00d5
+			public const int icon_group = 2131427541;
 			
 			// aapt resource value: 0x7f0b0041
 			public const int ifRoom = 2131427393;
 			
-			// aapt resource value: 0x7f0b0073
-			public const int image = 2131427443;
+			// aapt resource value: 0x7f0b0071
+			public const int image = 2131427441;
 			
-			// aapt resource value: 0x7f0b0074
-			public const int imagewithtext = 2131427444;
+			// aapt resource value: 0x7f0b007a
+			public const int imagewithtext = 2131427450;
 			
-			// aapt resource value: 0x7f0b0070
-			public const int indeterminate = 2131427440;
+			// aapt resource value: 0x7f0b0077
+			public const int indeterminate = 2131427447;
 			
-			// aapt resource value: 0x7f0b00cb
-			public const int info = 2131427531;
+			// aapt resource value: 0x7f0b00d1
+			public const int info = 2131427537;
 			
 			// aapt resource value: 0x7f0b0068
 			public const int italic = 2131427432;
@@ -9176,8 +9376,11 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b004e
 			public const int labeled = 2131427406;
 			
-			// aapt resource value: 0x7f0b00b1
-			public const int largeLabel = 2131427505;
+			// aapt resource value: 0x7f0b00b7
+			public const int largeLabel = 2131427511;
+			
+			// aapt resource value: 0x7f0b0075
+			public const int layers = 2131427445;
 			
 			// aapt resource value: 0x7f0b0054
 			public const int left = 2131427412;
@@ -9191,29 +9394,29 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0024
 			public const int listMode = 2131427364;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int list_item = 2131427451;
+			// aapt resource value: 0x7f0b0081
+			public const int list_item = 2131427457;
 			
-			// aapt resource value: 0x7f0b00d1
-			public const int main_appbar = 2131427537;
+			// aapt resource value: 0x7f0b00d7
+			public const int main_appbar = 2131427543;
 			
-			// aapt resource value: 0x7f0b00d3
-			public const int main_tablayout = 2131427539;
+			// aapt resource value: 0x7f0b00d9
+			public const int main_tablayout = 2131427545;
 			
-			// aapt resource value: 0x7f0b00d2
-			public const int main_toolbar = 2131427538;
-			
-			// aapt resource value: 0x7f0b00d4
-			public const int main_viewpager = 2131427540;
+			// aapt resource value: 0x7f0b00d8
+			public const int main_toolbar = 2131427544;
 			
 			// aapt resource value: 0x7f0b00da
-			public const int masked = 2131427546;
+			public const int main_viewpager = 2131427546;
 			
-			// aapt resource value: 0x7f0b00c4
-			public const int media_actions = 2131427524;
+			// aapt resource value: 0x7f0b00e0
+			public const int masked = 2131427552;
 			
-			// aapt resource value: 0x7f0b00a7
-			public const int message = 2131427495;
+			// aapt resource value: 0x7f0b00ca
+			public const int media_actions = 2131427530;
+			
+			// aapt resource value: 0x7f0b00ad
+			public const int message = 2131427501;
 			
 			// aapt resource value: 0x7f0b0038
 			public const int middle = 2131427384;
@@ -9230,8 +9433,8 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b002f
 			public const int multiply = 2131427375;
 			
-			// aapt resource value: 0x7f0b00b6
-			public const int navigation_header_container = 2131427510;
+			// aapt resource value: 0x7f0b00bc
+			public const int navigation_header_container = 2131427516;
 			
 			// aapt resource value: 0x7f0b0042
 			public const int never = 2131427394;
@@ -9242,14 +9445,14 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0025
 			public const int normal = 2131427365;
 			
+			// aapt resource value: 0x7f0b00d3
+			public const int notification_background = 2131427539;
+			
 			// aapt resource value: 0x7f0b00cd
-			public const int notification_background = 2131427533;
+			public const int notification_main_column = 2131427533;
 			
-			// aapt resource value: 0x7f0b00c7
-			public const int notification_main_column = 2131427527;
-			
-			// aapt resource value: 0x7f0b00c6
-			public const int notification_main_column_container = 2131427526;
+			// aapt resource value: 0x7f0b00cc
+			public const int notification_main_column_container = 2131427532;
 			
 			// aapt resource value: 0x7f0b006d
 			public const int onKeyFocus = 2131427437;
@@ -9263,8 +9466,8 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0057
 			public const int parallax = 2131427415;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int parentPanel = 2131427455;
+			// aapt resource value: 0x7f0b0085
+			public const int parentPanel = 2131427461;
 			
 			// aapt resource value: 0x7f0b000b
 			public const int parent_matrix = 2131427339;
@@ -9278,17 +9481,20 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0007
 			public const int progress_horizontal = 2131427335;
 			
-			// aapt resource value: 0x7f0b0092
-			public const int radio = 2131427474;
+			// aapt resource value: 0x7f0b0098
+			public const int radio = 2131427480;
+			
+			// aapt resource value: 0x7f0b0072
+			public const int rectangle = 2131427442;
 			
 			// aapt resource value: 0x7f0b0055
 			public const int right = 2131427413;
 			
-			// aapt resource value: 0x7f0b00cc
-			public const int right_icon = 2131427532;
+			// aapt resource value: 0x7f0b00d2
+			public const int right_icon = 2131427538;
 			
-			// aapt resource value: 0x7f0b00c8
-			public const int right_side = 2131427528;
+			// aapt resource value: 0x7f0b00ce
+			public const int right_side = 2131427534;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int save_image_matrix = 2131427340;
@@ -9305,62 +9511,62 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0049
 			public const int scroll = 2131427401;
 			
-			// aapt resource value: 0x7f0b0085
-			public const int scrollIndicatorDown = 2131427461;
+			// aapt resource value: 0x7f0b008b
+			public const int scrollIndicatorDown = 2131427467;
 			
-			// aapt resource value: 0x7f0b0081
-			public const int scrollIndicatorUp = 2131427457;
+			// aapt resource value: 0x7f0b0087
+			public const int scrollIndicatorUp = 2131427463;
 			
-			// aapt resource value: 0x7f0b0082
-			public const int scrollView = 2131427458;
+			// aapt resource value: 0x7f0b0088
+			public const int scrollView = 2131427464;
 			
 			// aapt resource value: 0x7f0b005d
 			public const int scrollable = 2131427421;
 			
-			// aapt resource value: 0x7f0b009c
-			public const int search_badge = 2131427484;
-			
-			// aapt resource value: 0x7f0b009b
-			public const int search_bar = 2131427483;
-			
-			// aapt resource value: 0x7f0b009d
-			public const int search_button = 2131427485;
-			
 			// aapt resource value: 0x7f0b00a2
-			public const int search_close_btn = 2131427490;
-			
-			// aapt resource value: 0x7f0b009e
-			public const int search_edit_frame = 2131427486;
-			
-			// aapt resource value: 0x7f0b00a4
-			public const int search_go_btn = 2131427492;
-			
-			// aapt resource value: 0x7f0b009f
-			public const int search_mag_icon = 2131427487;
-			
-			// aapt resource value: 0x7f0b00a0
-			public const int search_plate = 2131427488;
+			public const int search_badge = 2131427490;
 			
 			// aapt resource value: 0x7f0b00a1
-			public const int search_src_text = 2131427489;
+			public const int search_bar = 2131427489;
+			
+			// aapt resource value: 0x7f0b00a3
+			public const int search_button = 2131427491;
+			
+			// aapt resource value: 0x7f0b00a8
+			public const int search_close_btn = 2131427496;
+			
+			// aapt resource value: 0x7f0b00a4
+			public const int search_edit_frame = 2131427492;
+			
+			// aapt resource value: 0x7f0b00aa
+			public const int search_go_btn = 2131427498;
 			
 			// aapt resource value: 0x7f0b00a5
-			public const int search_voice_btn = 2131427493;
+			public const int search_mag_icon = 2131427493;
 			
 			// aapt resource value: 0x7f0b00a6
-			public const int select_dialog_listview = 2131427494;
+			public const int search_plate = 2131427494;
+			
+			// aapt resource value: 0x7f0b00a7
+			public const int search_src_text = 2131427495;
+			
+			// aapt resource value: 0x7f0b00ab
+			public const int search_voice_btn = 2131427499;
+			
+			// aapt resource value: 0x7f0b00ac
+			public const int select_dialog_listview = 2131427500;
 			
 			// aapt resource value: 0x7f0b004f
 			public const int selected = 2131427407;
 			
-			// aapt resource value: 0x7f0b00d5
-			public const int shellcontent_appbar = 2131427541;
+			// aapt resource value: 0x7f0b00db
+			public const int shellcontent_appbar = 2131427547;
 			
-			// aapt resource value: 0x7f0b00d6
-			public const int shellcontent_toolbar = 2131427542;
+			// aapt resource value: 0x7f0b00dc
+			public const int shellcontent_toolbar = 2131427548;
 			
-			// aapt resource value: 0x7f0b008e
-			public const int shortcut = 2131427470;
+			// aapt resource value: 0x7f0b0094
+			public const int shortcut = 2131427476;
 			
 			// aapt resource value: 0x7f0b002a
 			public const int showCustom = 2131427370;
@@ -9371,11 +9577,11 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b002c
 			public const int showTitle = 2131427372;
 			
-			// aapt resource value: 0x7f0b00d7
-			public const int sliding_tabs = 2131427543;
+			// aapt resource value: 0x7f0b00dd
+			public const int sliding_tabs = 2131427549;
 			
-			// aapt resource value: 0x7f0b00b0
-			public const int smallLabel = 2131427504;
+			// aapt resource value: 0x7f0b00b6
+			public const int smallLabel = 2131427510;
 			
 			// aapt resource value: 0x7f0b0016
 			public const int snackbar_action = 2131427350;
@@ -9389,11 +9595,14 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b004b
 			public const int snapMargins = 2131427403;
 			
-			// aapt resource value: 0x7f0b007e
-			public const int spacer = 2131427454;
+			// aapt resource value: 0x7f0b0084
+			public const int spacer = 2131427460;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int split_action_bar = 2131427336;
+			
+			// aapt resource value: 0x7f0b0073
+			public const int square = 2131427443;
 			
 			// aapt resource value: 0x7f0b0031
 			public const int src_atop = 2131427377;
@@ -9407,17 +9616,17 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0056
 			public const int start = 2131427414;
 			
-			// aapt resource value: 0x7f0b00c3
-			public const int status_bar_latest_event_content = 2131427523;
+			// aapt resource value: 0x7f0b00c9
+			public const int status_bar_latest_event_content = 2131427529;
 			
 			// aapt resource value: 0x7f0b005b
 			public const int stretch = 2131427419;
 			
-			// aapt resource value: 0x7f0b008f
-			public const int submenuarrow = 2131427471;
+			// aapt resource value: 0x7f0b0095
+			public const int submenuarrow = 2131427477;
 			
-			// aapt resource value: 0x7f0b00a3
-			public const int submit_area = 2131427491;
+			// aapt resource value: 0x7f0b00a9
+			public const int submit_area = 2131427497;
 			
 			// aapt resource value: 0x7f0b0026
 			public const int tabMode = 2131427366;
@@ -9437,17 +9646,17 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0022
 			public const int text2 = 2131427362;
 			
-			// aapt resource value: 0x7f0b0084
-			public const int textSpacerNoButtons = 2131427460;
+			// aapt resource value: 0x7f0b008a
+			public const int textSpacerNoButtons = 2131427466;
 			
-			// aapt resource value: 0x7f0b0083
-			public const int textSpacerNoTitle = 2131427459;
+			// aapt resource value: 0x7f0b0089
+			public const int textSpacerNoTitle = 2131427465;
 			
 			// aapt resource value: 0x7f0b005a
 			public const int textStart = 2131427418;
 			
-			// aapt resource value: 0x7f0b00bb
-			public const int text_input_password_toggle = 2131427515;
+			// aapt resource value: 0x7f0b00c1
+			public const int text_input_password_toggle = 2131427521;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int textinput_counter = 2131427352;
@@ -9458,29 +9667,29 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b001a
 			public const int textinput_helper_text = 2131427354;
 			
-			// aapt resource value: 0x7f0b00c9
-			public const int time = 2131427529;
+			// aapt resource value: 0x7f0b00cf
+			public const int time = 2131427535;
 			
 			// aapt resource value: 0x7f0b0023
 			public const int title = 2131427363;
 			
-			// aapt resource value: 0x7f0b008b
-			public const int titleDividerNoCustom = 2131427467;
+			// aapt resource value: 0x7f0b0091
+			public const int titleDividerNoCustom = 2131427473;
 			
-			// aapt resource value: 0x7f0b0089
-			public const int title_template = 2131427465;
+			// aapt resource value: 0x7f0b008f
+			public const int title_template = 2131427471;
 			
-			// aapt resource value: 0x7f0b00d8
-			public const int toolbar = 2131427544;
+			// aapt resource value: 0x7f0b00de
+			public const int toolbar = 2131427550;
 			
 			// aapt resource value: 0x7f0b0045
 			public const int top = 2131427397;
 			
-			// aapt resource value: 0x7f0b0088
-			public const int topPanel = 2131427464;
+			// aapt resource value: 0x7f0b008e
+			public const int topPanel = 2131427470;
 			
-			// aapt resource value: 0x7f0b00b4
-			public const int touch_outside = 2131427508;
+			// aapt resource value: 0x7f0b00ba
+			public const int touch_outside = 2131427514;
 			
 			// aapt resource value: 0x7f0b000f
 			public const int transition_current_scene = 2131427343;
@@ -9497,8 +9706,8 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b0013
 			public const int transition_transform = 2131427347;
 			
-			// aapt resource value: 0x7f0b0071
-			public const int @unchecked = 2131427441;
+			// aapt resource value: 0x7f0b0078
+			public const int @unchecked = 2131427448;
 			
 			// aapt resource value: 0x7f0b0034
 			public const int uniform = 2131427380;
@@ -9518,8 +9727,8 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0b001b
 			public const int view_offset_helper = 2131427355;
 			
-			// aapt resource value: 0x7f0b00d9
-			public const int visible = 2131427545;
+			// aapt resource value: 0x7f0b00df
+			public const int visible = 2131427551;
 			
 			// aapt resource value: 0x7f0b0043
 			public const int withText = 2131427395;
@@ -9783,85 +9992,88 @@ namespace SodexoApp.Droid
 			public const int FlyoutContent = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int mtrl_layout_snackbar = 2130968624;
+			public const int layout_maps = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int mtrl_layout_snackbar_include = 2130968625;
+			public const int mtrl_layout_snackbar = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_action = 2130968626;
+			public const int mtrl_layout_snackbar_include = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_action_tombstone = 2130968627;
+			public const int notification_action = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_media_action = 2130968628;
+			public const int notification_action_tombstone = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_media_cancel_action = 2130968629;
+			public const int notification_media_action = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int notification_template_big_media = 2130968630;
+			public const int notification_media_cancel_action = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int notification_template_big_media_custom = 2130968631;
+			public const int notification_template_big_media = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int notification_template_big_media_narrow = 2130968632;
+			public const int notification_template_big_media_custom = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int notification_template_big_media_narrow_custom = 2130968633;
+			public const int notification_template_big_media_narrow = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int notification_template_custom_big = 2130968634;
+			public const int notification_template_big_media_narrow_custom = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int notification_template_icon_group = 2130968635;
+			public const int notification_template_custom_big = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int notification_template_lines_media = 2130968636;
+			public const int notification_template_icon_group = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int notification_template_media = 2130968637;
+			public const int notification_template_lines_media = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int notification_template_media_custom = 2130968638;
+			public const int notification_template_media = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int notification_template_part_chronometer = 2130968639;
+			public const int notification_template_media_custom = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int notification_template_part_time = 2130968640;
+			public const int notification_template_part_chronometer = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int RootLayout = 2130968641;
+			public const int notification_template_part_time = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int ScrollViewer = 2130968642;
+			public const int RootLayout = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int select_dialog_item_material = 2130968643;
+			public const int ScrollViewer = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int select_dialog_multichoice_material = 2130968644;
+			public const int select_dialog_item_material = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int select_dialog_singlechoice_material = 2130968645;
+			public const int select_dialog_multichoice_material = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int sfcomboBox_layout = 2130968646;
+			public const int select_dialog_singlechoice_material = 2130968646;
 			
 			// aapt resource value: 0x7f040047
-			public const int ShellContent = 2130968647;
+			public const int sfcomboBox_layout = 2130968647;
 			
 			// aapt resource value: 0x7f040048
-			public const int support_simple_spinner_dropdown_item = 2130968648;
+			public const int ShellContent = 2130968648;
 			
 			// aapt resource value: 0x7f040049
-			public const int Tabbar = 2130968649;
+			public const int support_simple_spinner_dropdown_item = 2130968649;
 			
 			// aapt resource value: 0x7f04004a
-			public const int Toolbar = 2130968650;
+			public const int Tabbar = 2130968650;
+			
+			// aapt resource value: 0x7f04004b
+			public const int Toolbar = 2130968651;
 			
 			static Layout()
 			{
@@ -9869,6 +10081,22 @@ namespace SodexoApp.Droid
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f100000
+			public const int menu_sf_maps = 2131755008;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}
@@ -9904,14 +10132,14 @@ namespace SodexoApp.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f0d003c
-			public const int ApplicationName = 2131558460;
+			// aapt resource value: 0x7f0d003f
+			public const int ApplicationName = 2131558463;
 			
-			// aapt resource value: 0x7f0d003b
-			public const int Hello = 2131558459;
+			// aapt resource value: 0x7f0d003e
+			public const int Hello = 2131558462;
 			
-			// aapt resource value: 0x7f0d003d
-			public const int Load_More = 2131558461;
+			// aapt resource value: 0x7f0d0040
+			public const int Load_More = 2131558464;
 			
 			// aapt resource value: 0x7f0d0000
 			public const int abc_action_bar_home_description = 2131558400;
@@ -10033,14 +10261,20 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0d0039
 			public const int accept = 2131558457;
 			
+			// aapt resource value: 0x7f0d003d
+			public const int action_settings = 2131558461;
+			
+			// aapt resource value: 0x7f0d003b
+			public const int app_name = 2131558459;
+			
 			// aapt resource value: 0x7f0d0028
 			public const int appbar_scrolling_view_behavior = 2131558440;
 			
 			// aapt resource value: 0x7f0d0029
 			public const int bottom_sheet_behavior = 2131558441;
 			
-			// aapt resource value: 0x7f0d003f
-			public const int cancel_drop = 2131558463;
+			// aapt resource value: 0x7f0d0042
+			public const int cancel_drop = 2131558466;
 			
 			// aapt resource value: 0x7f0d002a
 			public const int character_counter_content_description = 2131558442;
@@ -10051,11 +10285,11 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0d003a
 			public const int decline = 2131558458;
 			
-			// aapt resource value: 0x7f0d0040
-			public const int drop_above = 2131558464;
+			// aapt resource value: 0x7f0d0043
+			public const int drop_above = 2131558467;
 			
-			// aapt resource value: 0x7f0d0041
-			public const int drop_below = 2131558465;
+			// aapt resource value: 0x7f0d0044
+			public const int drop_below = 2131558468;
 			
 			// aapt resource value: 0x7f0d002c
 			public const int fab_transformation_scrim_behavior = 2131558444;
@@ -10063,14 +10297,17 @@ namespace SodexoApp.Droid
 			// aapt resource value: 0x7f0d002d
 			public const int fab_transformation_sheet_behavior = 2131558445;
 			
+			// aapt resource value: 0x7f0d003c
+			public const int hello_world = 2131558460;
+			
 			// aapt resource value: 0x7f0d002e
 			public const int hide_bottom_view_on_scroll_behavior = 2131558446;
 			
 			// aapt resource value: 0x7f0d0036
 			public const int library_name = 2131558454;
 			
-			// aapt resource value: 0x7f0d003e
-			public const int load_more_items = 2131558462;
+			// aapt resource value: 0x7f0d0041
+			public const int load_more_items = 2131558465;
 			
 			// aapt resource value: 0x7f0d002f
 			public const int mtrl_chip_close_icon_content_description = 2131558447;
@@ -13032,7 +13269,7 @@ namespace SodexoApp.Droid
 			public const int DesignTheme_bottomSheetStyle = 1;
 			
 			public static int[] DrawableStates = new int[] {
-					2130772459};
+					2130772487};
 			
 			// aapt resource value: 0
 			public const int DrawableStates_state_indeterminate = 0;
@@ -13922,9 +14159,9 @@ namespace SodexoApp.Droid
 			public const int SearchView_voiceIcon = 12;
 			
 			public static int[] SfCheckBox = new int[] {
-					2130772460,
-					2130772461,
-					2130772462};
+					2130772488,
+					2130772489,
+					2130772490};
 			
 			// aapt resource value: 2
 			public const int SfCheckBox_checked = 2;
@@ -13934,6 +14171,120 @@ namespace SodexoApp.Droid
 			
 			// aapt resource value: 0
 			public const int SfCheckBox_isthreestate = 0;
+			
+			public static int[] SfMaps = new int[] {
+					2130772459,
+					2130772460,
+					2130772461,
+					2130772462,
+					2130772463,
+					2130772464,
+					2130772465,
+					2130772466,
+					2130772467,
+					2130772468,
+					2130772469,
+					2130772470,
+					2130772471,
+					2130772472,
+					2130772473,
+					2130772474,
+					2130772475,
+					2130772476,
+					2130772477,
+					2130772478,
+					2130772479,
+					2130772480,
+					2130772481,
+					2130772482,
+					2130772483,
+					2130772484,
+					2130772485,
+					2130772486};
+			
+			// aapt resource value: 19
+			public const int SfMaps_bubbleAlpha = 19;
+			
+			// aapt resource value: 14
+			public const int SfMaps_bubbleFillColor = 14;
+			
+			// aapt resource value: 18
+			public const int SfMaps_bubbleIsAutoFillColors = 18;
+			
+			// aapt resource value: 16
+			public const int SfMaps_bubbleMaxSize = 16;
+			
+			// aapt resource value: 15
+			public const int SfMaps_bubbleMinSize = 15;
+			
+			// aapt resource value: 17
+			public const int SfMaps_bubbleVisibility = 17;
+			
+			// aapt resource value: 23
+			public const int SfMaps_enableMapSelection = 23;
+			
+			// aapt resource value: 27
+			public const int SfMaps_enableMapZooming = 27;
+			
+			// aapt resource value: 12
+			public const int SfMaps_mapLegendIcon = 12;
+			
+			// aapt resource value: 9
+			public const int SfMaps_mapLegendIconHeight = 9;
+			
+			// aapt resource value: 10
+			public const int SfMaps_mapLegendIconWidth = 10;
+			
+			// aapt resource value: 13
+			public const int SfMaps_mapLegendType = 13;
+			
+			// aapt resource value: 11
+			public const int SfMaps_mapLegendVisibility = 11;
+			
+			// aapt resource value: 6
+			public const int SfMaps_mapMarkerIcon = 6;
+			
+			// aapt resource value: 3
+			public const int SfMaps_markerIconColor = 3;
+			
+			// aapt resource value: 7
+			public const int SfMaps_markerIconSize = 7;
+			
+			// aapt resource value: 0
+			public const int SfMaps_markerLabel = 0;
+			
+			// aapt resource value: 4
+			public const int SfMaps_markerLabelColor = 4;
+			
+			// aapt resource value: 5
+			public const int SfMaps_markerLabelSize = 5;
+			
+			// aapt resource value: 1
+			public const int SfMaps_markerLatitude = 1;
+			
+			// aapt resource value: 2
+			public const int SfMaps_markerLongitude = 2;
+			
+			// aapt resource value: 24
+			public const int SfMaps_selectedShapeColor = 24;
+			
+			// aapt resource value: 25
+			public const int SfMaps_selectedShapeStroke = 25;
+			
+			// aapt resource value: 26
+			public const int SfMaps_selectedShapeStrokeThickness = 26;
+			
+			// aapt resource value: 20
+			public const int SfMaps_shapeFill = 20;
+			
+			// aapt resource value: 21
+			public const int SfMaps_shapeStroke = 21;
+			
+			// aapt resource value: 22
+			public const int SfMaps_shapeStrokeThickness = 22;
+			
+			// aapt resource value: 8
+			public const int SfMaps_uri = 8;
 			
 			public static int[] SfNumericTextBox = new int[] {
 					2130772445,
@@ -13994,18 +14345,18 @@ namespace SodexoApp.Droid
 			public const int SfNumericTextBox_watermarkColor = 11;
 			
 			public static int[] SfSegmentedControl = new int[] {
-					2130772463,
-					2130772464,
-					2130772465,
-					2130772466,
-					2130772467,
-					2130772468,
-					2130772469,
-					2130772470,
-					2130772471,
-					2130772472,
-					2130772473,
-					2130772474};
+					2130772491,
+					2130772492,
+					2130772493,
+					2130772494,
+					2130772495,
+					2130772496,
+					2130772497,
+					2130772498,
+					2130772499,
+					2130772500,
+					2130772501,
+					2130772502};
 			
 			// aapt resource value: 1
 			public const int SfSegmentedControl_segmentBackColor = 1;

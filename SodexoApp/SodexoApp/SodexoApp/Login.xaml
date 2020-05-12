@@ -54,7 +54,7 @@
                     <StackLayout Grid.Row="2" Margin="30,0,30,0">
                         <inputLayout:SfTextInputLayout  Hint="Contraseña" IsHintAlwaysFloated="False" 
                 ContainerType="Filled" HelperText="Enter your password" ContainerBackgroundColor="White"   EnablePasswordVisibilityToggle="true"  FocusedColor="#2a295c">
-                    <Entry Text="alejo0316" x:Name="Tx_pass"/>
+                    <Entry Text="alejo0316" x:Name="Tx_pass" IsPassword="True"/>
                         </inputLayout:SfTextInputLayout>
                     </StackLayout>
 

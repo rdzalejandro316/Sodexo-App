@@ -2,15 +2,42 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"             
+             xmlns:maps="clr-namespace:Syncfusion.SfMaps.XForms;assembly=Syncfusion.SfMaps.XForms"
              x:Class="SodexoApp.Views.Menu.Mantenimiento.Peticion">
     
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="markerTemplate">
+                <StackLayout IsClippedToBounds="false" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="35">
+                    <Image Source="pin.png" Scale="1" Aspect="AspectFit " HorizontalOptions="StartAndExpand" VerticalOptions="Center"  HeightRequest="35" WidthRequest="25"/>
+                </StackLayout>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Informacion"
-                VerticalOptions="Start" 
-                HorizontalOptions="CenterAndExpand" Margin="0,10,0,0" TextColor="Black" FontSize="20"/>
-        </StackLayout>
+
+            <maps:SfMaps x:Name="maps" ZoomLevel="4">
+                <maps:SfMaps.Layers>
+                    <maps:ImageryLayer GeoCoordinates="30.9709225,-100.2187212" >
+                        <maps:ImageryLayer.Sublayers>
+                            <maps:ShapeFileLayer x:Name="sublayer1" ShapeType="Polygon" Points="{Binding SubLayer1}" >
+                                <maps:ShapeFileLayer.ShapeSettings>
+                                    <maps:ShapeSetting ShapeFill="Blue" ShapeStroke="DarkBlue" 
+                                               ShapeStrokeThickness="4" />
+                                </maps:ShapeFileLayer.ShapeSettings>
+                            </maps:ShapeFileLayer>
+                            <maps:ShapeFileLayer x:Name="subLayer2" ShapeType="Polygon" Points="{Binding SubLayer2}">
+                                <maps:ShapeFileLayer.ShapeSettings>
+                                    <maps:ShapeSetting ShapeFill="Orange" ShapeStroke="Red"
+                                               ShapeStrokeThickness="4" />
+                                </maps:ShapeFileLayer.ShapeSettings>
+                            </maps:ShapeFileLayer>
+                        </maps:ImageryLayer.Sublayers>
+                    </maps:ImageryLayer>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
+
     </ContentPage.Content>
 </ContentPage>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KWWn2QVGZ4rAOW7J2gBYjLTzj6BM3yOeBvkCVbOtTPTxAoTFnGpCt33XKysLIEZThg5li1VtVVB8L++wS4BnVA==",
+  "dgSpecHash": "kl0UmW2j0sBlnCCBwG7I313g/WDC94EQMXhBBoHb79lll1Rykv27eiriKDHE32qqKu6yg6Ebahh7gmMdwyb38g==",
   "success": true,
   "projectFilePath": "C:\\Users\\aleja\\Desktop\\sodexo App\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfcombobox\\17.4.0.55\\syncfusion.xamarin.sfcombobox.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfdatagrid\\17.4.0.55\\syncfusion.xamarin.sfdatagrid.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sflistview\\17.4.0.55\\syncfusion.xamarin.sflistview.17.4.0.55.nupkg.sha512",
+    "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfmaps\\17.4.0.55\\syncfusion.xamarin.sfmaps.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfnumerictextbox\\17.4.0.55\\syncfusion.xamarin.sfnumerictextbox.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfpopuplayout\\17.4.0.55\\syncfusion.xamarin.sfpopuplayout.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

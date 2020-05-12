@@ -17,8 +17,20 @@ namespace SodexoApp.Views.Menu.Mantenimiento {
     public partial class Peticion : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Syncfusion.SfMaps.XForms.SfMaps maps;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Syncfusion.SfMaps.XForms.ShapeFileLayer sublayer1;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Syncfusion.SfMaps.XForms.ShapeFileLayer subLayer2;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Peticion));
+            maps = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.SfMaps.XForms.SfMaps>(this, "maps");
+            sublayer1 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.SfMaps.XForms.ShapeFileLayer>(this, "sublayer1");
+            subLayer2 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.SfMaps.XForms.ShapeFileLayer>(this, "subLayer2");
         }
     }
 }

@@ -46,6 +46,8 @@ public final class R {
         public static final int enterfromright=0x7f050022;
         public static final int exittoleft=0x7f050023;
         public static final int exittoright=0x7f050024;
+        public static final int scale_in=0x7f050025;
+        public static final int scale_out=0x7f050026;
     }
     public static final class animator {
         public static final int design_appbar_state_list_animator=0x7f060000;
@@ -669,6 +671,61 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int boxStrokeWidth=0x7f0101c5;
+        /** Determines the auto fill color of the bubble.
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bubbleAlpha=0x7f0101fe;
+        /** Determines the fill color of the bubble.
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bubbleFillColor=0x7f0101f9;
+        /** Determines the auto fill color of the bubble.
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bubbleIsAutoFillColors=0x7f0101fd;
+        /** Determines the maximum size of the bubble.
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bubbleMaxSize=0x7f0101fb;
+        /** Determines the minimum size of the bubble.
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bubbleMinSize=0x7f0101fa;
+        /** Determines the visibility of the bubble.
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int bubbleVisibility=0x7f0101fc;
         /**  Style for buttons within button bars 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -841,7 +898,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>checked</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int checked=0x7f0101ee;
+        public static final int checked=0x7f01020a;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1420,7 +1477,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cornerradius=0x7f0101ed;
+        public static final int cornerradius=0x7f010209;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1605,6 +1662,24 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int enableGroupSeparator=0x7f0101e0;
+        /** Determines the selection of the shapes.
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int enableMapSelection=0x7f010202;
+        /** Determines the zooming of the shapes.
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int enableMapZooming=0x7f010206;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -2248,7 +2323,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int isthreestate=0x7f0101ec;
+        public static final int isthreestate=0x7f010208;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -2658,6 +2733,137 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int logoDescription=0x7f010108;
+        /** Determines the legend icon of the map .
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>circle</code></td><td>1</td><td></td></tr>
+<tr><td><code>rectangle</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int mapLegendIcon=0x7f0101f7;
+        /** Determines the icon height of the legend.
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapLegendIconHeight=0x7f0101f4;
+        /** Determines the icon width of the legend.
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapLegendIconWidth=0x7f0101f5;
+        /** Determines the legend type of the map .
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>layers</code></td><td>0</td><td></td></tr>
+<tr><td><code>bubbles</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int mapLegendType=0x7f0101f8;
+        /** Determines the visibility of the legend.
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mapLegendVisibility=0x7f0101f6;
+        /** Determines the marker icon of the map .
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>rectangle</code></td><td>0</td><td></td></tr>
+<tr><td><code>diamond</code></td><td>1</td><td></td></tr>
+<tr><td><code>square</code></td><td>2</td><td></td></tr>
+<tr><td><code>circle</code></td><td>3</td><td></td></tr>
+<tr><td><code>image</code></td><td>4</td><td></td></tr>
+</table>
+         */
+        public static final int mapMarkerIcon=0x7f0101f1;
+        /** Determines the marker icon color of the map marker.
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int markerIconColor=0x7f0101ee;
+        /** Determines the marker icon size of the map marker.
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int markerIconSize=0x7f0101f2;
+        /** Determines the marker label of the map marker.
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int markerLabel=0x7f0101eb;
+        /** Determines the marker label color of the map marker.
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int markerLabelColor=0x7f0101ef;
+        /** Determines the marker label size of the map marker.
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int markerLabelSize=0x7f0101f0;
+        /** Determines the marker latitude of the map marker.
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int markerLatitude=0x7f0101ec;
+        /** Determines the marker longitude of the map marker.
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int markerLongitude=0x7f0101ed;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -3083,7 +3289,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int segmentBackColor=0x7f0101f0;
+        public static final int segmentBackColor=0x7f01020c;
         /**         The border color of SfSegmentCondrol
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -3093,7 +3299,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int segmentBorderColor=0x7f0101f1;
+        public static final int segmentBorderColor=0x7f01020d;
         /**         The border thickness of SfSegmentCondrol
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -3102,7 +3308,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int segmentBorderThickness=0x7f0101f2;
+        public static final int segmentBorderThickness=0x7f01020e;
         /**         The color of SfSegmentCondrol
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -3112,7 +3318,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int segmentColor=0x7f0101f3;
+        public static final int segmentColor=0x7f01020f;
         /**         The corner radius of SfSegmentCondrol
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -3121,7 +3327,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int segmentCornerRadius=0x7f0101f8;
+        public static final int segmentCornerRadius=0x7f010214;
         /**         The displaymode of SfSegmentCondrol
          <p>Must be one of the following constant values.</p>
 <table>
@@ -3134,7 +3340,7 @@ containing a value of this type.
 <tr><td><code>imagewithtext</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int segmentDisplayMode=0x7f0101fa;
+        public static final int segmentDisplayMode=0x7f010216;
         /**         The position of SfSegmentCondrol
          <p>Must be one of the following constant values.</p>
 <table>
@@ -3148,7 +3354,7 @@ containing a value of this type.
 <tr><td><code>border</code></td><td>3</td><td></td></tr>
 </table>
          */
-        public static final int segmentPosition=0x7f0101f9;
+        public static final int segmentPosition=0x7f010215;
         /**         The selected index of SfSegmentCondrol
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -3157,7 +3363,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int segmentSelectedIndex=0x7f0101ef;
+        public static final int segmentSelectedIndex=0x7f01020b;
         /**         The stroke thickness of SfSegmentCondrol
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -3166,7 +3372,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int segmentStrokeThickness=0x7f0101f7;
+        public static final int segmentStrokeThickness=0x7f010213;
         /**         The segment height of SfSegmentCondrol
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -3175,7 +3381,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int segmentedHeight=0x7f0101f5;
+        public static final int segmentedHeight=0x7f010211;
         /**         The segment padding of SfSegmentCondrol
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -3184,7 +3390,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int segmentedPadding=0x7f0101f4;
+        public static final int segmentedPadding=0x7f010210;
         /**         The segment width of SfSegmentCondrol
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -3193,7 +3399,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int segmentedWidth=0x7f0101f6;
+        public static final int segmentedWidth=0x7f010212;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -3214,6 +3420,62 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int selectableItemBackgroundBorderless=0x7f010082;
+        /** Determines the selected shapes color of the shapes.
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int selectedShapeColor=0x7f010203;
+        /** Determines the selected shapes stroke of the shapes.
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int selectedShapeStroke=0x7f010204;
+        /** Determines the selected shapes stroke thickness of the shapes.
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int selectedShapeStrokeThickness=0x7f010205;
+        /** Determines the shape fill color of the shapes.
+         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int shapeFill=0x7f0101ff;
+        /** Determines the shape stroke of the shapes.
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int shapeStroke=0x7f010200;
+        /** Determines the shape stroke thickness of the shapes.
+         <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int shapeStrokeThickness=0x7f010201;
         /**  How this item should display in the Action Bar, if present. 
          <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
@@ -3383,7 +3645,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int state_indeterminate=0x7f0101eb;
+        public static final int state_indeterminate=0x7f010207;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -4196,6 +4458,15 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int ttcIndex=0x7f0101dc;
+        /** Determines the uri of the layer.
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uri=0x7f0101f3;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -4606,6 +4877,13 @@ containing a value of this type.
         public static final int abc_text_size_subtitle_material_toolbar=0x7f0a000b;
         public static final int abc_text_size_title_material=0x7f0a0053;
         public static final int abc_text_size_title_material_toolbar=0x7f0a000c;
+        /**  Default screen margins, per the Android Design guidelines. 
+ Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). 
+         */
+        public static final int activity_horizontal_margin=0x7f0a00dd;
+        public static final int activity_vertical_margin=0x7f0a00de;
         public static final int browser_actions_context_menu_max_width=0x7f0a00c5;
         public static final int browser_actions_context_menu_min_padding=0x7f0a00c6;
         public static final int cardview_compat_inset_shadow=0x7f0a0006;
@@ -4662,7 +4940,7 @@ containing a value of this type.
         public static final int design_tab_text_size=0x7f0a0092;
         public static final int design_tab_text_size_2line=0x7f0a0093;
         public static final int design_textinput_caption_translate_y=0x7f0a0094;
-        public static final int disabledAlpha=0x7f0a00dd;
+        public static final int disabledAlpha=0x7f0a00df;
         public static final int disabled_alpha_material_dark=0x7f0a0054;
         public static final int disabled_alpha_material_light=0x7f0a0055;
         public static final int fastscroll_default_thickness=0x7f0a0000;
@@ -4870,13 +5148,13 @@ containing a value of this type.
         public static final int avatar8=0x7f020070;
         public static final int avatar9=0x7f020071;
         public static final int avd_hide_password=0x7f020072;
-        public static final int avd_hide_password_1=0x7f0200a6;
-        public static final int avd_hide_password_2=0x7f0200a7;
-        public static final int avd_hide_password_3=0x7f0200a8;
+        public static final int avd_hide_password_1=0x7f0200ac;
+        public static final int avd_hide_password_2=0x7f0200ad;
+        public static final int avd_hide_password_3=0x7f0200ae;
         public static final int avd_show_password=0x7f020073;
-        public static final int avd_show_password_1=0x7f0200a9;
-        public static final int avd_show_password_2=0x7f0200aa;
-        public static final int avd_show_password_3=0x7f0200ab;
+        public static final int avd_show_password_1=0x7f0200af;
+        public static final int avd_show_password_2=0x7f0200b0;
+        public static final int avd_show_password_3=0x7f0200b1;
         public static final int btn_checkbox=0x7f020074;
         public static final int btn_checkbox_checked=0x7f020075;
         public static final int btn_checkbox_checked_to_indeterminate_animation=0x7f020076;
@@ -4895,258 +5173,271 @@ containing a value of this type.
         public static final int design_password_eye=0x7f020083;
         public static final int design_snackbar_background=0x7f020084;
         public static final int dropdownbuttonimage=0x7f020085;
-        public static final int ic_mtrl_chip_checked_black=0x7f020086;
-        public static final int ic_mtrl_chip_checked_circle=0x7f020087;
-        public static final int ic_mtrl_chip_close_circle=0x7f020088;
-        public static final int input_layout_drop_down_icon=0x7f020089;
-        public static final int inputlayout_togglecollapseicon=0x7f02008a;
-        public static final int inputlayout_togglevisibleicon=0x7f02008b;
-        public static final int mtrl_snackbar_background=0x7f02008c;
-        public static final int mtrl_tabs_default_indicator=0x7f02008d;
-        public static final int navigation_empty_icon=0x7f02008e;
-        public static final int notification=0x7f02008f;
-        public static final int notification_action_background=0x7f020090;
-        public static final int notification_bg=0x7f020091;
-        public static final int notification_bg_low=0x7f020092;
-        public static final int notification_bg_low_normal=0x7f020093;
-        public static final int notification_bg_low_pressed=0x7f020094;
-        public static final int notification_bg_normal=0x7f020095;
-        public static final int notification_bg_normal_pressed=0x7f020096;
-        public static final int notification_icon_background=0x7f020097;
-        public static final int notification_template_icon_bg=0x7f0200a4;
-        public static final int notification_template_icon_low_bg=0x7f0200a5;
-        public static final int notification_tile_bg=0x7f020098;
-        public static final int notify_panel_notification_icon_bg=0x7f020099;
-        public static final int popup_forms_android_close_icon=0x7f02009a;
-        public static final int popup_forms_android_shadow=0x7f02009b;
-        public static final int popup_forms_dark_theme_close_icon=0x7f02009c;
-        public static final int popup_forms_light_theme_close_icon=0x7f02009d;
-        public static final int sodexo=0x7f02009e;
-        public static final int sodexosplash=0x7f02009f;
-        public static final int splash_screen=0x7f0200a0;
-        public static final int tooltip_frame_dark=0x7f0200a1;
-        public static final int tooltip_frame_light=0x7f0200a2;
-        public static final int van=0x7f0200a3;
+        public static final int house=0x7f020086;
+        public static final int ic_mtrl_chip_checked_black=0x7f020087;
+        public static final int ic_mtrl_chip_checked_circle=0x7f020088;
+        public static final int ic_mtrl_chip_close_circle=0x7f020089;
+        public static final int icon=0x7f02008a;
+        public static final int input_layout_drop_down_icon=0x7f02008b;
+        public static final int inputlayout_togglecollapseicon=0x7f02008c;
+        public static final int inputlayout_togglevisibleicon=0x7f02008d;
+        public static final int mark=0x7f02008e;
+        public static final int mtrl_snackbar_background=0x7f02008f;
+        public static final int mtrl_tabs_default_indicator=0x7f020090;
+        public static final int navigation_empty_icon=0x7f020091;
+        public static final int notification=0x7f020092;
+        public static final int notification_action_background=0x7f020093;
+        public static final int notification_bg=0x7f020094;
+        public static final int notification_bg_low=0x7f020095;
+        public static final int notification_bg_low_normal=0x7f020096;
+        public static final int notification_bg_low_pressed=0x7f020097;
+        public static final int notification_bg_normal=0x7f020098;
+        public static final int notification_bg_normal_pressed=0x7f020099;
+        public static final int notification_icon_background=0x7f02009a;
+        public static final int notification_template_icon_bg=0x7f0200aa;
+        public static final int notification_template_icon_low_bg=0x7f0200ab;
+        public static final int notification_tile_bg=0x7f02009b;
+        public static final int notify_panel_notification_icon_bg=0x7f02009c;
+        public static final int popup_forms_android_close_icon=0x7f02009d;
+        public static final int popup_forms_android_shadow=0x7f02009e;
+        public static final int popup_forms_dark_theme_close_icon=0x7f02009f;
+        public static final int popup_forms_light_theme_close_icon=0x7f0200a0;
+        public static final int sodexo=0x7f0200a1;
+        public static final int sodexosplash=0x7f0200a2;
+        public static final int splash_screen=0x7f0200a3;
+        public static final int tools=0x7f0200a4;
+        public static final int tooltip_frame_dark=0x7f0200a5;
+        public static final int tooltip_frame_light=0x7f0200a6;
+        public static final int user=0x7f0200a7;
+        public static final int van=0x7f0200a8;
+        public static final int washing=0x7f0200a9;
     }
     public static final class id {
         public static final int ALT=0x7f0b0039;
-        public static final int BorderView=0x7f0b00db;
+        public static final int BorderView=0x7f0b00e1;
         public static final int CTRL=0x7f0b003a;
         public static final int FUNCTION=0x7f0b003b;
-        public static final int Itemname=0x7f0b00af;
+        public static final int Itemname=0x7f0b00b5;
         public static final int META=0x7f0b003c;
         public static final int SHIFT=0x7f0b003d;
         public static final int SYM=0x7f0b003e;
-        public static final int action0=0x7f0b00c1;
-        public static final int action_bar=0x7f0b0098;
+        public static final int action0=0x7f0b00c7;
+        public static final int action_bar=0x7f0b009e;
         public static final int action_bar_activity_content=0x7f0b0001;
-        public static final int action_bar_container=0x7f0b0097;
-        public static final int action_bar_root=0x7f0b0093;
+        public static final int action_bar_container=0x7f0b009d;
+        public static final int action_bar_root=0x7f0b0099;
         public static final int action_bar_spinner=0x7f0b0002;
-        public static final int action_bar_subtitle=0x7f0b0076;
-        public static final int action_bar_title=0x7f0b0075;
-        public static final int action_container=0x7f0b00be;
-        public static final int action_context_bar=0x7f0b0099;
-        public static final int action_divider=0x7f0b00c5;
-        public static final int action_image=0x7f0b00bf;
+        public static final int action_bar_subtitle=0x7f0b007c;
+        public static final int action_bar_title=0x7f0b007b;
+        public static final int action_container=0x7f0b00c4;
+        public static final int action_context_bar=0x7f0b009f;
+        public static final int action_divider=0x7f0b00cb;
+        public static final int action_image=0x7f0b00c5;
         public static final int action_menu_divider=0x7f0b0003;
         public static final int action_menu_presenter=0x7f0b0004;
-        public static final int action_mode_bar=0x7f0b0095;
-        public static final int action_mode_bar_stub=0x7f0b0094;
-        public static final int action_mode_close_button=0x7f0b0077;
-        public static final int action_text=0x7f0b00c0;
-        public static final int actions=0x7f0b00ce;
-        public static final int activity_chooser_view_content=0x7f0b0078;
+        public static final int action_mode_bar=0x7f0b009b;
+        public static final int action_mode_bar_stub=0x7f0b009a;
+        public static final int action_mode_close_button=0x7f0b007d;
+        public static final int action_settings=0x7f0b00e2;
+        public static final int action_text=0x7f0b00c6;
+        public static final int actions=0x7f0b00d4;
+        public static final int activity_chooser_view_content=0x7f0b007e;
         public static final int add=0x7f0b002e;
-        public static final int alertTitle=0x7f0b008a;
+        public static final int alertTitle=0x7f0b0090;
         public static final int all=0x7f0b0064;
         public static final int always=0x7f0b003f;
         public static final int async=0x7f0b0065;
         public static final int auto=0x7f0b004d;
         public static final int beginning=0x7f0b0036;
         public static final int blocking=0x7f0b0066;
-        public static final int border=0x7f0b0072;
+        public static final int border=0x7f0b0079;
         public static final int bottom=0x7f0b0044;
-        public static final int bottomtab_navarea=0x7f0b00a8;
-        public static final int bottomtab_tabbar=0x7f0b00a9;
-        public static final int browser_actions_header_text=0x7f0b00ab;
-        public static final int browser_actions_menu_item_icon=0x7f0b00ad;
-        public static final int browser_actions_menu_item_text=0x7f0b00ae;
-        public static final int browser_actions_menu_items=0x7f0b00ac;
-        public static final int browser_actions_menu_view=0x7f0b00aa;
-        public static final int buttonPanel=0x7f0b007d;
-        public static final int cancel_action=0x7f0b00c2;
+        public static final int bottomtab_navarea=0x7f0b00ae;
+        public static final int bottomtab_tabbar=0x7f0b00af;
+        public static final int browser_actions_header_text=0x7f0b00b1;
+        public static final int browser_actions_menu_item_icon=0x7f0b00b3;
+        public static final int browser_actions_menu_item_text=0x7f0b00b4;
+        public static final int browser_actions_menu_items=0x7f0b00b2;
+        public static final int browser_actions_menu_view=0x7f0b00b0;
+        public static final int bubbles=0x7f0b0074;
+        public static final int buttonPanel=0x7f0b0083;
+        public static final int cancel_action=0x7f0b00c8;
         public static final int center=0x7f0b004c;
         public static final int center_horizontal=0x7f0b0051;
         public static final int center_vertical=0x7f0b0052;
-        public static final int checkbox=0x7f0b0091;
-        public static final int checked=0x7f0b006f;
-        public static final int chronometer=0x7f0b00ca;
+        public static final int checkbox=0x7f0b0097;
+        public static final int checked=0x7f0b0076;
+        public static final int chronometer=0x7f0b00d0;
+        public static final int circle=0x7f0b006f;
         public static final int clip_horizontal=0x7f0b0061;
         public static final int clip_vertical=0x7f0b0062;
         public static final int collapseActionView=0x7f0b0040;
         public static final int compute=0x7f0b006b;
-        public static final int container=0x7f0b00b2;
-        public static final int content=0x7f0b008d;
-        public static final int contentPanel=0x7f0b0080;
-        public static final int coordinator=0x7f0b00b3;
-        public static final int custom=0x7f0b0087;
-        public static final int customPanel=0x7f0b0086;
+        public static final int container=0x7f0b00b8;
+        public static final int content=0x7f0b0093;
+        public static final int contentPanel=0x7f0b0086;
+        public static final int coordinator=0x7f0b00b9;
+        public static final int custom=0x7f0b008d;
+        public static final int customPanel=0x7f0b008c;
         public static final int decimalMode=0x7f0b0069;
-        public static final int decor_content_parent=0x7f0b0096;
-        public static final int default_activity_button=0x7f0b007a;
-        public static final int design_bottom_sheet=0x7f0b00b5;
-        public static final int design_menu_item_action_area=0x7f0b00ba;
-        public static final int design_menu_item_action_area_stub=0x7f0b00b9;
-        public static final int design_menu_item_text=0x7f0b00b8;
-        public static final int design_navigation_view=0x7f0b00b7;
+        public static final int decor_content_parent=0x7f0b009c;
+        public static final int default_activity_button=0x7f0b0080;
+        public static final int design_bottom_sheet=0x7f0b00bb;
+        public static final int design_menu_item_action_area=0x7f0b00c0;
+        public static final int design_menu_item_action_area_stub=0x7f0b00bf;
+        public static final int design_menu_item_text=0x7f0b00be;
+        public static final int design_navigation_view=0x7f0b00bd;
+        public static final int diamond=0x7f0b0070;
         public static final int disableHome=0x7f0b0027;
         public static final int doubleMode=0x7f0b006a;
-        public static final int edit_query=0x7f0b009a;
+        public static final int edit_query=0x7f0b00a0;
         public static final int end=0x7f0b0037;
-        public static final int end_padder=0x7f0b00d0;
+        public static final int end_padder=0x7f0b00d6;
         public static final int enterAlways=0x7f0b0046;
         public static final int enterAlwaysCollapsed=0x7f0b0047;
         public static final int exitUntilCollapsed=0x7f0b0048;
-        public static final int expand_activities_button=0x7f0b0079;
-        public static final int expanded_menu=0x7f0b0090;
+        public static final int expand_activities_button=0x7f0b007f;
+        public static final int expanded_menu=0x7f0b0096;
         public static final int fill=0x7f0b005e;
         public static final int fill_horizontal=0x7f0b0063;
         public static final int fill_vertical=0x7f0b0053;
         public static final int filled=0x7f0b005f;
         public static final int fixed=0x7f0b005c;
-        public static final int flyoutcontent_appbar=0x7f0b00bc;
-        public static final int flyoutcontent_recycler=0x7f0b00bd;
+        public static final int flyoutcontent_appbar=0x7f0b00c2;
+        public static final int flyoutcontent_recycler=0x7f0b00c3;
         public static final int forever=0x7f0b0067;
         public static final int ghost_view=0x7f0b000a;
-        public static final int group_divider=0x7f0b008c;
+        public static final int group_divider=0x7f0b0092;
         public static final int home=0x7f0b0005;
         public static final int homeAsUp=0x7f0b0028;
-        public static final int icon=0x7f0b007c;
-        public static final int icon_group=0x7f0b00cf;
+        public static final int icon=0x7f0b0082;
+        public static final int icon_group=0x7f0b00d5;
         public static final int ifRoom=0x7f0b0041;
-        public static final int image=0x7f0b0073;
-        public static final int imagewithtext=0x7f0b0074;
-        public static final int indeterminate=0x7f0b0070;
-        public static final int info=0x7f0b00cb;
+        public static final int image=0x7f0b0071;
+        public static final int imagewithtext=0x7f0b007a;
+        public static final int indeterminate=0x7f0b0077;
+        public static final int info=0x7f0b00d1;
         public static final int italic=0x7f0b0068;
         public static final int item_touch_helper_previous_elevation=0x7f0b0000;
         public static final int labeled=0x7f0b004e;
-        public static final int largeLabel=0x7f0b00b1;
+        public static final int largeLabel=0x7f0b00b7;
+        public static final int layers=0x7f0b0075;
         public static final int left=0x7f0b0054;
         public static final int line1=0x7f0b001c;
         public static final int line3=0x7f0b001d;
         public static final int listMode=0x7f0b0024;
-        public static final int list_item=0x7f0b007b;
-        public static final int main_appbar=0x7f0b00d1;
-        public static final int main_tablayout=0x7f0b00d3;
-        public static final int main_toolbar=0x7f0b00d2;
-        public static final int main_viewpager=0x7f0b00d4;
-        public static final int masked=0x7f0b00da;
-        public static final int media_actions=0x7f0b00c4;
-        public static final int message=0x7f0b00a7;
+        public static final int list_item=0x7f0b0081;
+        public static final int main_appbar=0x7f0b00d7;
+        public static final int main_tablayout=0x7f0b00d9;
+        public static final int main_toolbar=0x7f0b00d8;
+        public static final int main_viewpager=0x7f0b00da;
+        public static final int masked=0x7f0b00e0;
+        public static final int media_actions=0x7f0b00ca;
+        public static final int message=0x7f0b00ad;
         public static final int middle=0x7f0b0038;
         public static final int mini=0x7f0b0059;
         public static final int mtrl_child_content_container=0x7f0b0014;
         public static final int mtrl_internal_children_alpha_tag=0x7f0b0015;
         public static final int multiply=0x7f0b002f;
-        public static final int navigation_header_container=0x7f0b00b6;
+        public static final int navigation_header_container=0x7f0b00bc;
         public static final int never=0x7f0b0042;
         public static final int none=0x7f0b0029;
         public static final int normal=0x7f0b0025;
-        public static final int notification_background=0x7f0b00cd;
-        public static final int notification_main_column=0x7f0b00c7;
-        public static final int notification_main_column_container=0x7f0b00c6;
+        public static final int notification_background=0x7f0b00d3;
+        public static final int notification_main_column=0x7f0b00cd;
+        public static final int notification_main_column_container=0x7f0b00cc;
         public static final int onKeyFocus=0x7f0b006d;
         public static final int onLostFocus=0x7f0b006e;
         public static final int outline=0x7f0b0060;
         public static final int parallax=0x7f0b0057;
-        public static final int parentPanel=0x7f0b007f;
+        public static final int parentPanel=0x7f0b0085;
         public static final int parent_matrix=0x7f0b000b;
         public static final int pin=0x7f0b0058;
         public static final int progress_circular=0x7f0b0006;
         public static final int progress_horizontal=0x7f0b0007;
-        public static final int radio=0x7f0b0092;
+        public static final int radio=0x7f0b0098;
+        public static final int rectangle=0x7f0b0072;
         public static final int right=0x7f0b0055;
-        public static final int right_icon=0x7f0b00cc;
-        public static final int right_side=0x7f0b00c8;
+        public static final int right_icon=0x7f0b00d2;
+        public static final int right_side=0x7f0b00ce;
         public static final int save_image_matrix=0x7f0b000c;
         public static final int save_non_transition_alpha=0x7f0b000d;
         public static final int save_scale_type=0x7f0b000e;
         public static final int screen=0x7f0b0030;
         public static final int scroll=0x7f0b0049;
-        public static final int scrollIndicatorDown=0x7f0b0085;
-        public static final int scrollIndicatorUp=0x7f0b0081;
-        public static final int scrollView=0x7f0b0082;
+        public static final int scrollIndicatorDown=0x7f0b008b;
+        public static final int scrollIndicatorUp=0x7f0b0087;
+        public static final int scrollView=0x7f0b0088;
         public static final int scrollable=0x7f0b005d;
-        public static final int search_badge=0x7f0b009c;
-        public static final int search_bar=0x7f0b009b;
-        public static final int search_button=0x7f0b009d;
-        public static final int search_close_btn=0x7f0b00a2;
-        public static final int search_edit_frame=0x7f0b009e;
-        public static final int search_go_btn=0x7f0b00a4;
-        public static final int search_mag_icon=0x7f0b009f;
-        public static final int search_plate=0x7f0b00a0;
-        public static final int search_src_text=0x7f0b00a1;
-        public static final int search_voice_btn=0x7f0b00a5;
-        public static final int select_dialog_listview=0x7f0b00a6;
+        public static final int search_badge=0x7f0b00a2;
+        public static final int search_bar=0x7f0b00a1;
+        public static final int search_button=0x7f0b00a3;
+        public static final int search_close_btn=0x7f0b00a8;
+        public static final int search_edit_frame=0x7f0b00a4;
+        public static final int search_go_btn=0x7f0b00aa;
+        public static final int search_mag_icon=0x7f0b00a5;
+        public static final int search_plate=0x7f0b00a6;
+        public static final int search_src_text=0x7f0b00a7;
+        public static final int search_voice_btn=0x7f0b00ab;
+        public static final int select_dialog_listview=0x7f0b00ac;
         public static final int selected=0x7f0b004f;
-        public static final int shellcontent_appbar=0x7f0b00d5;
-        public static final int shellcontent_toolbar=0x7f0b00d6;
-        public static final int shortcut=0x7f0b008e;
+        public static final int shellcontent_appbar=0x7f0b00db;
+        public static final int shellcontent_toolbar=0x7f0b00dc;
+        public static final int shortcut=0x7f0b0094;
         public static final int showCustom=0x7f0b002a;
         public static final int showHome=0x7f0b002b;
         public static final int showTitle=0x7f0b002c;
-        public static final int sliding_tabs=0x7f0b00d7;
-        public static final int smallLabel=0x7f0b00b0;
+        public static final int sliding_tabs=0x7f0b00dd;
+        public static final int smallLabel=0x7f0b00b6;
         public static final int snackbar_action=0x7f0b0016;
         public static final int snackbar_text=0x7f0b0017;
         public static final int snap=0x7f0b004a;
         public static final int snapMargins=0x7f0b004b;
-        public static final int spacer=0x7f0b007e;
+        public static final int spacer=0x7f0b0084;
         public static final int split_action_bar=0x7f0b0008;
+        public static final int square=0x7f0b0073;
         public static final int src_atop=0x7f0b0031;
         public static final int src_in=0x7f0b0032;
         public static final int src_over=0x7f0b0033;
         public static final int start=0x7f0b0056;
-        public static final int status_bar_latest_event_content=0x7f0b00c3;
+        public static final int status_bar_latest_event_content=0x7f0b00c9;
         public static final int stretch=0x7f0b005b;
-        public static final int submenuarrow=0x7f0b008f;
-        public static final int submit_area=0x7f0b00a3;
+        public static final int submenuarrow=0x7f0b0095;
+        public static final int submit_area=0x7f0b00a9;
         public static final int tabMode=0x7f0b0026;
         public static final int tag_transition_group=0x7f0b001e;
         public static final int tag_unhandled_key_event_manager=0x7f0b001f;
         public static final int tag_unhandled_key_listeners=0x7f0b0020;
         public static final int text=0x7f0b0021;
         public static final int text2=0x7f0b0022;
-        public static final int textSpacerNoButtons=0x7f0b0084;
-        public static final int textSpacerNoTitle=0x7f0b0083;
+        public static final int textSpacerNoButtons=0x7f0b008a;
+        public static final int textSpacerNoTitle=0x7f0b0089;
         public static final int textStart=0x7f0b005a;
-        public static final int text_input_password_toggle=0x7f0b00bb;
+        public static final int text_input_password_toggle=0x7f0b00c1;
         public static final int textinput_counter=0x7f0b0018;
         public static final int textinput_error=0x7f0b0019;
         public static final int textinput_helper_text=0x7f0b001a;
-        public static final int time=0x7f0b00c9;
+        public static final int time=0x7f0b00cf;
         public static final int title=0x7f0b0023;
-        public static final int titleDividerNoCustom=0x7f0b008b;
-        public static final int title_template=0x7f0b0089;
-        public static final int toolbar=0x7f0b00d8;
+        public static final int titleDividerNoCustom=0x7f0b0091;
+        public static final int title_template=0x7f0b008f;
+        public static final int toolbar=0x7f0b00de;
         public static final int top=0x7f0b0045;
-        public static final int topPanel=0x7f0b0088;
-        public static final int touch_outside=0x7f0b00b4;
+        public static final int topPanel=0x7f0b008e;
+        public static final int touch_outside=0x7f0b00ba;
         public static final int transition_current_scene=0x7f0b000f;
         public static final int transition_layout_save=0x7f0b0010;
         public static final int transition_position=0x7f0b0011;
         public static final int transition_scene_layoutid_cache=0x7f0b0012;
         public static final int transition_transform=0x7f0b0013;
-        public static final int unchecked=0x7f0b0071;
+        public static final int unchecked=0x7f0b0078;
         public static final int uniform=0x7f0b0034;
         public static final int unlabeled=0x7f0b0050;
         public static final int up=0x7f0b0009;
         public static final int useLogo=0x7f0b002d;
         public static final int value=0x7f0b006c;
         public static final int view_offset_helper=0x7f0b001b;
-        public static final int visible=0x7f0b00d9;
+        public static final int visible=0x7f0b00df;
         public static final int withText=0x7f0b0043;
         public static final int wrap_content=0x7f0b0035;
     }
@@ -5227,33 +5518,37 @@ containing a value of this type.
         public static final int design_navigation_menu_item=0x7f04002d;
         public static final int design_text_input_password_icon=0x7f04002e;
         public static final int flyoutcontent=0x7f04002f;
-        public static final int mtrl_layout_snackbar=0x7f040030;
-        public static final int mtrl_layout_snackbar_include=0x7f040031;
-        public static final int notification_action=0x7f040032;
-        public static final int notification_action_tombstone=0x7f040033;
-        public static final int notification_media_action=0x7f040034;
-        public static final int notification_media_cancel_action=0x7f040035;
-        public static final int notification_template_big_media=0x7f040036;
-        public static final int notification_template_big_media_custom=0x7f040037;
-        public static final int notification_template_big_media_narrow=0x7f040038;
-        public static final int notification_template_big_media_narrow_custom=0x7f040039;
-        public static final int notification_template_custom_big=0x7f04003a;
-        public static final int notification_template_icon_group=0x7f04003b;
-        public static final int notification_template_lines_media=0x7f04003c;
-        public static final int notification_template_media=0x7f04003d;
-        public static final int notification_template_media_custom=0x7f04003e;
-        public static final int notification_template_part_chronometer=0x7f04003f;
-        public static final int notification_template_part_time=0x7f040040;
-        public static final int rootlayout=0x7f040041;
-        public static final int scrollviewer=0x7f040042;
-        public static final int select_dialog_item_material=0x7f040043;
-        public static final int select_dialog_multichoice_material=0x7f040044;
-        public static final int select_dialog_singlechoice_material=0x7f040045;
-        public static final int sfcombobox_layout=0x7f040046;
-        public static final int shellcontent=0x7f040047;
-        public static final int support_simple_spinner_dropdown_item=0x7f040048;
-        public static final int tabbar=0x7f040049;
-        public static final int toolbar=0x7f04004a;
+        public static final int layout_maps=0x7f040030;
+        public static final int mtrl_layout_snackbar=0x7f040031;
+        public static final int mtrl_layout_snackbar_include=0x7f040032;
+        public static final int notification_action=0x7f040033;
+        public static final int notification_action_tombstone=0x7f040034;
+        public static final int notification_media_action=0x7f040035;
+        public static final int notification_media_cancel_action=0x7f040036;
+        public static final int notification_template_big_media=0x7f040037;
+        public static final int notification_template_big_media_custom=0x7f040038;
+        public static final int notification_template_big_media_narrow=0x7f040039;
+        public static final int notification_template_big_media_narrow_custom=0x7f04003a;
+        public static final int notification_template_custom_big=0x7f04003b;
+        public static final int notification_template_icon_group=0x7f04003c;
+        public static final int notification_template_lines_media=0x7f04003d;
+        public static final int notification_template_media=0x7f04003e;
+        public static final int notification_template_media_custom=0x7f04003f;
+        public static final int notification_template_part_chronometer=0x7f040040;
+        public static final int notification_template_part_time=0x7f040041;
+        public static final int rootlayout=0x7f040042;
+        public static final int scrollviewer=0x7f040043;
+        public static final int select_dialog_item_material=0x7f040044;
+        public static final int select_dialog_multichoice_material=0x7f040045;
+        public static final int select_dialog_singlechoice_material=0x7f040046;
+        public static final int sfcombobox_layout=0x7f040047;
+        public static final int shellcontent=0x7f040048;
+        public static final int support_simple_spinner_dropdown_item=0x7f040049;
+        public static final int tabbar=0x7f04004a;
+        public static final int toolbar=0x7f04004b;
+    }
+    public static final class menu {
+        public static final int menu_sf_maps=0x7f100000;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -5263,9 +5558,9 @@ containing a value of this type.
         public static final int logosodexo=0x7f030004;
     }
     public static final class string {
-        public static final int ApplicationName=0x7f0d003c;
-        public static final int Hello=0x7f0d003b;
-        public static final int Load_More=0x7f0d003d;
+        public static final int ApplicationName=0x7f0d003f;
+        public static final int Hello=0x7f0d003e;
+        public static final int Load_More=0x7f0d0040;
         public static final int abc_action_bar_home_description=0x7f0d0000;
         public static final int abc_action_bar_up_description=0x7f0d0001;
         public static final int abc_action_menu_overflow_description=0x7f0d0002;
@@ -5306,19 +5601,22 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0d0019;
         public static final int abc_toolbar_collapse_description=0x7f0d001a;
         public static final int accept=0x7f0d0039;
+        public static final int action_settings=0x7f0d003d;
+        public static final int app_name=0x7f0d003b;
         public static final int appbar_scrolling_view_behavior=0x7f0d0028;
         public static final int bottom_sheet_behavior=0x7f0d0029;
-        public static final int cancel_drop=0x7f0d003f;
+        public static final int cancel_drop=0x7f0d0042;
         public static final int character_counter_content_description=0x7f0d002a;
         public static final int character_counter_pattern=0x7f0d002b;
         public static final int decline=0x7f0d003a;
-        public static final int drop_above=0x7f0d0040;
-        public static final int drop_below=0x7f0d0041;
+        public static final int drop_above=0x7f0d0043;
+        public static final int drop_below=0x7f0d0044;
         public static final int fab_transformation_scrim_behavior=0x7f0d002c;
         public static final int fab_transformation_sheet_behavior=0x7f0d002d;
+        public static final int hello_world=0x7f0d003c;
         public static final int hide_bottom_view_on_scroll_behavior=0x7f0d002e;
         public static final int library_name=0x7f0d0036;
-        public static final int load_more_items=0x7f0d003e;
+        public static final int load_more_items=0x7f0d0041;
         public static final int mtrl_chip_close_icon_content_description=0x7f0d002f;
         public static final int password_toggle_content_description=0x7f0d0030;
         public static final int path_password_eye=0x7f0d0031;
@@ -11519,7 +11817,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #DrawableStates_state_indeterminate
          */
         public static final int[] DrawableStates = {
-            0x7f0101eb
+            0x7f010207
         };
         /**
           <p>This symbol is the offset where the {@link com.companyname.sodexoapp.R.attr#state_indeterminate}
@@ -14986,7 +15284,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #SfCheckBox_isthreestate
          */
         public static final int[] SfCheckBox = {
-            0x7f0101ec, 0x7f0101ed, 0x7f0101ee
+            0x7f010208, 0x7f010209, 0x7f01020a
         };
         /**
           <p>This symbol is the offset where the {@link com.companyname.sodexoapp.R.attr#checked}
@@ -15034,6 +15332,544 @@ containing a value of this type.
           @attr name com.companyname.sodexoapp:isthreestate
         */
         public static final int SfCheckBox_isthreestate = 0;
+        /** Attributes that can be used with a SfMaps.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SfMaps_bubbleAlpha com.companyname.sodexoapp:bubbleAlpha}</code></td><td>Determines the auto fill color of the bubble.</td></tr>
+           <tr><td><code>{@link #SfMaps_bubbleFillColor com.companyname.sodexoapp:bubbleFillColor}</code></td><td>Determines the fill color of the bubble.</td></tr>
+           <tr><td><code>{@link #SfMaps_bubbleIsAutoFillColors com.companyname.sodexoapp:bubbleIsAutoFillColors}</code></td><td>Determines the auto fill color of the bubble.</td></tr>
+           <tr><td><code>{@link #SfMaps_bubbleMaxSize com.companyname.sodexoapp:bubbleMaxSize}</code></td><td>Determines the maximum size of the bubble.</td></tr>
+           <tr><td><code>{@link #SfMaps_bubbleMinSize com.companyname.sodexoapp:bubbleMinSize}</code></td><td>Determines the minimum size of the bubble.</td></tr>
+           <tr><td><code>{@link #SfMaps_bubbleVisibility com.companyname.sodexoapp:bubbleVisibility}</code></td><td>Determines the visibility of the bubble.</td></tr>
+           <tr><td><code>{@link #SfMaps_enableMapSelection com.companyname.sodexoapp:enableMapSelection}</code></td><td>Determines the selection of the shapes.</td></tr>
+           <tr><td><code>{@link #SfMaps_enableMapZooming com.companyname.sodexoapp:enableMapZooming}</code></td><td>Determines the zooming of the shapes.</td></tr>
+           <tr><td><code>{@link #SfMaps_mapLegendIcon com.companyname.sodexoapp:mapLegendIcon}</code></td><td>Determines the legend icon of the map .</td></tr>
+           <tr><td><code>{@link #SfMaps_mapLegendIconHeight com.companyname.sodexoapp:mapLegendIconHeight}</code></td><td>Determines the icon height of the legend.</td></tr>
+           <tr><td><code>{@link #SfMaps_mapLegendIconWidth com.companyname.sodexoapp:mapLegendIconWidth}</code></td><td>Determines the icon width of the legend.</td></tr>
+           <tr><td><code>{@link #SfMaps_mapLegendType com.companyname.sodexoapp:mapLegendType}</code></td><td>Determines the legend type of the map .</td></tr>
+           <tr><td><code>{@link #SfMaps_mapLegendVisibility com.companyname.sodexoapp:mapLegendVisibility}</code></td><td>Determines the visibility of the legend.</td></tr>
+           <tr><td><code>{@link #SfMaps_mapMarkerIcon com.companyname.sodexoapp:mapMarkerIcon}</code></td><td>Determines the marker icon of the map .</td></tr>
+           <tr><td><code>{@link #SfMaps_markerIconColor com.companyname.sodexoapp:markerIconColor}</code></td><td>Determines the marker icon color of the map marker.</td></tr>
+           <tr><td><code>{@link #SfMaps_markerIconSize com.companyname.sodexoapp:markerIconSize}</code></td><td>Determines the marker icon size of the map marker.</td></tr>
+           <tr><td><code>{@link #SfMaps_markerLabel com.companyname.sodexoapp:markerLabel}</code></td><td>Determines the marker label of the map marker.</td></tr>
+           <tr><td><code>{@link #SfMaps_markerLabelColor com.companyname.sodexoapp:markerLabelColor}</code></td><td>Determines the marker label color of the map marker.</td></tr>
+           <tr><td><code>{@link #SfMaps_markerLabelSize com.companyname.sodexoapp:markerLabelSize}</code></td><td>Determines the marker label size of the map marker.</td></tr>
+           <tr><td><code>{@link #SfMaps_markerLatitude com.companyname.sodexoapp:markerLatitude}</code></td><td>Determines the marker latitude of the map marker.</td></tr>
+           <tr><td><code>{@link #SfMaps_markerLongitude com.companyname.sodexoapp:markerLongitude}</code></td><td>Determines the marker longitude of the map marker.</td></tr>
+           <tr><td><code>{@link #SfMaps_selectedShapeColor com.companyname.sodexoapp:selectedShapeColor}</code></td><td>Determines the selected shapes color of the shapes.</td></tr>
+           <tr><td><code>{@link #SfMaps_selectedShapeStroke com.companyname.sodexoapp:selectedShapeStroke}</code></td><td>Determines the selected shapes stroke of the shapes.</td></tr>
+           <tr><td><code>{@link #SfMaps_selectedShapeStrokeThickness com.companyname.sodexoapp:selectedShapeStrokeThickness}</code></td><td>Determines the selected shapes stroke thickness of the shapes.</td></tr>
+           <tr><td><code>{@link #SfMaps_shapeFill com.companyname.sodexoapp:shapeFill}</code></td><td>Determines the shape fill color of the shapes.</td></tr>
+           <tr><td><code>{@link #SfMaps_shapeStroke com.companyname.sodexoapp:shapeStroke}</code></td><td>Determines the shape stroke of the shapes.</td></tr>
+           <tr><td><code>{@link #SfMaps_shapeStrokeThickness com.companyname.sodexoapp:shapeStrokeThickness}</code></td><td>Determines the shape stroke thickness of the shapes.</td></tr>
+           <tr><td><code>{@link #SfMaps_uri com.companyname.sodexoapp:uri}</code></td><td>Determines the uri of the layer.</td></tr>
+           </table>
+           @see #SfMaps_bubbleAlpha
+           @see #SfMaps_bubbleFillColor
+           @see #SfMaps_bubbleIsAutoFillColors
+           @see #SfMaps_bubbleMaxSize
+           @see #SfMaps_bubbleMinSize
+           @see #SfMaps_bubbleVisibility
+           @see #SfMaps_enableMapSelection
+           @see #SfMaps_enableMapZooming
+           @see #SfMaps_mapLegendIcon
+           @see #SfMaps_mapLegendIconHeight
+           @see #SfMaps_mapLegendIconWidth
+           @see #SfMaps_mapLegendType
+           @see #SfMaps_mapLegendVisibility
+           @see #SfMaps_mapMarkerIcon
+           @see #SfMaps_markerIconColor
+           @see #SfMaps_markerIconSize
+           @see #SfMaps_markerLabel
+           @see #SfMaps_markerLabelColor
+           @see #SfMaps_markerLabelSize
+           @see #SfMaps_markerLatitude
+           @see #SfMaps_markerLongitude
+           @see #SfMaps_selectedShapeColor
+           @see #SfMaps_selectedShapeStroke
+           @see #SfMaps_selectedShapeStrokeThickness
+           @see #SfMaps_shapeFill
+           @see #SfMaps_shapeStroke
+           @see #SfMaps_shapeStrokeThickness
+           @see #SfMaps_uri
+         */
+        public static final int[] SfMaps = {
+            0x7f0101eb, 0x7f0101ec, 0x7f0101ed, 0x7f0101ee,
+            0x7f0101ef, 0x7f0101f0, 0x7f0101f1, 0x7f0101f2,
+            0x7f0101f3, 0x7f0101f4, 0x7f0101f5, 0x7f0101f6,
+            0x7f0101f7, 0x7f0101f8, 0x7f0101f9, 0x7f0101fa,
+            0x7f0101fb, 0x7f0101fc, 0x7f0101fd, 0x7f0101fe,
+            0x7f0101ff, 0x7f010200, 0x7f010201, 0x7f010202,
+            0x7f010203, 0x7f010204, 0x7f010205, 0x7f010206
+        };
+        /**
+          <p>
+          @attr description
+          Determines the auto fill color of the bubble.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:bubbleAlpha
+        */
+        public static final int SfMaps_bubbleAlpha = 19;
+        /**
+          <p>
+          @attr description
+          Determines the fill color of the bubble.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:bubbleFillColor
+        */
+        public static final int SfMaps_bubbleFillColor = 14;
+        /**
+          <p>
+          @attr description
+          Determines the auto fill color of the bubble.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:bubbleIsAutoFillColors
+        */
+        public static final int SfMaps_bubbleIsAutoFillColors = 18;
+        /**
+          <p>
+          @attr description
+          Determines the maximum size of the bubble.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:bubbleMaxSize
+        */
+        public static final int SfMaps_bubbleMaxSize = 16;
+        /**
+          <p>
+          @attr description
+          Determines the minimum size of the bubble.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:bubbleMinSize
+        */
+        public static final int SfMaps_bubbleMinSize = 15;
+        /**
+          <p>
+          @attr description
+          Determines the visibility of the bubble.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:bubbleVisibility
+        */
+        public static final int SfMaps_bubbleVisibility = 17;
+        /**
+          <p>
+          @attr description
+          Determines the selection of the shapes.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:enableMapSelection
+        */
+        public static final int SfMaps_enableMapSelection = 23;
+        /**
+          <p>
+          @attr description
+          Determines the zooming of the shapes.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:enableMapZooming
+        */
+        public static final int SfMaps_enableMapZooming = 27;
+        /**
+          <p>
+          @attr description
+          Determines the legend icon of the map .
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>circle</code></td><td>1</td><td></td></tr>
+<tr><td><code>rectangle</code></td><td>2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:mapLegendIcon
+        */
+        public static final int SfMaps_mapLegendIcon = 12;
+        /**
+          <p>
+          @attr description
+          Determines the icon height of the legend.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:mapLegendIconHeight
+        */
+        public static final int SfMaps_mapLegendIconHeight = 9;
+        /**
+          <p>
+          @attr description
+          Determines the icon width of the legend.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:mapLegendIconWidth
+        */
+        public static final int SfMaps_mapLegendIconWidth = 10;
+        /**
+          <p>
+          @attr description
+          Determines the legend type of the map .
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>layers</code></td><td>0</td><td></td></tr>
+<tr><td><code>bubbles</code></td><td>1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:mapLegendType
+        */
+        public static final int SfMaps_mapLegendType = 13;
+        /**
+          <p>
+          @attr description
+          Determines the visibility of the legend.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:mapLegendVisibility
+        */
+        public static final int SfMaps_mapLegendVisibility = 11;
+        /**
+          <p>
+          @attr description
+          Determines the marker icon of the map .
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>rectangle</code></td><td>0</td><td></td></tr>
+<tr><td><code>diamond</code></td><td>1</td><td></td></tr>
+<tr><td><code>square</code></td><td>2</td><td></td></tr>
+<tr><td><code>circle</code></td><td>3</td><td></td></tr>
+<tr><td><code>image</code></td><td>4</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:mapMarkerIcon
+        */
+        public static final int SfMaps_mapMarkerIcon = 6;
+        /**
+          <p>
+          @attr description
+          Determines the marker icon color of the map marker.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:markerIconColor
+        */
+        public static final int SfMaps_markerIconColor = 3;
+        /**
+          <p>
+          @attr description
+          Determines the marker icon size of the map marker.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:markerIconSize
+        */
+        public static final int SfMaps_markerIconSize = 7;
+        /**
+          <p>
+          @attr description
+          Determines the marker label of the map marker.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:markerLabel
+        */
+        public static final int SfMaps_markerLabel = 0;
+        /**
+          <p>
+          @attr description
+          Determines the marker label color of the map marker.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:markerLabelColor
+        */
+        public static final int SfMaps_markerLabelColor = 4;
+        /**
+          <p>
+          @attr description
+          Determines the marker label size of the map marker.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:markerLabelSize
+        */
+        public static final int SfMaps_markerLabelSize = 5;
+        /**
+          <p>
+          @attr description
+          Determines the marker latitude of the map marker.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:markerLatitude
+        */
+        public static final int SfMaps_markerLatitude = 1;
+        /**
+          <p>
+          @attr description
+          Determines the marker longitude of the map marker.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:markerLongitude
+        */
+        public static final int SfMaps_markerLongitude = 2;
+        /**
+          <p>
+          @attr description
+          Determines the selected shapes color of the shapes.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:selectedShapeColor
+        */
+        public static final int SfMaps_selectedShapeColor = 24;
+        /**
+          <p>
+          @attr description
+          Determines the selected shapes stroke of the shapes.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:selectedShapeStroke
+        */
+        public static final int SfMaps_selectedShapeStroke = 25;
+        /**
+          <p>
+          @attr description
+          Determines the selected shapes stroke thickness of the shapes.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:selectedShapeStrokeThickness
+        */
+        public static final int SfMaps_selectedShapeStrokeThickness = 26;
+        /**
+          <p>
+          @attr description
+          Determines the shape fill color of the shapes.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:shapeFill
+        */
+        public static final int SfMaps_shapeFill = 20;
+        /**
+          <p>
+          @attr description
+          Determines the shape stroke of the shapes.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:shapeStroke
+        */
+        public static final int SfMaps_shapeStroke = 21;
+        /**
+          <p>
+          @attr description
+          Determines the shape stroke thickness of the shapes.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:shapeStrokeThickness
+        */
+        public static final int SfMaps_shapeStrokeThickness = 22;
+        /**
+          <p>
+          @attr description
+          Determines the uri of the layer.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.companyname.sodexoapp:uri
+        */
+        public static final int SfMaps_uri = 8;
         /** Attributes that can be used with a SfNumericTextBox.
            <p>Includes the following attributes:</p>
            <table>
@@ -15316,9 +16152,9 @@ containing a value of this type.
            @see #SfSegmentedControl_segmentedWidth
          */
         public static final int[] SfSegmentedControl = {
-            0x7f0101ef, 0x7f0101f0, 0x7f0101f1, 0x7f0101f2,
-            0x7f0101f3, 0x7f0101f4, 0x7f0101f5, 0x7f0101f6,
-            0x7f0101f7, 0x7f0101f8, 0x7f0101f9, 0x7f0101fa
+            0x7f01020b, 0x7f01020c, 0x7f01020d, 0x7f01020e,
+            0x7f01020f, 0x7f010210, 0x7f010211, 0x7f010212,
+            0x7f010213, 0x7f010214, 0x7f010215, 0x7f010216
         };
         /**
           <p>

@@ -18,4 +18,9 @@ C:\Users\aleja\Desktop\sodexo App\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netsta
 C:\Users\aleja\Desktop\sodexo App\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\SodexoApp.dll
 C:\Users\aleja\Desktop\sodexo App\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\ref\SodexoApp.dll
 C:\Users\aleja\Desktop\sodexo App\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\SodexoApp.pdb
+C:\Users\aleja\Desktop\sodexo App\SodexoApp\SodexoApp\SodexoApp\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\aleja\Desktop\sodexo App\SodexoApp\SodexoApp\SodexoApp\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\aleja\Desktop\sodexo App\SodexoApp\SodexoApp\SodexoApp\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\aleja\Desktop\sodexo App\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\SodexoApp.csproj.CopyComplete
+C:\Users\aleja\Desktop\sodexo App\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\SodexoApp.csproj.CoreCompileInputs.cache
 C:\Users\aleja\Desktop\sodexo App\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\XamlC.stamp

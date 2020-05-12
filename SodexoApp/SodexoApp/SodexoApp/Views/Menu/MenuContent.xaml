@@ -47,32 +47,41 @@
                 <ColumnDefinition Width="20"/>
             </Grid.ColumnDefinitions>
             <Grid.Resources>
-                <Style TargetType="Label" x:Key="title">
+                <Style TargetType="buttons:SfButton" x:Key="BtnMenu">
+                    <Setter Property="CornerRadius" Value="5"/>
+                    <Setter Property="BackgroundColor" Value="{StaticResource ColorMain}"/>
+                    <Setter Property="Margin" Value="5"/>
+                </Style>
+                <Style TargetType="Image" x:Key="BtnImage">
                     <Setter Property="VerticalOptions" Value="Center"/>
                     <Setter Property="HorizontalOptions" Value="Center"/>
+                    <Setter Property="Margin" Value="15"/>
+                </Style>
+                <Style TargetType="Label" x:Key="lbtit">
+                    <Setter Property="FontSize" Value="14"/>
+                    <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+                    <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                    <Setter Property="TextColor" Value="White"/>
+                    <Setter Property="Margin" Value="0,0,0,5"/>
                 </Style>
             </Grid.Resources>
 
 
 
-            <buttons:SfButton x:Name="BtnAlojamiento" Grid.Row="1" Grid.Column="1" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnAlojamiento_Clicked">
+            <buttons:SfButton x:Name="BtnAlojamiento" Grid.Row="1" Grid.Column="1" Clicked="BtnAlojamiento_Clicked" Style="{StaticResource BtnMenu}">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="1*"/>
                             <RowDefinition Height="30"/>
                         </Grid.RowDefinitions>
-
-                        <Grid>
-                            <Image Source="sodexo.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="40" />
-                        </Grid>
-                        
-                        <Label Grid.Row="1" Text="Alojamiento" FontSize="16" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" Margin="0,0,0,5"/>
+                        <Image Source="house.png" Style="{StaticResource BtnImage}" />
+                        <Label Grid.Row="1" Text="Alojamiento" Style="{StaticResource lbtit}"/>
                     </Grid>
                 </buttons:SfButton.Content>
             </buttons:SfButton>
 
-            <buttons:SfButton x:Name="BtnLavanderia" Grid.Row="1" Grid.Column="2" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnLavanderia_Clicked">
+            <buttons:SfButton x:Name="BtnLavanderia" Grid.Row="1" Grid.Column="2" Clicked="BtnLavanderia_Clicked" Style="{StaticResource BtnMenu}">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -80,16 +89,13 @@
                             <RowDefinition Height="30"/>
                         </Grid.RowDefinitions>
 
-                        <Grid>
-                            <Image Source="sodexo.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="40" />
-                        </Grid>
-
-                        <Label Grid.Row="1" Text="Lavanderia" FontSize="16" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" Margin="0,0,0,5"/>
+                        <Image Source="washing.png" Style="{StaticResource BtnImage}"/>
+                        <Label Grid.Row="1" Text="Lavanderia" Style="{StaticResource lbtit}"/>
                     </Grid>
                 </buttons:SfButton.Content>
             </buttons:SfButton>
 
-            <buttons:SfButton x:Name="BtnMantenimiento" Grid.Row="2" Grid.Column="1" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnMantenimiento_Clicked">
+            <buttons:SfButton x:Name="BtnMantenimiento" Grid.Row="2" Grid.Column="1" Clicked="BtnMantenimiento_Clicked" Style="{StaticResource BtnMenu}">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -97,16 +103,13 @@
                             <RowDefinition Height="30"/>
                         </Grid.RowDefinitions>
 
-                        <Grid>
-                            <Image Source="sodexo.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="40" />
-                        </Grid>
-
-                        <Label Grid.Row="1" Text="Mantenimiento" FontSize="16" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" Margin="0,0,0,5"/>
+                        <Image Source="tools.png" Style="{StaticResource BtnImage}"/>
+                        <Label Grid.Row="1" Text="Mantenimiento" Style="{StaticResource lbtit}"/>
                     </Grid>
                 </buttons:SfButton.Content>
             </buttons:SfButton>
 
-            <buttons:SfButton x:Name="BtnPerfil" Grid.Row="2" Grid.Column="2" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnPerfil_Clicked">
+            <buttons:SfButton x:Name="BtnPerfil" Grid.Row="2" Grid.Column="2" Clicked="BtnPerfil_Clicked" Style="{StaticResource BtnMenu}">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -114,11 +117,8 @@
                             <RowDefinition Height="30"/>
                         </Grid.RowDefinitions>
 
-                        <Grid>
-                            <Image Source="sodexo.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="40" />
-                        </Grid>
-
-                        <Label Grid.Row="1" Text="Perfil" FontSize="16" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" Margin="0,0,0,5"/>
+                        <Image Source="user.png" Style="{StaticResource BtnImage}"/>
+                        <Label Grid.Row="1" Text="Perfil" Style="{StaticResource lbtit}"/>
                     </Grid>
                 </buttons:SfButton.Content>
             </buttons:SfButton>

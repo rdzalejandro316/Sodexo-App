@@ -250,6 +250,36 @@ syncfusion.listview.xforms.android.MaterialSfListViewRenderer;crc64ede7d561f8925
 Syncfusion.ListView.XForms.Android.SwipeViewRenderer, Syncfusion.SfListView.XForms.Android;crc64ede7d561f89251b6.SwipeViewRenderer
 Syncfusion.ListView.XForms.Android.SwipeViewRenderer;crc64ede7d561f89251b6.SwipeViewRenderer
 syncfusion.listview.xforms.android.SwipeViewRenderer;crc64ede7d561f89251b6.SwipeViewRenderer
+Com.Syncfusion.Maps.SfMaps, Syncfusion.SfMaps.Android;crc641263c70d98efa901.SfMaps
+Com.Syncfusion.Maps.SfMaps;crc641263c70d98efa901.SfMaps
+com.syncfusion.maps.SfMaps;crc641263c70d98efa901.SfMaps
+Com.Syncfusion.Maps.MapElementsRenderer, Syncfusion.SfMaps.Android;crc641263c70d98efa901.MapElementsRenderer
+Com.Syncfusion.Maps.MapElementsRenderer;crc641263c70d98efa901.MapElementsRenderer
+com.syncfusion.maps.MapElementsRenderer;crc641263c70d98efa901.MapElementsRenderer
+Com.Syncfusion.Maps.TileLayer, Syncfusion.SfMaps.Android;crc641263c70d98efa901.TileLayer
+Com.Syncfusion.Maps.TileLayer;crc641263c70d98efa901.TileLayer
+com.syncfusion.maps.TileLayer;crc641263c70d98efa901.TileLayer
+Com.Syncfusion.Maps.MapLegendRenderer, Syncfusion.SfMaps.Android;crc641263c70d98efa901.MapLegendRenderer
+Com.Syncfusion.Maps.MapLegendRenderer;crc641263c70d98efa901.MapLegendRenderer
+com.syncfusion.maps.MapLegendRenderer;crc641263c70d98efa901.MapLegendRenderer
+Com.Syncfusion.Maps.ShapeLayer, Syncfusion.SfMaps.Android;crc641263c70d98efa901.ShapeLayer
+Com.Syncfusion.Maps.ShapeLayer;crc641263c70d98efa901.ShapeLayer
+com.syncfusion.maps.ShapeLayer;crc641263c70d98efa901.ShapeLayer
+Com.Syncfusion.Maps.TooltipView, Syncfusion.SfMaps.Android;crc641263c70d98efa901.TooltipView
+Com.Syncfusion.Maps.TooltipView;crc641263c70d98efa901.TooltipView
+com.syncfusion.maps.TooltipView;crc641263c70d98efa901.TooltipView
+Com.Syncfusion.Maps.ZoomLayout, Syncfusion.SfMaps.Android;crc641263c70d98efa901.ZoomLayout
+Com.Syncfusion.Maps.ZoomLayout;crc641263c70d98efa901.ZoomLayout
+com.syncfusion.maps.ZoomLayout;crc641263c70d98efa901.ZoomLayout
+Com.Syncfusion.Maps.ZoomLayout+ScaleListener, Syncfusion.SfMaps.Android;crc641263c70d98efa901.ZoomLayout_ScaleListener
+Com.Syncfusion.Maps.ZoomLayout.ScaleListener;crc641263c70d98efa901.ZoomLayout_ScaleListener
+com.syncfusion.maps.ZoomLayout_ScaleListener;crc641263c70d98efa901.ZoomLayout_ScaleListener
+Com.Syncfusion.Maps.ZoomLayout+GestureListener, Syncfusion.SfMaps.Android;crc641263c70d98efa901.ZoomLayout_GestureListener
+Com.Syncfusion.Maps.ZoomLayout.GestureListener;crc641263c70d98efa901.ZoomLayout_GestureListener
+com.syncfusion.maps.ZoomLayout_GestureListener;crc641263c70d98efa901.ZoomLayout_GestureListener
+Syncfusion.SfMaps.XForms.Droid.SfMapsRenderer, Syncfusion.SfMaps.XForms.Android;crc644da8c59357d7e769.SfMapsRenderer
+Syncfusion.SfMaps.XForms.Droid.SfMapsRenderer;crc644da8c59357d7e769.SfMapsRenderer
+syncfusion.sfmaps.xforms.droid.SfMapsRenderer;crc644da8c59357d7e769.SfMapsRenderer
 Com.Syncfusion.Numerictextbox.SfNumericTextBox, Syncfusion.SfNumericTextBox.Android;crc645adc4b20c7f8e944.SfNumericTextBox
 Com.Syncfusion.Numerictextbox.SfNumericTextBox;crc645adc4b20c7f8e944.SfNumericTextBox
 com.syncfusion.numerictextbox.SfNumericTextBox;crc645adc4b20c7f8e944.SfNumericTextBox

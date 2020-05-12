@@ -26,14 +26,14 @@ namespace SodexoApp.Views.Menu
             {
 
                 menuList = new List<MasterPageItem>();
-                menuList.Add(new MasterPageItem() { Title = "Inicio", IconSource = "cateting.png", TargetType = typeof(Views.Menu.Menu) });
-                menuList.Add(new MasterPageItem() { Title = "Pre Check-in", IconSource = "cateting.png", TargetType = typeof(Views.Menu.Menu) });
-                menuList.Add(new MasterPageItem() { Title = "Check-in", IconSource = "cateting.png", TargetType = typeof(Views.Menu.Menu) });
-                menuList.Add(new MasterPageItem() { Title = "Check-out", IconSource = "cateting.png", TargetType = typeof(Views.Menu.Menu) });
-                menuList.Add(new MasterPageItem() { Title = "Encuestas", IconSource = "cateting.png", TargetType = typeof(Views.Menu.Menu) });
-                menuList.Add(new MasterPageItem() { Title = "Capacitacion", IconSource = "cateting.png", TargetType = typeof(Views.Menu.Menu) });
-                menuList.Add(new MasterPageItem() { Title = "Consultar Empleado", IconSource = "cateting.png", TargetType = typeof(Views.Menu.Menu) });
-                menuList.Add(new MasterPageItem() { Title = "Cerrar Cession", IconSource = "cateting.png", TargetType = typeof(Views.Menu.Menu) });
+                menuList.Add(new MasterPageItem() { Title = "Inicio", IconSource = "mark.png", TargetType = typeof(Views.Menu.Menu) });
+                menuList.Add(new MasterPageItem() { Title = "Pre Check-in", IconSource = "mark.png", TargetType = typeof(Views.Menu.Menu) });
+                menuList.Add(new MasterPageItem() { Title = "Check-in", IconSource = "mark.png", TargetType = typeof(Views.Menu.Menu) });
+                menuList.Add(new MasterPageItem() { Title = "Check-out", IconSource = "mark.png", TargetType = typeof(Views.Menu.Menu) });
+                menuList.Add(new MasterPageItem() { Title = "Encuestas", IconSource = "mark.png", TargetType = typeof(Views.Menu.Menu) });
+                menuList.Add(new MasterPageItem() { Title = "Capacitacion", IconSource = "mark.png", TargetType = typeof(Views.Menu.Menu) });
+                menuList.Add(new MasterPageItem() { Title = "Consultar Empleado", IconSource = "mark.png", TargetType = typeof(Views.Menu.Menu) });
+                menuList.Add(new MasterPageItem() { Title = "Cerrar Cession", IconSource = "mark.png", TargetType = typeof(Views.Menu.Menu) });
                 navigationDrawerList.ItemsSource = menuList;
 
                 TxName.Text = App.NameUser;

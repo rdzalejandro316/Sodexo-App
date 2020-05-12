@@ -141,6 +141,10 @@
               "target": "Package",
               "version": "[17.4.0.55, )"
             },
+            "Syncfusion.Xamarin.SfMaps": {
+              "target": "Package",
+              "version": "[17.4.0.55, )"
+            },
             "Syncfusion.Xamarin.SfPopupLayout": {
               "target": "Package",
               "version": "[17.4.0.55, )"

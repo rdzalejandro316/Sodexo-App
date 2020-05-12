@@ -9,7 +9,7 @@
              x:Class="SodexoApp.Views.Menu.MenuItems" Title="Master">
 
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="White">
             <Grid BackgroundColor="{StaticResource ColorMain}" HeightRequest="120">
                 <StackLayout Orientation="Horizontal">
                     <sfavatar:SfAvatarView ContentType="AvatarCharacter"
@@ -36,7 +36,6 @@
 
             </Grid>
 
-
             <ListView x:Name="navigationDrawerList"
                   RowHeight="60"
                   SeparatorVisibility="Default"
@@ -51,8 +50,8 @@
                              Padding="20,10,0,10"
                              Spacing="20">
                                 <Image Source="{Binding IconSource}"
-                                    WidthRequest="20"
-                                    HeightRequest="20"
+                                    WidthRequest="15"
+                                    HeightRequest="15"
                                     VerticalOptions="Center" />
 
                                 <Label Text="{Binding Title}"
@@ -64,7 +63,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
