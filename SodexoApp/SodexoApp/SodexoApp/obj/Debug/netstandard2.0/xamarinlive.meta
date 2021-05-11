@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XamlProjectMeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Files>
+    <XamlFileMeta>
+      <FilePath>D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\App.xaml</FilePath>
+      <Hash>67-41-F3-18-68-A5-9F-D0-09-39-0D-A8-29-12-C2-E9</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\Login.xaml</FilePath>
+      <Hash>2D-46-C9-80-E9-9E-E5-A5-23-0C-09-3F-1D-B8-1B-48</Hash>
+      <Properties>
+        <string>BackgroundColor</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\Views\Menu\Alojamiento\AlojamientoOpciones.xaml</FilePath>
+      <Hash>12-E9-CF-CF-6F-C5-A2-AA-93-7E-C2-B3-09-A8-07-F3</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\Views\Menu\Alojamiento\ConsultaVivienda.xaml</FilePath>
+      <Hash>92-71-C8-74-48-38-5D-DB-CA-01-4D-34-95-2A-1E-04</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\Views\Menu\Lavanderia\LavanderiaInfo.xaml</FilePath>
+      <Hash>0B-EF-CF-AE-CA-D4-99-80-FF-80-4F-A6-44-81-DD-E0</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\Views\Menu\Mantenimiento\Peticion.xaml</FilePath>
+      <Hash>6D-FF-62-3B-46-D6-AC-83-30-52-0A-B1-EA-6B-F3-7C</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\Views\Menu\Menu.xaml</FilePath>
+      <Hash>D1-18-1C-0E-3B-4E-09-4D-22-E8-9D-17-B1-FE-0A-F2</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\Views\Menu\MenuContent.xaml</FilePath>
+      <Hash>44-77-22-9F-81-EF-1F-8C-AB-63-6D-F5-6E-4D-A3-B3</Hash>
+      <Properties>
+        <string>BackgroundColor</string>
+        <string>Title</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\Views\Menu\MenuItems.xaml</FilePath>
+      <Hash>F4-C1-B4-53-F7-99-11-1A-78-05-DF-DE-5D-D5-7D-C9</Hash>
+      <Properties>
+        <string>Title</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\Views\Menu\Perfil\Perfil.xaml</FilePath>
+      <Hash>F6-47-47-2C-A0-06-57-DD-A2-DD-40-B8-91-FD-E0-AB</Hash>
+      <Properties>
+        <string>Title</string>
+      </Properties>
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\Views\Notificacion\Notification.xaml</FilePath>
+      <Hash>4D-AF-13-90-36-F1-9F-AE-04-39-3A-37-69-D2-27-67</Hash>
+      <Properties>
+        <string>Appearing</string>
+      </Properties>
+    </XamlFileMeta>
+  </Files>
+</XamlProjectMeta>

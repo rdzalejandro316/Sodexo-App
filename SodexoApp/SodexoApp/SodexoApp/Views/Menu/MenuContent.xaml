@@ -36,8 +36,9 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -55,7 +56,7 @@
                 <Style TargetType="Image" x:Key="BtnImage">
                     <Setter Property="VerticalOptions" Value="Center"/>
                     <Setter Property="HorizontalOptions" Value="Center"/>
-                    <Setter Property="Margin" Value="15"/>
+                    <Setter Property="Margin" Value="5,10,5,5"/>
                 </Style>
                 <Style TargetType="Label" x:Key="lbtit">
                     <Setter Property="FontSize" Value="14"/>
@@ -70,7 +71,7 @@
 
             <buttons:SfButton x:Name="BtnAlojamiento" Grid.Row="1" Grid.Column="1" Clicked="BtnAlojamiento_Clicked" Style="{StaticResource BtnMenu}">
                 <buttons:SfButton.Content>
-                    <Grid>
+                    <Grid >
                         <Grid.RowDefinitions>
                             <RowDefinition Height="1*"/>
                             <RowDefinition Height="30"/>
@@ -81,7 +82,23 @@
                 </buttons:SfButton.Content>
             </buttons:SfButton>
 
-            <buttons:SfButton x:Name="BtnLavanderia" Grid.Row="1" Grid.Column="2" Clicked="BtnLavanderia_Clicked" Style="{StaticResource BtnMenu}">
+            <buttons:SfButton x:Name="BtnAlimentacion" Grid.Row="1" Grid.Column="2" Clicked="BtnAlimentacion_Clicked" Style="{StaticResource BtnMenu}">
+                <buttons:SfButton.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+
+                        <Image Source="restaurante.png" Style="{StaticResource BtnImage}"/>
+                        <Label Grid.Row="1" Text="Alimentacion" Style="{StaticResource lbtit}"/>
+                    </Grid>
+                </buttons:SfButton.Content>
+            </buttons:SfButton>
+            
+            
+            
+            <buttons:SfButton x:Name="BtnLavanderia" Grid.Row="2" Grid.Column="1" Clicked="BtnLavanderia_Clicked" Style="{StaticResource BtnMenu}">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -95,7 +112,23 @@
                 </buttons:SfButton.Content>
             </buttons:SfButton>
 
-            <buttons:SfButton x:Name="BtnMantenimiento" Grid.Row="2" Grid.Column="1" Clicked="BtnMantenimiento_Clicked" Style="{StaticResource BtnMenu}">
+            <buttons:SfButton x:Name="BtnQR" Grid.Row="2" Grid.Column="2" Clicked="BtnQR_Clicked" Style="{StaticResource BtnMenu}">
+                <buttons:SfButton.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+
+                        <Image Source="qr.png" Style="{StaticResource BtnImage}"/>
+                        <Label Grid.Row="1" Text="QR" Style="{StaticResource lbtit}"/>
+                    </Grid>
+                </buttons:SfButton.Content>
+            </buttons:SfButton>
+            
+            
+           
+            <buttons:SfButton x:Name="BtnMantenimiento" Grid.Row="3" Grid.Column="1" Clicked="BtnMantenimiento_Clicked" Style="{StaticResource BtnMenu}">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -109,7 +142,7 @@
                 </buttons:SfButton.Content>
             </buttons:SfButton>
 
-            <buttons:SfButton x:Name="BtnPerfil" Grid.Row="2" Grid.Column="2" Clicked="BtnPerfil_Clicked" Style="{StaticResource BtnMenu}">
+            <buttons:SfButton x:Name="BtnConfig" Grid.Row="3" Grid.Column="2" Clicked="BtnConfig_Clicked" Style="{StaticResource BtnMenu}">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -118,7 +151,7 @@
                         </Grid.RowDefinitions>
 
                         <Image Source="user.png" Style="{StaticResource BtnImage}"/>
-                        <Label Grid.Row="1" Text="Perfil" Style="{StaticResource lbtit}"/>
+                        <Label Grid.Row="1" Text="Configuracion" Style="{StaticResource lbtit}"/>
                     </Grid>
                 </buttons:SfButton.Content>
             </buttons:SfButton>

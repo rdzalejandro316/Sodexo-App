@@ -16,6 +16,41 @@ namespace SodexoApp.Views.Menu.Alojamiento
         {
             InitializeComponent();
         }
+       
+
+        private async void BtnMapaViviendas_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+
+                int idacceso = (int)SiaApi.AccesoEnum.BtnMapaViviendas;
+
+                if (!SiaConfig.ValidAcceso(idacceso.ToString()))
+                {
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    return;
+                }
+                else
+                {
+
+                }
+
+            }
+            catch (Exception w)
+            {
+                await DisplayAlert("alerta", "error al abrir:" + w, "OK");
+            }
+        }
+
+        private void BtnConsultaVivienda_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnConsultaUsuario_Clicked(object sender, EventArgs e)
+        {
+
+        }
 
         private void BtnPrechekin_Clicked(object sender, EventArgs e)
         {
@@ -31,5 +66,8 @@ namespace SodexoApp.Views.Menu.Alojamiento
         {
 
         }
+
+
+
     }
 }

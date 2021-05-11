@@ -98,6 +98,23 @@
           "lib/MonoAndroid10/Syncfusion.SfBadgeView.XForms.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfBusyIndicator/17.4.0.55": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.55",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.Android.dll": {},
+          "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.XForms.Android.dll": {},
+          "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.Android.dll": {},
+          "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.XForms.Android.dll": {},
+          "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        }
+      },
       "Syncfusion.Xamarin.SfComboBox/17.4.0.55": {
         "type": "package",
         "dependencies": {
@@ -197,6 +214,25 @@
         "runtime": {
           "lib/MonoAndroid10/Syncfusion.SfPopupLayout.XForms.Android.dll": {},
           "lib/MonoAndroid10/Syncfusion.SfPopupLayout.XForms.dll": {}
+        }
+      },
+      "System.Data.SqlClient/4.8.2": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -1006,11 +1042,13 @@
           "Syncfusion.Xamarin.Cards": "17.4.0.55",
           "Syncfusion.Xamarin.Core": "17.4.0.55",
           "Syncfusion.Xamarin.SfBadgeView": "17.4.0.55",
+          "Syncfusion.Xamarin.SfBusyIndicator": "17.4.0.55",
           "Syncfusion.Xamarin.SfComboBox": "17.4.0.55",
           "Syncfusion.Xamarin.SfDataGrid": "17.4.0.55",
           "Syncfusion.Xamarin.SfListView": "17.4.0.55",
           "Syncfusion.Xamarin.SfMaps": "17.4.0.55",
           "Syncfusion.Xamarin.SfPopupLayout": "17.4.0.55",
+          "System.Data.SqlClient": "4.8.2",
           "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.908675"
         },
@@ -1241,6 +1279,35 @@
         "syncfusion.xamarin.sfbadgeview.nuspec"
       ]
     },
+    "Syncfusion.Xamarin.SfBusyIndicator/17.4.0.55": {
+      "sha512": "VKFd3/YxodCVBY9PcnR7Et3qNe4/PU7JU4Qr74y/SZubxIIqNaNYgTJzdijUOLUUPKYVooGd+u4xj71qN6s7VQ==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfbusyindicator/17.4.0.55",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.Android.xml",
+        "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfBusyIndicator.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfBusyIndicator.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfBusyIndicator.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfBusyIndicator.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfBusyIndicator.iOS.xml",
+        "lib/netstandard2.0/Syncfusion.SfBusyIndicator.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfBusyIndicator.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfBusyIndicator.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfBusyIndicator.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.xml",
+        "syncfusion.xamarin.sfbusyindicator.17.4.0.55.nupkg.sha512",
+        "syncfusion.xamarin.sfbusyindicator.nuspec"
+      ]
+    },
     "Syncfusion.Xamarin.SfComboBox/17.4.0.55": {
       "sha512": "aWDaoRJeXnx8hm3m9mmWASpWe126eCGV2VEmmtnGvAq9bhCTrYdC3uNM/lj14/ViMkEB1J+ed3tcW/agHkhUyA==",
       "type": "package",
@@ -1427,6 +1494,92 @@
         "lib/uap10.0/Syncfusion.SfPopupLayout.XForms.xml",
         "syncfusion.xamarin.sfpopuplayout.17.4.0.55.nupkg.sha512",
         "syncfusion.xamarin.sfpopuplayout.nuspec"
+      ]
+    },
+    "System.Data.SqlClient/4.8.2": {
+      "sha512": "80vGtW6uLB4AkyrdVuKTXYUyuXDPAsSKbTVfvjndZaRAYxzFzWhJbvUfeAKrN+128ycWZjLIAl61dFUwWHOOTw==",
+      "type": "package",
+      "path": "system.data.sqlclient/4.8.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net451/System.Data.SqlClient.dll",
+        "lib/net46/System.Data.SqlClient.dll",
+        "lib/net461/System.Data.SqlClient.dll",
+        "lib/net461/System.Data.SqlClient.xml",
+        "lib/netcoreapp2.1/System.Data.SqlClient.dll",
+        "lib/netcoreapp2.1/System.Data.SqlClient.xml",
+        "lib/netstandard1.2/System.Data.SqlClient.dll",
+        "lib/netstandard1.2/System.Data.SqlClient.xml",
+        "lib/netstandard1.3/System.Data.SqlClient.dll",
+        "lib/netstandard1.3/System.Data.SqlClient.xml",
+        "lib/netstandard2.0/System.Data.SqlClient.dll",
+        "lib/netstandard2.0/System.Data.SqlClient.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net451/System.Data.SqlClient.dll",
+        "ref/net46/System.Data.SqlClient.dll",
+        "ref/net461/System.Data.SqlClient.dll",
+        "ref/net461/System.Data.SqlClient.xml",
+        "ref/netcoreapp2.1/System.Data.SqlClient.dll",
+        "ref/netcoreapp2.1/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/System.Data.SqlClient.dll",
+        "ref/netstandard1.2/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/de/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/es/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/fr/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/it/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/ja/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/ko/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/ru/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/zh-hans/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/zh-hant/System.Data.SqlClient.xml",
+        "ref/netstandard1.3/System.Data.SqlClient.dll",
+        "ref/netstandard1.3/System.Data.SqlClient.xml",
+        "ref/netstandard1.3/de/System.Data.SqlClient.xml",
+        "ref/netstandard1.3/es/System.Data.SqlClient.xml",
+        "ref/netstandard1.3/fr/System.Data.SqlClient.xml",
+        "ref/netstandard1.3/it/System.Data.SqlClient.xml",
+        "ref/netstandard1.3/ja/System.Data.SqlClient.xml",
+        "ref/netstandard1.3/ko/System.Data.SqlClient.xml",
+        "ref/netstandard1.3/ru/System.Data.SqlClient.xml",
+        "ref/netstandard1.3/zh-hans/System.Data.SqlClient.xml",
+        "ref/netstandard1.3/zh-hant/System.Data.SqlClient.xml",
+        "ref/netstandard2.0/System.Data.SqlClient.dll",
+        "ref/netstandard2.0/System.Data.SqlClient.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll",
+        "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.xml",
+        "runtimes/unix/lib/netstandard1.3/System.Data.SqlClient.dll",
+        "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll",
+        "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.xml",
+        "runtimes/win/lib/net451/System.Data.SqlClient.dll",
+        "runtimes/win/lib/net46/System.Data.SqlClient.dll",
+        "runtimes/win/lib/net461/System.Data.SqlClient.dll",
+        "runtimes/win/lib/net461/System.Data.SqlClient.xml",
+        "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.xml",
+        "runtimes/win/lib/netstandard1.3/System.Data.SqlClient.dll",
+        "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll",
+        "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.xml",
+        "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.dll",
+        "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.xml",
+        "system.data.sqlclient.4.8.2.nupkg.sha512",
+        "system.data.sqlclient.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
@@ -2550,11 +2703,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aleja\\Desktop\\sodexo App\\SodexoApp\\SodexoApp\\SodexoApp.Android\\SodexoApp.Android.csproj",
+      "projectUniqueName": "D:\\Empresas\\Empresas\\Sodexo Android\\SodexoApp\\SodexoApp\\SodexoApp.Android\\SodexoApp.Android.csproj",
       "projectName": "SodexoApp.Android",
-      "projectPath": "C:\\Users\\aleja\\Desktop\\sodexo App\\SodexoApp\\SodexoApp\\SodexoApp.Android\\SodexoApp.Android.csproj",
+      "projectPath": "D:\\Empresas\\Empresas\\Sodexo Android\\SodexoApp\\SodexoApp\\SodexoApp.Android\\SodexoApp.Android.csproj",
       "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aleja\\Desktop\\sodexo App\\SodexoApp\\SodexoApp\\SodexoApp.Android\\obj\\",
+      "outputPath": "D:\\Empresas\\Empresas\\Sodexo Android\\SodexoApp\\SodexoApp\\SodexoApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2575,8 +2728,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\aleja\\Desktop\\sodexo App\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj": {
-              "projectPath": "C:\\Users\\aleja\\Desktop\\sodexo App\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj"
+            "D:\\Empresas\\Empresas\\Sodexo Android\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj": {
+              "projectPath": "D:\\Empresas\\Empresas\\Sodexo Android\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj"
             }
           }
         }

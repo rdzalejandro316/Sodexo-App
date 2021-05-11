@@ -7,23 +7,38 @@
              mc:Ignorable="d"
              x:Class="SodexoApp.Views.Menu.Alojamiento.AlojamientoOpciones">
 
+    <ContentPage.Resources>
+        <Style TargetType="Image" x:Key="BtnImage">
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="Margin" Value="5,10,5,5"/>
+        </Style>
+        <Style TargetType="Label" x:Key="lbtit">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="Margin" Value="0,0,0,5"/>
+        </Style>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="50"/>
                 <RowDefinition Height="1*"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="20"/>
                 <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="20"/>
             </Grid.ColumnDefinitions>
 
-
-            <buttons:SfButton x:Name="BtnPrechekin" Grid.Row="1" Grid.Column="1" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnPrechekin_Clicked">
+            <buttons:SfButton x:Name="BtnMapaViviendas" Grid.Row="1" Grid.Column="1" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnMapaViviendas_Clicked">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -31,16 +46,15 @@
                             <RowDefinition Height="30"/>
                         </Grid.RowDefinitions>
 
-                        <Grid>
-                            <Image Source="sodexo.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="40" />
-                        </Grid>
 
-                        <Label Grid.Row="1" Text="Pre Check-In" FontSize="16" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" Margin="0,0,0,10"/>
+                        <Image Source="mapa.png" Style="{StaticResource BtnImage}" />
+                        <Label Grid.Row="1" Text="Mapa Viviendas" Style="{StaticResource lbtit}"/>
+
                     </Grid>
                 </buttons:SfButton.Content>
             </buttons:SfButton>
 
-            <buttons:SfButton x:Name="Btnchekin" Grid.Row="2" Grid.Column="1" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="Btnchekin_Clicked">
+            <buttons:SfButton x:Name="BtnConsultaVivienda" Grid.Row="1" Grid.Column="2" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnConsultaVivienda_Clicked">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -48,16 +62,16 @@
                             <RowDefinition Height="30"/>
                         </Grid.RowDefinitions>
 
-                        <Grid>
-                            <Image Source="sodexo.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="40" />
-                        </Grid>
 
-                        <Label Grid.Row="1" Text="Check-In" FontSize="16" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" Margin="0,0,0,10"/>
+                        <Image Source="consultavivienda.png" Style="{StaticResource BtnImage}" />
+                        <Label Grid.Row="1" Text="Consulta Vivienda" Style="{StaticResource lbtit}"/>
+
                     </Grid>
                 </buttons:SfButton.Content>
             </buttons:SfButton>
 
-            <buttons:SfButton x:Name="Btnchekout" Grid.Row="3" Grid.Column="1" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="Btnchekout_Clicked">
+            
+            <buttons:SfButton x:Name="BtnConsultaUsuario" Grid.Row="2" Grid.Column="1" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnConsultaUsuario_Clicked">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -65,11 +79,54 @@
                             <RowDefinition Height="30"/>
                         </Grid.RowDefinitions>
 
-                        <Grid>
-                            <Image Source="sodexo.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="40" />
-                        </Grid>
 
-                        <Label Grid.Row="1" Text="Check-Out" FontSize="16" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White" Margin="0,0,0,10"/>
+                        <Image Source="consultausuario.png" Style="{StaticResource BtnImage}" />
+                        <Label Grid.Row="1" Text="Consulta Usuario" Style="{StaticResource lbtit}"/>
+
+                    </Grid>
+                </buttons:SfButton.Content>
+            </buttons:SfButton>
+
+            <buttons:SfButton x:Name="BtnPrechekin" Grid.Row="2" Grid.Column="2" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnPrechekin_Clicked">
+                <buttons:SfButton.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+
+
+                        <Image Source="prechekin.png" Style="{StaticResource BtnImage}" />
+                        <Label Grid.Row="1" Text="Pre-CheckIn" Style="{StaticResource lbtit}"/>
+                    </Grid>
+                </buttons:SfButton.Content>
+            </buttons:SfButton>
+
+
+            <buttons:SfButton x:Name="Btnchekin" Grid.Row="3" Grid.Column="1" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="Btnchekin_Clicked">
+                <buttons:SfButton.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+
+                        <Image Source="checkin.png" Style="{StaticResource BtnImage}" />
+                        <Label Grid.Row="1" Text="Check In" Style="{StaticResource lbtit}"/>
+                    </Grid>
+                </buttons:SfButton.Content>
+            </buttons:SfButton>
+
+            <buttons:SfButton x:Name="Btnchekout" Grid.Row="3" Grid.Column="2" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="Btnchekout_Clicked">
+                <buttons:SfButton.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+
+                        <Image Source="checkout.png" Style="{StaticResource BtnImage}" />
+                        <Label Grid.Row="1" Text="Check-Out" Style="{StaticResource lbtit}"/>
                     </Grid>
                 </buttons:SfButton.Content>
             </buttons:SfButton>

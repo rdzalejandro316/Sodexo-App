@@ -90,7 +90,7 @@ namespace SodexoApp.Views.Notificacion
             {
                 ret = SiaApi.Query("select * from CtNotification", "-2",1);  
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }

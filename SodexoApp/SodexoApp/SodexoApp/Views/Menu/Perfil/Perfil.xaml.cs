@@ -56,7 +56,7 @@ namespace SodexoApp.Views.Menu.Perfil
             }
             catch (Exception w)
             {
-                DisplayAlert("alerta", "Error en load:" + w, "OK");
+                await DisplayAlert("alerta", "Error en load:" + w, "OK");
             }
         }
 

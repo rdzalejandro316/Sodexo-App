@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jG++dCnBzboAWgLVEiRGGCS0VdW6cOGYsF2j6vfjsFATFTKHlKB3eSYJAtu9uSE1uGE0/OOrwpBEsEvgqxYBFA==",
+  "dgSpecHash": "Vuj2ywiVvsVGTdof+NM5+Jbvi7gOHRx/MZ6LbR9cflZE5qxvwcdTGJa5fWJ3vWxksILBA+HrWsgwYk45H+UWEA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleja\\Desktop\\sodexo App\\SodexoApp\\SodexoApp\\SodexoApp.Android\\SodexoApp.Android.csproj",
+  "projectFilePath": "D:\\Empresas\\Empresas\\Sodexo Android\\SodexoApp\\SodexoApp\\SodexoApp.Android\\SodexoApp.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleja\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.licensing\\17.4.0.55\\syncfusion.licensing.17.4.0.55.nupkg.sha512",
@@ -12,12 +12,14 @@
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.datasource\\17.4.0.55\\syncfusion.xamarin.datasource.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.gridcommon\\17.4.0.55\\syncfusion.xamarin.gridcommon.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfbadgeview\\17.4.0.55\\syncfusion.xamarin.sfbadgeview.17.4.0.55.nupkg.sha512",
+    "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfbusyindicator\\17.4.0.55\\syncfusion.xamarin.sfbusyindicator.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfcombobox\\17.4.0.55\\syncfusion.xamarin.sfcombobox.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfdatagrid\\17.4.0.55\\syncfusion.xamarin.sfdatagrid.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sflistview\\17.4.0.55\\syncfusion.xamarin.sflistview.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfmaps\\17.4.0.55\\syncfusion.xamarin.sfmaps.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfnumerictextbox\\17.4.0.55\\syncfusion.xamarin.sfnumerictextbox.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfpopuplayout\\17.4.0.55\\syncfusion.xamarin.sfpopuplayout.17.4.0.55.nupkg.sha512",
+    "C:\\Users\\aleja\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",
@@ -56,7 +58,7 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.vector.drawable\\28.0.0.3\\xamarin.android.support.vector.drawable.28.0.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.versionedparcelable\\28.0.0.3\\xamarin.android.support.versionedparcelable.28.0.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.viewpager\\28.0.0.3\\xamarin.android.support.viewpager.28.0.0.3.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\aleja\\.nuget\\packages\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\xamarin.forms\\4.3.0.908675\\xamarin.forms.4.3.0.908675.nupkg.sha512"
   ],
   "logs": []

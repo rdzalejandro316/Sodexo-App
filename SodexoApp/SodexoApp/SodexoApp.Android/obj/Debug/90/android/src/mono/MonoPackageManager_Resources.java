@@ -18,6 +18,9 @@ public class MonoPackageManager_Resources {
 		"Syncfusion.Licensing.dll",
 		"Syncfusion.SfBadgeView.XForms.Android.dll",
 		"Syncfusion.SfBadgeView.XForms.dll",
+		"Syncfusion.SfBusyIndicator.Android.dll",
+		"Syncfusion.SfBusyIndicator.XForms.Android.dll",
+		"Syncfusion.SfBusyIndicator.XForms.dll",
 		"Syncfusion.SfComboBox.XForms.Android.dll",
 		"Syncfusion.SfComboBox.XForms.dll",
 		"Syncfusion.SfDataGrid.XForms.Android.dll",
@@ -77,5 +80,5 @@ public class MonoPackageManager_Resources {
 	};
 	public static String[] Dependencies = new String[]{
 	};
-	public static String ApiPackageName = null;
+	public static String ApiPackageName = "Mono.Android.Platform.ApiLevel_28";
 }

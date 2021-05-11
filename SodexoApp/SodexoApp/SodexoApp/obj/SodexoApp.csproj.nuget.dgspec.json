@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aleja\\Desktop\\sodexo App\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj": {}
+    "D:\\Empresas\\Empresas\\Sodexo Android\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aleja\\Desktop\\sodexo App\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj": {
+    "D:\\Empresas\\Empresas\\Sodexo Android\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleja\\Desktop\\sodexo App\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj",
+        "projectUniqueName": "D:\\Empresas\\Empresas\\Sodexo Android\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj",
         "projectName": "SodexoApp",
-        "projectPath": "C:\\Users\\aleja\\Desktop\\sodexo App\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj",
+        "projectPath": "D:\\Empresas\\Empresas\\Sodexo Android\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj",
         "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleja\\Desktop\\sodexo App\\SodexoApp\\SodexoApp\\SodexoApp\\obj\\",
+        "outputPath": "D:\\Empresas\\Empresas\\Sodexo Android\\SodexoApp\\SodexoApp\\SodexoApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -30,6 +30,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -41,6 +42,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -68,6 +70,10 @@
               "target": "Package",
               "version": "[17.4.0.55, )"
             },
+            "Syncfusion.Xamarin.SfBusyIndicator": {
+              "target": "Package",
+              "version": "[17.4.0.55, )"
+            },
             "Syncfusion.Xamarin.SfComboBox": {
               "target": "Package",
               "version": "[17.4.0.55, )"
@@ -88,6 +94,10 @@
               "target": "Package",
               "version": "[17.4.0.55, )"
             },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.3.1, )"
@@ -107,7 +117,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,5 @@
-﻿using Syncfusion.XForms.Cards;
+﻿using SodexoApp.Helpers;
+using Syncfusion.XForms.Cards;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace SodexoApp.Views.Menu
         public MenuContent()
         {
             InitializeComponent();
+            SiaApi.LoadAccesos();
         }
         
 
@@ -22,21 +24,70 @@ namespace SodexoApp.Views.Menu
         {
             try
             {
-                App.MasterD.IsPresented = false;
-                await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Alojamiento.AlojamientoOpciones());
+
+                int idacceso = (int)SiaApi.AccesoEnum.BtnAlojamiento;
+                
+                if (!SiaConfig.ValidAcceso(idacceso.ToString()))
+                {                    
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    return;
+                }
+                else
+                {
+                    App.MasterD.IsPresented = false;
+                    await App.MasterD.Detail.Navigation.PushAsync(new Alojamiento.AlojamientoOpciones());
+                }
+
             }
             catch (Exception w)
             {
-                await DisplayAlert("errro","error al abrir:"+w,"OK");
+                await DisplayAlert("alerta","error al abrir:"+w,"OK");
             }
         }
+        private async void BtnAlimentacion_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+
+                int idacceso = (int)SiaApi.AccesoEnum.BtnAlimentacion;
+
+                if (!SiaConfig.ValidAcceso(idacceso.ToString()))
+                {
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    return;
+                }
+                else
+                {
+                    //App.MasterD.IsPresented = false;
+                    //await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Alojamiento.ConsultaVivienda());
+                }
+
+            }
+            catch (Exception w)
+            {
+                await DisplayAlert("errro", "error al abrir:" + w, "OK");
+            }
+        }
+
 
         private async void BtnLavanderia_Clicked(object sender, EventArgs e)
         {
             try
             {
-                App.MasterD.IsPresented = false;
-                await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Lavanderia.LavanderiaInfo());
+                int idacceso = (int)SiaApi.AccesoEnum.BtnLavanderia;
+
+                if (!SiaConfig.ValidAcceso(idacceso.ToString()))
+                {
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    return;
+                }
+                else
+                {
+                    App.MasterD.IsPresented = false;
+                    await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Lavanderia.LavanderiaInfo());
+                }
+
+                
             }
             catch (Exception w)
             {
@@ -48,8 +99,20 @@ namespace SodexoApp.Views.Menu
         {
             try
             {
-                App.MasterD.IsPresented = false;
-                await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Mantenimiento.Peticion());
+                int idacceso = (int)SiaApi.AccesoEnum.BtnMantenimiento;
+
+                if (!SiaConfig.ValidAcceso(idacceso.ToString()))
+                {
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    return;
+                }
+                else
+                {
+                    App.MasterD.IsPresented = false;
+                    await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Mantenimiento.Peticion());
+                }
+
+
             }
             catch (Exception w)
             {
@@ -57,33 +120,85 @@ namespace SodexoApp.Views.Menu
             }
         }
 
-        private async void BtnPerfil_Clicked(object sender, EventArgs e)
+
+        private async void BtnQR_Clicked(object sender, EventArgs e)
         {
             try
             {
-                App.MasterD.IsPresented = false;
-                await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Perfil.Perfil());
+                int idacceso = (int)SiaApi.AccesoEnum.BtnQR;
+
+                if (!SiaConfig.ValidAcceso(idacceso.ToString()))
+                {
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    return;
+                }
+                else
+                {
+                    App.MasterD.IsPresented = false;
+                    await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Mantenimiento.Peticion());
+                }
+
+
             }
             catch (Exception w)
             {
                 await DisplayAlert("errro", "error al abrir:" + w, "OK");
             }
         }
+
+        private async void BtnConfig_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                int idacceso = (int)SiaApi.AccesoEnum.BtnConfig;
+
+                if (!SiaConfig.ValidAcceso(idacceso.ToString()))
+                {
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    return;
+                }
+                else
+                {
+                    App.MasterD.IsPresented = false;
+                    await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Mantenimiento.Peticion());
+                }
+
+
+            }
+            catch (Exception w)
+            {
+                await DisplayAlert("errro", "error al abrir:" + w, "OK");
+            }
+        }
+
 
         private async void BtnNotification_Clicked(object sender, EventArgs e)
         {
             try
             {
-                App.MasterD.IsPresented = false;
-                await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Notificacion.Notification());                
+                int idacceso = (int)SiaApi.AccesoEnum.BtnNotification;
+
+                if (!SiaConfig.ValidAcceso(idacceso.ToString()))
+                {
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    return;
+                }
+                else
+                {
+                    App.MasterD.IsPresented = false;
+                    await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Notificacion.Notification());
+                }
+
+
             }
             catch (Exception w)
             {
                 await DisplayAlert("errro", "error al abrir:" + w, "OK");
-            }
+            }            
         }
 
+             
 
-
+       
     }
 }
