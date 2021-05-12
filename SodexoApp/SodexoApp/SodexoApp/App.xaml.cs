@@ -25,10 +25,9 @@ namespace SodexoApp
             //17.4.0.55
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjIzMDg4QDMxMzcyZTM0MmUzMGNrSUxWOHRyS1kxZU9GdWxLb0dVQVlUK2k5LzZVSkpRZC9mWktldlVJYmc9");
             InitializeComponent();
-            //MainPage = new Login();
-            //MainPage = new Views.Menu.Mantenimiento.Peticion();
+            //MainPage = new Login();            
             MainPage = new Views.Menu.Menu();   
-            //MainPage = new Views.Menu.Alojamiento.ConsultaVivienda();   
+            //MainPage = new Views.Menu.Alojamiento.ConsultaVivienda();
         }
 
         protected override void OnStart()

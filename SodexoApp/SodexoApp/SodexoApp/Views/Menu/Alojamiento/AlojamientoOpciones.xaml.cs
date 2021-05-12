@@ -32,7 +32,8 @@ namespace SodexoApp.Views.Menu.Alojamiento
                 }
                 else
                 {
-
+                    App.MasterD.IsPresented = false;
+                    await App.MasterD.Detail.Navigation.PushAsync(new Alojamiento.MapaVivienda());
                 }
 
             }
@@ -42,14 +43,54 @@ namespace SodexoApp.Views.Menu.Alojamiento
             }
         }
 
-        private void BtnConsultaVivienda_Clicked(object sender, EventArgs e)
+        private async void BtnConsultaVivienda_Clicked(object sender, EventArgs e)
         {
+            try
+            {
 
+                int idacceso = (int)SiaApi.AccesoEnum.BtnConsultaVivienda;
+
+                if (!SiaConfig.ValidAcceso(idacceso.ToString()))
+                {
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    return;
+                }
+                else
+                {
+                    App.MasterD.IsPresented = false;
+                    await App.MasterD.Detail.Navigation.PushAsync(new Alojamiento.ConsultaVivienda());
+                }
+
+            }
+            catch (Exception w)
+            {
+                await DisplayAlert("alerta", "error al abrir:" + w, "OK");
+            }
         }
 
-        private void BtnConsultaUsuario_Clicked(object sender, EventArgs e)
+        private async void BtnConsultaUsuario_Clicked(object sender, EventArgs e)
         {
+            try
+            {
 
+                int idacceso = (int)SiaApi.AccesoEnum.BtnConsultaUsuario;
+
+                if (!SiaConfig.ValidAcceso(idacceso.ToString()))
+                {
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    return;
+                }
+                else
+                {
+                    App.MasterD.IsPresented = false;
+                    await App.MasterD.Detail.Navigation.PushAsync(new Alojamiento.ConsultaUsuario());
+                }
+
+            }
+            catch (Exception w)
+            {
+                await DisplayAlert("alerta", "error al abrir:" + w, "OK");
+            }
         }
 
         private void BtnPrechekin_Clicked(object sender, EventArgs e)

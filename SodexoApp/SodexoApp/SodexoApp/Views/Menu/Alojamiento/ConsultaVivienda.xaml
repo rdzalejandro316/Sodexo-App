@@ -6,8 +6,11 @@
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
              xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms"
              xmlns:style="clr-namespace:SodexoApp.Helpers"             
-             BackgroundColor="White" >
+             Title="Consulta vivienda">
+
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -26,13 +29,12 @@
             <Setter Property="RelativeLayout.HeightConstraint" Value="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1,Constant=0}"/>
         </Style>
         <Style TargetType="inputLayout:SfTextInputLayout" x:Key="combo">
-            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Margin" Value="10,5,10,0"/>
             <Setter Property="ContainerType" Value="Outlined"/>
             <Setter Property="FocusedColor" Value="Red"/>
         </Style>
         <Style TargetType="combobox:SfComboBox" x:Key="comboemp">
             <Setter Property="HeightRequest" Value="40"/>
-            <Setter Property="Text" Value="Seleccione el punto de venta"/>
             <Setter Property="TextSize" Value="10"/>
             <Setter Property="DropDownTextSize" Value="10"/>
         </Style>
@@ -44,58 +46,103 @@
             <Setter Property="Title" Value="Loading..."/>
             <Setter Property="TextColor" Value="{StaticResource ColorMain}"/>
             <Setter Property="HeightRequest" Value="100"/>
-            <Setter Property="RelativeLayout.XConstraint" Value="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.6,Constant=-100}"/>
-            <Setter Property="RelativeLayout.YConstraint" Value="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.7,Constant=-100}"/>
+            <Setter Property="VerticalOptions" Value="End"/>
+            <Setter Property="Margin" Value="0,0,0,50"/>
+        </Style>
+        <Style TargetType="cards:SfCardView" x:Key="cartas">
+            <Setter Property="Margin" Value="1"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="HeightRequest" Value="300"/>
+            <Setter Property="WidthRequest" Value="250"/>
+        </Style>
+        <Style TargetType="Button" x:Key="BtnStyle">
+            <Setter Property="BackgroundColor" Value="{StaticResource ColorMain}"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="HeightRequest" Value="40"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="Margin" Value="10,5,10,5"/>
         </Style>
     </ContentPage.Resources>
 
+
     <ContentPage.Content>
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="60"/>
-                <RowDefinition/>
-                <RowDefinition Height="40"/>
-            </Grid.RowDefinitions>
+            <tabView:SfTabView BackgroundColor="White" TabHeaderBackgroundColor="{StaticResource ColorMain}" x:Name="tabView" VisibleHeaderCount="2" TabHeaderPosition="Bottom" ScrollButtonBackgroundColor="Red">
+                <tabView:SfTabView.SelectionIndicatorSettings>
+                    <tabView:SelectionIndicatorSettings Color="White" Position="Bottom" AnimationDuration="3" StrokeThickness="2" />
+                </tabView:SfTabView.SelectionIndicatorSettings>
+                <tabView:SfTabItem Title="Filtros" TitleFontColor="White" SelectionColor="White">
+                    <tabView:SfTabItem.Content>
+                        <Grid>
+                            <cards:SfCardView HasShadow="True" ShadowColor="Gray" Grid.Column="0" Style="{StaticResource cartas}">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="10"/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
 
-            <Grid BackgroundColor="WhiteSmoke">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
 
-                <inputLayout:SfTextInputLayout Hint="Punto de venta" Style="{StaticResource combo}" Grid.Column="0">
-                    <combobox:SfComboBox x:Name="CbPuntosv" DisplayMemberPath="Nom_pventa" SelectedValuePath="Id_pventa" Style="{StaticResource comboemp}"/>
-                </inputLayout:SfTextInputLayout>
+                                    <inputLayout:SfTextInputLayout Hint="Campamento" Style="{StaticResource combo}" Grid.Row="1">
+                                        <combobox:SfComboBox x:Name="CbCampamento" DisplayMemberPath="Nombre" SelectedValuePath="Codigo" Text="Seleccione un campamento" Style="{StaticResource comboemp}" SelectionChanged="CbCampamento_SelectionChanged"/>
+                                    </inputLayout:SfTextInputLayout>
+                                    
+                                    <inputLayout:SfTextInputLayout Hint="Punto de venta" Style="{StaticResource combo}" Grid.Row="2">
+                                        <combobox:SfComboBox x:Name="CbPuntosv" DisplayMemberPath="Nombre" SelectedValuePath="Codigo" Text="Seleccione un punto de venta" Style="{StaticResource comboemp}" SelectionChanged="CbPuntosv_SelectionChanged"/>
+                                    </inputLayout:SfTextInputLayout>
 
-                <Button x:Name="BtnConsultar" Grid.Column="1" Text="Consultar" Clicked="BtnConsultar_Clicked" BackgroundColor="{StaticResource ColorMain}" TextColor="White" HeightRequest="40" WidthRequest="120" HorizontalOptions="Center" VerticalOptions="Center" Margin="5"/>
-            </Grid>
+                                    <inputLayout:SfTextInputLayout Hint="Vivienda" Style="{StaticResource combo}" Grid.Row="3">
+                                        <combobox:SfComboBox x:Name="CbVivienda" DisplayMemberPath="Nombre" SelectedValuePath="Codigo" Text="Seleccione una vivienda" Style="{StaticResource comboemp}"/>
+                                    </inputLayout:SfTextInputLayout>
 
-            <Grid Grid.Row="1">
-                <RelativeLayout>
-                    <syncfusion:SfDataGrid x:Name="GridConsulta" GridStyle="{StaticResource estilo}" Style="{StaticResource Grilla}">
-                        <syncfusion:SfDataGrid.Columns>
-                            <syncfusion:GridTextColumn HeaderText="P venta" MappingName="Nom_pventa" CellTextSize="10" HeaderCellTextSize="10" />
-                            <syncfusion:GridTextColumn HeaderText="Vivienda" MappingName="Cod_Vivienda" CellTextSize="10" HeaderCellTextSize="10"/>
-                            <syncfusion:GridTextColumn HeaderText="habitacion" MappingName="Id_Habitacion" CellTextSize="10" HeaderCellTextSize="10"/>
-                            <syncfusion:GridTextColumn HeaderText="Cama" MappingName="Cama" CellTextSize="10" HeaderCellTextSize="10"/>
-                            <syncfusion:GridTextColumn HeaderText="Cedula" MappingName="Cedula" CellTextSize="10" HeaderCellTextSize="10"/>
-                            <syncfusion:GridTextColumn HeaderText="nombre" MappingName="nombre" CellTextSize="10" HeaderCellTextSize="10"/>
-                            <syncfusion:GridTextColumn HeaderText="apellido" MappingName="apellido" CellTextSize="10" HeaderCellTextSize="10"/>
-                            <syncfusion:GridTextColumn HeaderText="Fecha Ingreso" MappingName="Fecha_Ingreso" CellTextSize="10" HeaderCellTextSize="10"/>
-                            <syncfusion:GridTextColumn HeaderText="Fecha Salida" MappingName="Fecha_Salida" CellTextSize="10" HeaderCellTextSize="10"/>
-                        </syncfusion:SfDataGrid.Columns>
-                    </syncfusion:SfDataGrid>
-                    <busyindicator:SfBusyIndicator x:Name="SfBusyIndicator" Style="{StaticResource busycirl}" IsBusy="False"/>
-                </RelativeLayout>
-            </Grid>
 
-            <Grid Grid.Row="2" BackgroundColor="{StaticResource ColorMain}">
-                <StackLayout VerticalOptions="Center" Orientation="Horizontal">
-                    <Label Text="Total :" TextColor="White" Margin="5,0,0,0" FontAttributes="Bold" FontSize="14"/>
-                    <Label x:Name="TxTotal" Text="0" TextColor="White" FontSize="14"/>
-                </StackLayout>
-            </Grid>
+                                    <Button x:Name="BtnConsultar" Grid.Row="4" Text="Consultar" Clicked="BtnConsultar_Clicked" Style="{StaticResource BtnStyle}"/>
 
+                                </Grid>
+                            </cards:SfCardView>
+                        </Grid>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Consulta" TitleFontColor="White" SelectionColor="White">
+                    <tabView:SfTabItem.Content>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid Grid.Row="0">
+                                <RelativeLayout>
+                                    <syncfusion:SfDataGrid x:Name="GridConsulta" GridStyle="{StaticResource estilo}" Style="{StaticResource Grilla}">
+                                        <syncfusion:SfDataGrid.Columns>
+                                            <syncfusion:GridTextColumn HeaderText="Habitacion" MappingName="HabitacionCodigo" CellTextSize="10" HeaderCellTextSize="10"/>
+                                            <syncfusion:GridTextColumn HeaderText="EmpleadoCodigo" MappingName="EmpleadoCodigo" CellTextSize="10" HeaderCellTextSize="10"/>
+                                            <syncfusion:GridTextColumn HeaderText="EmpleadoNombres" MappingName="EmpleadoNombres" CellTextSize="10" HeaderCellTextSize="10"/>
+                                            <syncfusion:GridTextColumn HeaderText="EmpleadoApellidos" MappingName="EmpleadoApellidos" CellTextSize="10" HeaderCellTextSize="10"/>
+                                            <syncfusion:GridTextColumn HeaderText="EmpresaNombre" MappingName="EmpresaNombre" CellTextSize="10" HeaderCellTextSize="10"/>
+                                            <syncfusion:GridDateTimeColumn HeaderText="Fecha Ingreso" MappingName="FechaIngreso" Format="dd/MM/yyyy" CellTextSize="10" HeaderCellTextSize="10"/>
+                                            <syncfusion:GridDateTimeColumn HeaderText="Fecha Salida" MappingName="FechaSalida" Format="dd/MM/yyyy" CellTextSize="10" HeaderCellTextSize="10"/>
+                                        </syncfusion:SfDataGrid.Columns>
+                                    </syncfusion:SfDataGrid>
+                                </RelativeLayout>
+                            </Grid>
+
+                            <Grid Grid.Row="1" BackgroundColor="{StaticResource ColorMain}">
+                                <StackLayout VerticalOptions="Center" Orientation="Horizontal">
+                                    <Label Text="Total :" TextColor="White" Margin="5,0,0,0" FontAttributes="Bold" FontSize="14"/>
+                                    <Label x:Name="TxTotal" Text="0" TextColor="White" FontSize="14"/>
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+
+            </tabView:SfTabView>
+            <busyindicator:SfBusyIndicator x:Name="SfBusyIndicator" Style="{StaticResource busycirl}" IsBusy="False"/>
         </Grid>
     </ContentPage.Content>
+
 </ContentPage>

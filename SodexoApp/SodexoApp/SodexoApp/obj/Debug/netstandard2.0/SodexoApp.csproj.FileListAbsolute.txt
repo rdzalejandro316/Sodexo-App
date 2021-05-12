@@ -30,7 +30,6 @@ D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\bin\Debug\nets
 D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\bin\Debug\netstandard2.0\SodexoApp.pdb
 D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\Login.xaml.g.cs
 D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\Views\Menu\Alojamiento\AlojamientoOpciones.xaml.g.cs
-D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\Views\Menu\Alojamiento\ConsultaVivienda.xaml.g.cs
 D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\Views\Menu\Lavanderia\LavanderiaInfo.xaml.g.cs
 D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\Views\Menu\Mantenimiento\Peticion.xaml.g.cs
 D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\Views\Menu\Menu.xaml.g.cs
@@ -46,4 +45,7 @@ D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\nets
 D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\ref\SodexoApp.dll
 D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\SodexoApp.pdb
 D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\Views\Menu\Alojamiento\MapaVivienda.xaml.g.cs
 D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\SodexoApp.csprojAssemblyReference.cache
+D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\Views\Menu\Alojamiento\ConsultaUsuario.xaml.g.cs
+D:\Empresas\Empresas\Sodexo Android\SodexoApp\SodexoApp\SodexoApp\obj\Debug\netstandard2.0\Views\Menu\Alojamiento\ConsultaVivienda.xaml.g.cs

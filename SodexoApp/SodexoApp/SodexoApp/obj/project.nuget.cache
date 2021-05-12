@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bW8zoLS/IbbzfvZYyz3+l8TmTODyUap0mAi+RCtObh+w/uT4VmV8Ck+/gdNjS8chpaJHR5RDUcJKHgXWiiDcxQ==",
+  "dgSpecHash": "LazYZ6WK7lK18syPckZIjlNy57nYPS9GdxuHmRW3fkPPl4PNJZm/W278ssqUWFw9NdQjpaG3ybrkXm2JEGu/iw==",
   "success": true,
   "projectFilePath": "D:\\Empresas\\Empresas\\Sodexo Android\\SodexoApp\\SodexoApp\\SodexoApp\\SodexoApp.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,7 @@
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfmaps\\17.4.0.55\\syncfusion.xamarin.sfmaps.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfnumerictextbox\\17.4.0.55\\syncfusion.xamarin.sfnumerictextbox.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sfpopuplayout\\17.4.0.55\\syncfusion.xamarin.sfpopuplayout.17.4.0.55.nupkg.sha512",
+    "C:\\Users\\aleja\\.nuget\\packages\\syncfusion.xamarin.sftabview\\17.4.0.55\\syncfusion.xamarin.sftabview.17.4.0.55.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512",
     "C:\\Users\\aleja\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SodexoApp.Views.Menu.Alojamiento.MapaVivienda"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" 
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             xmlns:style="clr-namespace:SodexoApp.Helpers"             
+             BackgroundColor="White" Title="Mapa vivienda">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <style:CustomGridStyle x:Key="estilo"/>
+        </ResourceDictionary>
+        <Style TargetType="syncfusion:SfDataGrid" x:Key="Grilla">
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="ColumnSizer" Value="SizeToHeader"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="SelectionMode" Value="Single"/>
+            <Setter Property="HeaderRowHeight" Value="40"/>
+            <Setter Property="RowHeight" Value="40"/>
+            <Setter Property="VerticalOverScrollMode" Value="None"/>
+            <Setter Property="ScrollingMode" Value="Pixel"/>
+            <Setter Property="RelativeLayout.WidthConstraint" Value="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=0}"/>
+            <Setter Property="RelativeLayout.HeightConstraint" Value="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1,Constant=0}"/>
+        </Style>
+        <Style TargetType="inputLayout:SfTextInputLayout" x:Key="combo">
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="ContainerType" Value="Outlined"/>
+            <Setter Property="FocusedColor" Value="Red"/>
+        </Style>
+        <Style TargetType="combobox:SfComboBox" x:Key="comboemp">
+            <Setter Property="HeightRequest" Value="40"/>
+            <Setter Property="Text" Value="Seleccione el punto de venta"/>
+            <Setter Property="TextSize" Value="10"/>
+            <Setter Property="DropDownTextSize" Value="10"/>
+        </Style>
+        <Style TargetType="busyindicator:SfBusyIndicator" x:Key="busycirl">
+            <Setter Property="AnimationType" Value="SingleCircle"/>
+            <Setter Property="ViewBoxWidth" Value="30"/>
+            <Setter Property="EnableAnimation" Value="True"/>
+            <Setter Property="TitlePlacement" Value="Bottom"/>
+            <Setter Property="Title" Value="Loading..."/>
+            <Setter Property="TextColor" Value="{StaticResource ColorMain}"/>
+            <Setter Property="HeightRequest" Value="100"/>
+            <Setter Property="RelativeLayout.XConstraint" Value="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0.6,Constant=-100}"/>
+            <Setter Property="RelativeLayout.YConstraint" Value="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=0.7,Constant=-100}"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+
+            <Grid BackgroundColor="WhiteSmoke">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <inputLayout:SfTextInputLayout Hint="Punto de venta" Style="{StaticResource combo}" Grid.Column="0">
+                    <combobox:SfComboBox x:Name="CbPuntosv" DisplayMemberPath="Nom_pventa" SelectedValuePath="Id_pventa" Style="{StaticResource comboemp}"/>
+                </inputLayout:SfTextInputLayout>
+
+                <Button x:Name="BtnConsultar" Grid.Column="1" Text="Consultar" Clicked="BtnConsultar_Clicked" BackgroundColor="{StaticResource ColorMain}" TextColor="White" HeightRequest="40" WidthRequest="120" HorizontalOptions="Center" VerticalOptions="Center" Margin="5"/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <RelativeLayout>
+                    <syncfusion:SfDataGrid x:Name="GridConsulta" GridStyle="{StaticResource estilo}" Style="{StaticResource Grilla}">
+                        <syncfusion:SfDataGrid.Columns>
+                            <syncfusion:GridTextColumn HeaderText="P venta" MappingName="Nom_pventa" CellTextSize="10" HeaderCellTextSize="10" />
+                            <syncfusion:GridTextColumn HeaderText="Vivienda" MappingName="Cod_Vivienda" CellTextSize="10" HeaderCellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderText="habitacion" MappingName="Id_Habitacion" CellTextSize="10" HeaderCellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderText="Cama" MappingName="Cama" CellTextSize="10" HeaderCellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderText="Cedula" MappingName="Cedula" CellTextSize="10" HeaderCellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderText="nombre" MappingName="nombre" CellTextSize="10" HeaderCellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderText="apellido" MappingName="apellido" CellTextSize="10" HeaderCellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderText="Fecha Ingreso" MappingName="Fecha_Ingreso" CellTextSize="10" HeaderCellTextSize="10"/>
+                            <syncfusion:GridTextColumn HeaderText="Fecha Salida" MappingName="Fecha_Salida" CellTextSize="10" HeaderCellTextSize="10"/>
+                        </syncfusion:SfDataGrid.Columns>
+                    </syncfusion:SfDataGrid>
+                    <busyindicator:SfBusyIndicator x:Name="SfBusyIndicator" Style="{StaticResource busycirl}" IsBusy="False"/>
+                </RelativeLayout>
+            </Grid>
+
+            <Grid Grid.Row="2" BackgroundColor="{StaticResource ColorMain}">
+                <StackLayout VerticalOptions="Center" Orientation="Horizontal">
+                    <Label Text="Total :" TextColor="White" Margin="5,0,0,0" FontAttributes="Bold" FontSize="14"/>
+                    <Label x:Name="TxTotal" Text="0" TextColor="White" FontSize="14"/>
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

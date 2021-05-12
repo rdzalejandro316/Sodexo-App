@@ -94,6 +94,10 @@
               "target": "Package",
               "version": "[17.4.0.55, )"
             },
+            "Syncfusion.Xamarin.SfTabView": {
+              "target": "Package",
+              "version": "[17.4.0.55, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.2, )"
