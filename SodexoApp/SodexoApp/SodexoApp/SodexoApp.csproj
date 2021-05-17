@@ -32,8 +32,14 @@
     <Compile Update="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\Menu\Alimentacion\AlimentacionOpciones.xaml.cs">
+      <DependentUpon>AlimentacionOpciones.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Menu\Alojamiento\MapaVivienda.xaml.cs">
       <DependentUpon>MapaVivienda.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Menu\Lavanderia\LavanderiaOpciones.xaml.cs">
+      <DependentUpon>LavanderiaOpciones.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\Menu\Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
@@ -41,7 +47,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\Menu\Alimentacion\AlimentacionOpciones.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Menu\Alojamiento\AlojamientoOpciones.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Menu\Alojamiento\Check.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Menu\Alojamiento\ConsultaUsuario.xaml">
@@ -53,7 +65,7 @@
     <EmbeddedResource Update="Views\Menu\Alojamiento\MapaVivienda.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Menu\Lavanderia\LavanderiaInfo.xaml">
+    <EmbeddedResource Update="Views\Menu\Lavanderia\LavanderiaOpciones.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Menu\Mantenimiento\Peticion.xaml">

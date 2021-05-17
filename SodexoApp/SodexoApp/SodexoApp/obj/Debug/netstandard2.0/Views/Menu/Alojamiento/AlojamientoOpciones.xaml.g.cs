@@ -23,7 +23,7 @@ namespace SodexoApp.Views.Menu.Alojamiento {
         private global::Syncfusion.XForms.Buttons.SfButton BtnConsultaVivienda;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Syncfusion.XForms.Buttons.SfButton BtnConsultaUsuario;
+        private global::Syncfusion.XForms.Buttons.SfButton BtnConsultaUsuarioAlojamiento;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Syncfusion.XForms.Buttons.SfButton BtnPrechekin;
@@ -39,7 +39,7 @@ namespace SodexoApp.Views.Menu.Alojamiento {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AlojamientoOpciones));
             BtnMapaViviendas = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.Buttons.SfButton>(this, "BtnMapaViviendas");
             BtnConsultaVivienda = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.Buttons.SfButton>(this, "BtnConsultaVivienda");
-            BtnConsultaUsuario = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.Buttons.SfButton>(this, "BtnConsultaUsuario");
+            BtnConsultaUsuarioAlojamiento = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.Buttons.SfButton>(this, "BtnConsultaUsuarioAlojamiento");
             BtnPrechekin = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.Buttons.SfButton>(this, "BtnPrechekin");
             Btnchekin = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.Buttons.SfButton>(this, "Btnchekin");
             Btnchekout = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Syncfusion.XForms.Buttons.SfButton>(this, "Btnchekout");

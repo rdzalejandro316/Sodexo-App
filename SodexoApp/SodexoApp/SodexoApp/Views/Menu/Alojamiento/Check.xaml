@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SodexoApp.Views.Menu.Alojamiento.Check"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms"
+             xmlns:shimmer="clr-namespace:Syncfusion.XForms.Shimmer;assembly=Syncfusion.Core.XForms"             
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"             
+             Title="Pre Check-In" BackgroundColor="White" Appearing="ContentPage_Appearing">
+
+    <ContentPage.Resources>
+        <Style TargetType="inputLayout:SfTextInputLayout" x:Key="box">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="ContainerType" Value="Outlined"/>
+            <Setter Property="FocusedColor" Value="Red"/>
+        </Style>
+        <Style TargetType="combobox:SfComboBox" x:Key="comboemp">
+            <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="TextSize" Value="10"/>
+            <Setter Property="DropDownTextSize" Value="10"/>
+        </Style>
+        <Style TargetType="DatePicker" x:Key="CtlDate">
+            <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
+        <Style TargetType="TimePicker" x:Key="CtlTime">
+            <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
+        <Style TargetType="busyindicator:SfBusyIndicator" x:Key="busycirl">
+            <Setter Property="AnimationType" Value="SingleCircle"/>
+            <Setter Property="ViewBoxWidth" Value="30"/>
+            <Setter Property="EnableAnimation" Value="True"/>
+            <Setter Property="TitlePlacement" Value="Bottom"/>
+            <Setter Property="Title" Value="Loading..."/>
+            <Setter Property="TextColor" Value="{StaticResource ColorMain}"/>
+            <Setter Property="HeightRequest" Value="100"/>
+            <Setter Property="VerticalOptions" Value="End"/>
+            <Setter Property="Margin" Value="0,0,0,50"/>
+        </Style>
+        <Style TargetType="cards:SfCardView" x:Key="cartas">
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style TargetType="buttons:SfButton" x:Key="BtnStyle">
+            <Setter Property="BackgroundColor" Value="{StaticResource ColorMain}"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="Margin" Value="10,0,10,0"/>
+        </Style>
+        <Style TargetType="buttons:SfCheckBox" x:Key="CheckStyle">
+            <Setter Property="IsChecked" Value="False"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="CheckedColor" Value="{StaticResource ColorMain}"/>
+        </Style>
+        <Style TargetType="Entry" x:Key="EntryStyle">
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="WidthRequest" Value="100"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid>
+
+            <StackLayout x:Name="loadStack" IsVisible="True">
+                <shimmer:SfShimmer VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Type="Feed" IsActive="True" Margin="5"/>
+                <shimmer:SfShimmer VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Type="Feed" IsActive="True" Margin="5"/>
+            </StackLayout>
+
+            <Grid x:Name="LoadGrid" IsVisible="False">
+                <cards:SfCardView HasShadow="True" ShadowColor="Gray" Grid.Column="0" Style="{StaticResource cartas}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+
+                        <ScrollView>
+                            <Grid x:Name="GridMain">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="10"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="60"/>
+                                </Grid.RowDefinitions>
+
+                                <Label x:Name="TxAsignacion" Text="Asignacion" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" TextColor="{StaticResource  ColorMain}" FontSize="18" FontAttributes="Bold"/>
+
+                                <inputLayout:SfTextInputLayout Hint="Campamento" Style="{StaticResource box}" Grid.Row="2">
+                                    <combobox:SfComboBox x:Name="CbCampamento" DisplayMemberPath="Nombre" SelectedValuePath="Codigo" Text="Seleccione un campamento" Style="{StaticResource comboemp}" SelectionChanged="CbCampamento_SelectionChanged"/>
+                                </inputLayout:SfTextInputLayout>
+
+                                <inputLayout:SfTextInputLayout Hint="Punto de venta" Style="{StaticResource box}" Grid.Row="3">
+                                    <combobox:SfComboBox x:Name="CbPuntosv" DisplayMemberPath="Nombre" SelectedValuePath="Codigo" Text="Seleccione un punto de venta" Style="{StaticResource comboemp}" SelectionChanged="CbPuntosv_SelectionChanged"/>
+                                </inputLayout:SfTextInputLayout>
+
+                                <inputLayout:SfTextInputLayout Hint="Vivienda" Style="{StaticResource box}" Grid.Row="4">
+                                    <combobox:SfComboBox x:Name="CbVivienda" DisplayMemberPath="Nombre" SelectedValuePath="Codigo" Text="Seleccione una vivienda" Style="{StaticResource comboemp}" SelectionChanged="CbVivienda_SelectionChanged"/>
+                                </inputLayout:SfTextInputLayout>
+
+                                <inputLayout:SfTextInputLayout Hint="Habitacion" Style="{StaticResource box}" Grid.Row="5">
+                                    <combobox:SfComboBox x:Name="CbHabitacion" DisplayMemberPath="Nombre" SelectedValuePath="Codigo" Text="Seleccione una habitacion" Style="{StaticResource comboemp}" SelectionChanged="CbHabitacion_SelectionChanged"/>
+                                </inputLayout:SfTextInputLayout>
+
+                                <inputLayout:SfTextInputLayout Hint="Cama" Style="{StaticResource box}" Grid.Row="6">
+                                    <combobox:SfComboBox x:Name="CbCama" DisplayMemberPath="Nombre" SelectedValuePath="Codigo" Text="Seleccione una cama" Style="{StaticResource comboemp}"/>
+                                </inputLayout:SfTextInputLayout>
+
+                                <inputLayout:SfTextInputLayout Hint="Empleado" Style="{StaticResource box}" Grid.Row="7">
+                                    <Entry x:Name="TxEmpleado" Style="{StaticResource EntryStyle}"/>
+                                </inputLayout:SfTextInputLayout>
+
+                                <Grid Grid.Row="8">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <inputLayout:SfTextInputLayout Hint="Fecha Ingreso" Style="{StaticResource box}">
+                                        <DatePicker x:Name="TxFecIng" Style="{StaticResource CtlDate}"/>
+                                    </inputLayout:SfTextInputLayout>
+
+                                    <inputLayout:SfTextInputLayout Grid.Column="1" Hint="Hora Ingreso" Style="{StaticResource box}">
+                                        <TimePicker x:Name="TxHorIng" Format="HH:mm" Style="{StaticResource CtlTime}"/>
+                                    </inputLayout:SfTextInputLayout>
+                                </Grid>
+
+                                <Grid Grid.Row="9">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <inputLayout:SfTextInputLayout Hint="Fecha Salida" Style="{StaticResource box}">
+                                        <DatePicker x:Name="TxFecSal" Style="{StaticResource CtlDate}"/>
+                                    </inputLayout:SfTextInputLayout>
+
+                                    <inputLayout:SfTextInputLayout Grid.Column="1" Hint="Hora Salida" Style="{StaticResource box}">
+                                        <TimePicker x:Name="TxHorSal" Format="HH:mm" Style="{StaticResource CtlTime}"/>
+                                    </inputLayout:SfTextInputLayout>
+                                </Grid>
+
+                                <Grid Grid.Row="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <inputLayout:SfTextInputLayout Grid.Column="0" Hint="Check" Style="{StaticResource box}">
+                                        <buttons:SfCheckBox x:Name="ChContingencia" Text="Contingencia" Style="{StaticResource CheckStyle}"/>
+                                    </inputLayout:SfTextInputLayout>
+
+                                    <inputLayout:SfTextInputLayout Grid.Column="1" Hint="Check" Style="{StaticResource box}">
+                                        <buttons:SfCheckBox x:Name="ChVisitante" Text="Visitante" Style="{StaticResource CheckStyle}"/>
+                                    </inputLayout:SfTextInputLayout>
+
+                                </Grid>
+                                
+                                <inputLayout:SfTextInputLayout Hint="Nota" Style="{StaticResource box}" Grid.Row="11">
+                                    <Entry x:Name="TxNota" Style="{StaticResource EntryStyle}"/>
+                                </inputLayout:SfTextInputLayout>
+
+                            </Grid>
+                        </ScrollView>
+
+                        <buttons:SfButton x:Name="BtnValidar" Grid.Row="1" CornerRadius="5" Style="{StaticResource BtnStyle}" Clicked="BtnValidar_Clicked">
+                            <buttons:SfButton.Content>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                    <busyindicator:SfBusyIndicator x:Name="SfBusyIndicator" AnimationType="SingleCircle" IsBusy="True" TextColor="White" WidthRequest="50" ViewBoxWidth="30" ViewBoxHeight="30" IsVisible="False"/>
+                                    <Label x:Name="TxBtn" Text="Guardar" FontSize="20" VerticalTextAlignment="Center" TextColor="White" />
+                                </StackLayout>
+                            </buttons:SfButton.Content>
+                        </buttons:SfButton>
+                                                
+                    </Grid>
+
+
+                </cards:SfCardView>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SodexoApp.Views.Menu.Lavanderia.LavanderiaInfo.xaml", "Views/Menu/Lavanderia/LavanderiaInfo.xaml", typeof(global::SodexoApp.Views.Menu.Lavanderia.LavanderiaInfo))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("SodexoApp.Views.Menu.Alimentacion.AlimentoOpciones.xaml", "Views/Menu/Alimentacion/AlimentoOpciones.xaml", typeof(global::SodexoApp.Views.Menu.Alimentacion.AlimentoOpciones))]
 
-namespace SodexoApp.Views.Menu.Lavanderia {
+namespace SodexoApp.Views.Menu.Alimentacion {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Menu\\Lavanderia\\LavanderiaInfo.xaml")]
-    public partial class LavanderiaInfo : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Menu\\Alimentacion\\AlimentoOpciones.xaml")]
+    public partial class AlimentoOpciones : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(LavanderiaInfo));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AlimentoOpciones));
         }
     }
 }

@@ -12,6 +12,7 @@ namespace SodexoApp
         public static MasterDetailPage MasterD { get; set; }
         public static string idUser = "1033796537";
         public static string NameUser = "Admon";
+        public static string Alias = "Admon";
         
         public static int GroupId = 1;
         public static int ProyectId = 1;
@@ -27,7 +28,7 @@ namespace SodexoApp
             InitializeComponent();
             //MainPage = new Login();            
             MainPage = new Views.Menu.Menu();   
-            //MainPage = new Views.Menu.Alojamiento.ConsultaVivienda();
+            //MainPage = new Views.Menu.Alojamiento.Check("Pre Chekin","04");
         }
 
         protected override void OnStart()

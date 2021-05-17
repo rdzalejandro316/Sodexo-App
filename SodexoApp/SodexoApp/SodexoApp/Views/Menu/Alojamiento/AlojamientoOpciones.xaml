@@ -13,11 +13,16 @@
             <Setter Property="Margin" Value="5,10,5,5"/>
         </Style>
         <Style TargetType="Label" x:Key="lbtit">
-            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontSize" Value="12"/>
             <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
             <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="Margin" Value="0,0,0,5"/>
+        </Style>
+        <Style TargetType="buttons:SfButton" x:Key="BtnStyle">
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BackgroundColor" Value="{StaticResource ColorMain}"/>
         </Style>
     </ContentPage.Resources>
 
@@ -37,23 +42,21 @@
                 <ColumnDefinition Width="20"/>
             </Grid.ColumnDefinitions>
 
-            <buttons:SfButton x:Name="BtnMapaViviendas" Grid.Row="1" Grid.Column="1" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnMapaViviendas_Clicked">
+            <buttons:SfButton x:Name="BtnMapaViviendas" Grid.Row="1" Grid.Column="1" Clicked="BtnMapaViviendas_Clicked" Style="{StaticResource BtnStyle}">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="1*"/>
                             <RowDefinition Height="30"/>
                         </Grid.RowDefinitions>
-
 
                         <Image Source="mapa.png" Style="{StaticResource BtnImage}" />
                         <Label Grid.Row="1" Text="Mapa Viviendas" Style="{StaticResource lbtit}"/>
-
                     </Grid>
                 </buttons:SfButton.Content>
             </buttons:SfButton>
 
-            <buttons:SfButton x:Name="BtnConsultaVivienda" Grid.Row="1" Grid.Column="2" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnConsultaVivienda_Clicked">
+            <buttons:SfButton x:Name="BtnConsultaVivienda" Grid.Row="1" Grid.Column="2" Clicked="BtnConsultaVivienda_Clicked" Style="{StaticResource BtnStyle}">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -61,16 +64,14 @@
                             <RowDefinition Height="30"/>
                         </Grid.RowDefinitions>
 
-
                         <Image Source="consultavivienda.png" Style="{StaticResource BtnImage}" />
                         <Label Grid.Row="1" Text="Consulta Vivienda" Style="{StaticResource lbtit}"/>
-
                     </Grid>
                 </buttons:SfButton.Content>
             </buttons:SfButton>
 
-            
-            <buttons:SfButton x:Name="BtnConsultaUsuario" Grid.Row="2" Grid.Column="1" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnConsultaUsuario_Clicked">
+
+            <buttons:SfButton x:Name="BtnConsultaUsuarioAlojamiento" Grid.Row="2" Grid.Column="1" Clicked="BtnConsultaUsuarioAlojamiento_Clicked" Style="{StaticResource BtnStyle}">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -86,15 +87,13 @@
                 </buttons:SfButton.Content>
             </buttons:SfButton>
 
-            <buttons:SfButton x:Name="BtnPrechekin" Grid.Row="2" Grid.Column="2" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="BtnPrechekin_Clicked">
+            <buttons:SfButton x:Name="BtnPrechekin" Grid.Row="2" Grid.Column="2" Clicked="BtnPrechekin_Clicked" Style="{StaticResource BtnStyle}">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="1*"/>
                             <RowDefinition Height="30"/>
                         </Grid.RowDefinitions>
-
-
                         <Image Source="prechekin.png" Style="{StaticResource BtnImage}" />
                         <Label Grid.Row="1" Text="Pre-CheckIn" Style="{StaticResource lbtit}"/>
                     </Grid>
@@ -102,7 +101,7 @@
             </buttons:SfButton>
 
 
-            <buttons:SfButton x:Name="Btnchekin" Grid.Row="3" Grid.Column="1" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="Btnchekin_Clicked">
+            <buttons:SfButton x:Name="Btnchekin" Grid.Row="3" Grid.Column="1" Clicked="Btnchekin_Clicked" Style="{StaticResource BtnStyle}">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>
@@ -116,7 +115,7 @@
                 </buttons:SfButton.Content>
             </buttons:SfButton>
 
-            <buttons:SfButton x:Name="Btnchekout" Grid.Row="3" Grid.Column="2" CornerRadius="5" Margin="5" BackgroundColor="#2a295c" Clicked="Btnchekout_Clicked">
+            <buttons:SfButton x:Name="Btnchekout" Grid.Row="3" Grid.Column="2" Clicked="Btnchekout_Clicked" Style="{StaticResource BtnStyle}">
                 <buttons:SfButton.Content>
                     <Grid>
                         <Grid.RowDefinitions>

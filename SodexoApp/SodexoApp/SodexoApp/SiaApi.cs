@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Net;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SodexoApp
 {
@@ -29,7 +30,7 @@ namespace SodexoApp
 
             BtnMapaViviendas = 1369,
             BtnConsultaVivienda = 1370,
-            BtnConsultaUsuario = 1371,
+            BtnConsultaUsuarioAlojamiento = 1371,
             BtnPrechekin = 1372,
             Btnchekin = 1373,
             Btnchekout = 1374,
@@ -79,7 +80,6 @@ namespace SodexoApp
                 {
 
                     SqlCommand command = new SqlCommand(query, connection);
-
                     connection.Open();
                     SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
                     table.Load(reader);
@@ -93,6 +93,30 @@ namespace SodexoApp
                 return null;
             }
         }
+
+        public static async Task<DataTable> LoadDatatableAsync(string query, string conn)
+        {
+            try
+            {
+                DataTable table = new DataTable();
+                using (SqlConnection connection = new SqlConnection(conn))
+                {
+
+                    SqlCommand command = new SqlCommand(query, connection);
+                    await connection.OpenAsync();
+                    SqlDataReader reader = await command.ExecuteReaderAsync(CommandBehavior.CloseConnection);
+                    table.Load(reader);
+                    reader.Close();
+                    connection.Close();
+                    return table;
+                }
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
 
         public static SqlDataReader LoadDataReader(string query, string conn)
         {
@@ -155,7 +179,7 @@ namespace SodexoApp
             }
             catch (Exception w)
             {
-                Console.WriteLine("ERRRRRRRROR:" + w);
+                Console.WriteLine("ERRRRRRRROR LoadAccesos():" + w);
             }
         }
 

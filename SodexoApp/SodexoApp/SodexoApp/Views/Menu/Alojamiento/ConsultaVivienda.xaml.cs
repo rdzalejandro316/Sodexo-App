@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using SodexoApp.Helpers;
 using Syncfusion.XForms.ComboBox;
 using System;
 using System.Collections.Generic;
@@ -200,10 +201,6 @@ namespace SodexoApp.Views.Menu.Alojamiento
 
     }
 
-    public class Generic
-    {
-        public string Codigo { get; set; }
-        public string Nombre { get; set; }
-    }
+   
 
 }

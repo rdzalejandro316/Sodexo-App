@@ -29,7 +29,7 @@ namespace SodexoApp.Views.Menu
                 
                 if (!SiaConfig.ValidAcceso(idacceso.ToString()))
                 {                    
-                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tiene permiso para esta opcion", "OK");
                     return;
                 }
                 else
@@ -53,13 +53,13 @@ namespace SodexoApp.Views.Menu
 
                 if (!SiaConfig.ValidAcceso(idacceso.ToString()))
                 {
-                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tiene permisos para esta opcion", "OK");
                     return;
                 }
                 else
                 {
-                    //App.MasterD.IsPresented = false;
-                    //await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Alojamiento.ConsultaVivienda());
+                    App.MasterD.IsPresented = false;
+                    await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Alimentacion.AlimentacionOpciones());
                 }
 
             }
@@ -68,8 +68,6 @@ namespace SodexoApp.Views.Menu
                 await DisplayAlert("errro", "error al abrir:" + w, "OK");
             }
         }
-
-
         private async void BtnLavanderia_Clicked(object sender, EventArgs e)
         {
             try
@@ -78,13 +76,13 @@ namespace SodexoApp.Views.Menu
 
                 if (!SiaConfig.ValidAcceso(idacceso.ToString()))
                 {
-                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tiene permiso para esta opcion", "OK");
                     return;
                 }
                 else
                 {
                     App.MasterD.IsPresented = false;
-                    await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Lavanderia.LavanderiaInfo());
+                    await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Lavanderia.LavanderiaOpciones());
                 }
 
                 
@@ -95,6 +93,8 @@ namespace SodexoApp.Views.Menu
             }
         }
 
+
+
         private async void BtnMantenimiento_Clicked(object sender, EventArgs e)
         {
             try
@@ -103,7 +103,7 @@ namespace SodexoApp.Views.Menu
 
                 if (!SiaConfig.ValidAcceso(idacceso.ToString()))
                 {
-                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tiene permiso para esta opcion", "OK");
                     return;
                 }
                 else
@@ -120,7 +120,6 @@ namespace SodexoApp.Views.Menu
             }
         }
 
-
         private async void BtnQR_Clicked(object sender, EventArgs e)
         {
             try
@@ -129,7 +128,7 @@ namespace SodexoApp.Views.Menu
 
                 if (!SiaConfig.ValidAcceso(idacceso.ToString()))
                 {
-                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tiene permiso para esta opcion", "OK");
                     return;
                 }
                 else
@@ -154,7 +153,7 @@ namespace SodexoApp.Views.Menu
 
                 if (!SiaConfig.ValidAcceso(idacceso.ToString()))
                 {
-                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tiene permiso para esta opcion", "OK");
                     return;
                 }
                 else
@@ -180,7 +179,7 @@ namespace SodexoApp.Views.Menu
 
                 if (!SiaConfig.ValidAcceso(idacceso.ToString()))
                 {
-                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tien permiso para esta opcion", "OK");
+                    await DisplayAlert("Alerta", $"El usuario {App.NameUser} no tiene permiso para esta opcion", "OK");
                     return;
                 }
                 else
