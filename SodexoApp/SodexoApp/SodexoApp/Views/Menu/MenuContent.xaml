@@ -121,7 +121,7 @@
                         </Grid.RowDefinitions>
 
                         <Image Source="qr.png" Style="{StaticResource BtnImage}"/>
-                        <Label Grid.Row="1" Text="QR" Style="{StaticResource lbtit}"/>
+                        <Label Grid.Row="1" Text="PQR" Style="{StaticResource lbtit}"/>
                     </Grid>
                 </buttons:SfButton.Content>
             </buttons:SfButton>

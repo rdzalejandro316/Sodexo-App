@@ -29,6 +29,7 @@ namespace SodexoApp
             //MainPage = new Login();            
             MainPage = new Views.Menu.Menu();   
             //MainPage = new Views.Menu.Alojamiento.Check("Pre Chekin","04");
+            //MainPage = new Views.Menu.PQRS.Formulario();
         }
 
         protected override void OnStart()

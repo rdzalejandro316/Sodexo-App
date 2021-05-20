@@ -134,7 +134,7 @@ namespace SodexoApp.Views.Menu
                 else
                 {
                     App.MasterD.IsPresented = false;
-                    await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.Mantenimiento.Peticion());
+                    await App.MasterD.Detail.Navigation.PushAsync(new SodexoApp.Views.Menu.PQRS.Formulario());
                 }
 
 
